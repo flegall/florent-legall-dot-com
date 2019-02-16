@@ -1,15 +1,23 @@
+// @flow strict-local
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, keywords, title }) {
+type Props = {
+  +description?: string,
+  +lang: string,
+  +meta: $ReadOnlyArray<string>,
+  +keywords: $ReadOnlyArray<string>,
+  +title: string,
+};
+function SEO({ description, lang, meta, keywords, title }: Props) {
   return (
     <StaticQuery
       query={detailsQuery}
       render={data => {
         const metaDescription =
-          description || data.site.siteMetadata.description;
+          description != null || data.site.siteMetadata.description;
         return (
           <Helmet
             htmlAttributes={{

@@ -1,4 +1,5 @@
 [ignore]
+node_modules/graphql-skip-limit
 
 [include]
 
@@ -9,3 +10,9 @@
 [options]
 
 [strict]
+nonstrict-import
+unclear-type
+unsafe-getters-setters
+untyped-import
+untyped-type-import
+sketchy-null
