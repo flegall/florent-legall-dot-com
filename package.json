@@ -5,8 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@babel/core": "^7.0.0-0",
     "gatsby": "^2.1.4",
     "gatsby-image": "^2.0.29",
+    "gatsby-plugin-flow": "^1.0.2",
     "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-offline": "^2.0.23",
     "gatsby-plugin-react-helmet": "^3.0.6",
@@ -27,7 +29,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "eslint": "eslint . --cache",
+    "format": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.css\" \"**/*.md\""
   },
   "repository": {
     "type": "git",
@@ -35,5 +38,20 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "eslint": "5.14.0",
+    "eslint-config-prettier": "3.6.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-flowtype": "3.4.2",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jest": "21.27.2",
+    "eslint-plugin-node": "7.0.1",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "4.0.0",
+    "flow-bin": "^0.93.0",
+    "prettier": "^1.16.4"
   }
 }
