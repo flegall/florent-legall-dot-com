@@ -1,7 +1,7 @@
 ---
 title: "Bumping dependencies"
 date: "2019-02-16"
-path: "/bumping-dependencies"
+author: "Florent Le Gall"
 ---
 
-I'm a software engineer.
+When to bump dependencies ?

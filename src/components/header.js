@@ -1,6 +1,5 @@
 // @flow strict-local
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
 
 const Header = ({ siteTitle }: { siteTitle: string }) => (
@@ -31,10 +30,6 @@ const Header = ({ siteTitle }: { siteTitle: string }) => (
     </div>
   </header>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
 
 Header.defaultProps = {
   siteTitle: ``,

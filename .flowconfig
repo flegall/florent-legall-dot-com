@@ -1,5 +1,5 @@
 [ignore]
-node_modules/graphql-skip-limit
+.*/node_modules/graphql-skip-limit/.*
 
 [include]
 
