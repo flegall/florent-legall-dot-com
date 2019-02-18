@@ -19,6 +19,7 @@
     "gatsby-transformer-sharp": "^2.1.13",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-gravatar": "^2.6.3",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",

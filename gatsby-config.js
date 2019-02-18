@@ -1,8 +1,8 @@
 // @flow strict
 module.exports = {
   siteMetadata: {
-    title: `Florent Le Gall's blog`,
-    description: `A few words on software development in english and sometimes in french.`,
+    title: `Software kitchen`,
+    description: `Notes on software development in english and sometimes in french.`,
     author: `@flornt`,
   },
   plugins: [

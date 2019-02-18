@@ -12,7 +12,7 @@ type Props = {
         +node: {
           +id: string,
           +excerpt: string,
-          +frontmatter: { +date: string, +title: string },
+          +frontmatter: { +date: string, +title: string, +author: string },
           +fields: { +slug: string },
         },
       }>,
@@ -26,7 +26,7 @@ const IndexPage = ({ data }: Props) => (
       ({
         node: {
           id,
-          frontmatter: { date, title },
+          frontmatter: { date, title, author },
           fields: { slug },
         },
       }) => (
@@ -51,6 +51,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            author
           }
         }
       }

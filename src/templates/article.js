@@ -9,6 +9,8 @@ type Props = {
     +markdownRemark: {
       +frontmatter: {
         +title: string,
+        +author: string,
+        +date: string,
       },
       +html: string,
     },
@@ -16,11 +18,16 @@ type Props = {
 };
 const ArticlePage = ({ data }: Props) => {
   const post = data.markdownRemark;
+  const { html } = post;
+  const { title, author, date } = post.frontmatter;
   return (
     <Layout>
       <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <h1>{title}</h1>
+        <p style={{ textAlign: "right" }}>
+          {author} - {date}
+        </p>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   );
@@ -32,6 +39,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }
