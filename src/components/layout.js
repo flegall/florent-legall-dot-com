@@ -3,7 +3,6 @@ import * as React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
-import "./layout.css";
 
 const Layout = ({ children }: { children?: React.Node }) => (
   <StaticQuery

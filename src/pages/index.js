@@ -19,42 +19,39 @@ type Props = {
     },
   },
 };
-const IndexPage = ({ data }: Props) => {
-  console.log(data);
-  return (
-    <Layout>
-      <SEO title="Home" keywords={[`blog`, `software`, `engineer`]} />
-      {data.allMarkdownRemark.edges.map(
-        ({
-          node: {
-            id,
-            frontmatter: { date, title },
-            fields: { slug },
-          },
-        }) => (
-          <p key={id}>
-            <Link to={slug}>{title}</Link>
-          </p>
-        ),
-      )}
-    </Layout>
-  );
-};
+const IndexPage = ({ data }: Props) => (
+  <Layout>
+    <SEO title="Home" keywords={[`blog`, `software`, `engineer`]} />
+    {data.allMarkdownRemark.edges.map(
+      ({
+        node: {
+          id,
+          frontmatter: { date, title },
+          fields: { slug },
+        },
+      }) => (
+        <p key={id}>
+          <Link to={slug}>{title}</Link> <br />
+          {date}
+        </p>
+      ),
+    )}
+  </Layout>
+);
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
+          id
           fields {
             slug
           }
-          id
           frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
           }
-          excerpt
         }
       }
     }
