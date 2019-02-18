@@ -24,5 +24,14 @@ module.exports = {
         pathToConfigModule: `src/typography`,
       },
     },
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyzer",
+      options: {
+        analyzerMode: "static",
+        production: true,
+        openAnalyzer: false,
+      },
+    },
+    `gatsby-plugin-netlify`,
   ],
 };
