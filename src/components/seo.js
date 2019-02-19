@@ -2,6 +2,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+import gravatar from "gravatar";
 
 type Props = {
   +description?: string,
@@ -19,6 +20,7 @@ function SEO({ description, lang, meta, keywords, title }: Props) {
           description != null
             ? description
             : data.site.siteMetadata.description;
+
         return (
           <Helmet
             htmlAttributes={{
@@ -69,7 +71,13 @@ function SEO({ description, lang, meta, keywords, title }: Props) {
                   : [],
               )
               .concat(meta)}
-          />
+          >
+            <link
+              rel="icon"
+              type="image/x-icon"
+              href={gravatar.url("florent.legall@gmail.com", { size: 16 })}
+            />
+          </Helmet>
         );
       }}
     />
