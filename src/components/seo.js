@@ -16,7 +16,9 @@ function SEO({ description, lang, meta, keywords, title }: Props) {
       query={detailsQuery}
       render={data => {
         const metaDescription =
-          description != null || data.site.siteMetadata.description;
+          description != null
+            ? description
+            : data.site.siteMetadata.description;
         return (
           <Helmet
             htmlAttributes={{

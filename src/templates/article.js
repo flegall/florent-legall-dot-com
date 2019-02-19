@@ -3,6 +3,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 type Props = {
   +data: {
@@ -11,6 +12,8 @@ type Props = {
         +title: string,
         +author: string,
         +date: string,
+        +tags: $ReadOnlyArray<string>,
+        +description: string,
       },
       +html: string,
     },
@@ -19,9 +22,10 @@ type Props = {
 const ArticlePage = ({ data }: Props) => {
   const post = data.markdownRemark;
   const { html } = post;
-  const { title, author, date } = post.frontmatter;
+  const { title, author, date, tags, description } = post.frontmatter;
   return (
     <Layout>
+      <SEO title={title} keywords={tags} description={description} />
       <div>
         <h1>{title}</h1>
         <p style={{ textAlign: "right" }}>
@@ -41,6 +45,8 @@ export const query = graphql`
         title
         author
         date(formatString: "MMMM DD, YYYY")
+        tags
+        description
       }
     }
   }
