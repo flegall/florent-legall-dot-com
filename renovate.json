@@ -1,5 +1,9 @@
 {
-  "extends": [
-    "config:base"
-  ]
+  "extends": ["config:base"],
+  "pinVersions": true,
+  "semanticCommits": true,
+  "automerge": true,
+  "major": {
+    "automerge": false
+  }
 }
