@@ -3,6 +3,7 @@ title: About me
 description: Learn a bit more about me
 date: 2019-02-15
 author: Florent Le Gall
+published: true
 tags:
   - biography
   - florent

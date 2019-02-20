@@ -1,0 +1,3 @@
+.markdown :global a.anchor {
+  background-image: none;
+}
