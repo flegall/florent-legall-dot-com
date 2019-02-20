@@ -1,3 +1,16 @@
 .markdown :global a.anchor {
   background-image: none;
 }
+
+.markdown :global p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.markdown :global ul {
+  margin-bottom: 0.5rem;
+}
+
+.markdown :global li {
+  margin-bottom: 0rem;
+}
