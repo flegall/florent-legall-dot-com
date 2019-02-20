@@ -46,16 +46,23 @@ const Layout = ({ children }: { children?: React.Node }) => (
                 {data.site.siteMetadata.description}
               </p>
             </div>
-            <a href="https://twitter.com/flornt">twitter</a> •{" "}
-            <a href="https://github.com/flegall">github</a> •{" "}
-            <a href="https://www.linkedin.com/in/flegall/">linkedin</a> •{" "}
-            <a href="https://github.com/flegall/florent-legall-dot-com">
-              built
-            </a>
-            {` `}
-            with
-            {` `}
-            <a href="https://www.gatsbyjs.org">gatsby</a>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <span>
+                <a href="https://twitter.com/flornt">twitter</a> •{" "}
+                <a href="https://github.com/flegall">github</a> •{" "}
+                <a href="https://www.linkedin.com/in/flegall/">linkedin</a> •{" "}
+                <a href="https://github.com/flegall/florent-legall-dot-com">
+                  built
+                </a>
+                {` `}
+                with
+                {` `}
+                <a href="https://www.gatsbyjs.org">gatsby</a>
+              </span>
+              <span>
+                <a href="/rss.xml">rss.xml</a>
+              </span>
+            </div>
           </footer>
         </div>
       </>
