@@ -34,7 +34,10 @@ const ArticlePage = ({ data }: Props) => {
         <p style={{ textAlign: "right" }}>
           {author} - {date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: tableOfContents }} />
+        <div
+          style={{ display: "flex", flexDirection: "row-reverse" }}
+          dangerouslySetInnerHTML={{ __html: tableOfContents }}
+        />
         <div
           className={articleStyles.markdown}
           dangerouslySetInnerHTML={{ __html: html }}
