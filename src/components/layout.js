@@ -48,7 +48,11 @@ const Layout = ({ children }: { children?: React.Node }) => (
             </div>
             <a href="https://twitter.com/flornt">twitter</a> •{" "}
             <a href="https://github.com/flegall">github</a> •{" "}
-            <a href="https://www.linkedin.com/in/flegall/">linkedin</a> • built
+            <a href="https://www.linkedin.com/in/flegall/">linkedin</a> •{" "}
+            <a href="https://github.com/flegall/florent-legall-dot-com">
+              built
+            </a>
+            {` `}
             with
             {` `}
             <a href="https://www.gatsbyjs.org">gatsby</a>
