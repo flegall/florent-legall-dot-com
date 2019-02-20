@@ -3,12 +3,12 @@
 }
 
 .markdown :global p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   text-align: justify;
 }
 
 .markdown :global ul {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .markdown :global li {
