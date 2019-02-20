@@ -17,10 +17,10 @@ exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
   }
 };
 
-exports.createPages = ({ graphql, actions: { createPage } }) => {
+exports.createPages = async ({ graphql, actions: { createPage } }) => {
   // **Note:** The graphql function call returns a Promise
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
-  return graphql(`
+  const result = await graphql(`
     {
       allMarkdownRemark {
         edges {
@@ -32,17 +32,16 @@ exports.createPages = ({ graphql, actions: { createPage } }) => {
         }
       }
     }
-  `).then(result => {
-    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve(`./src/templates/article.js`),
-        context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
-          slug: node.fields.slug,
-        },
-      });
+  `);
+  for (const { node } of result.data.allMarkdownRemark.edges) {
+    await createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/article.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: node.fields.slug,
+      },
     });
-  });
+  }
 };

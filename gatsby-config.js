@@ -70,6 +70,7 @@ module.exports = {
         analyzerMode: "static",
         production: true,
         openAnalyzer: false,
+        logLevel: "silent",
       },
     },
     `gatsby-plugin-netlify`,
