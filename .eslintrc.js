@@ -11,15 +11,7 @@ module.exports = {
     "plugin:promise/recommended",
     "plugin:react/recommended",
   ],
-  plugins: [
-    "flowtype",
-    "prettier",
-    "standard",
-    "jest",
-    "import",
-    "promise",
-    "react",
-  ],
+  plugins: ["flowtype", "prettier", "standard", "import", "promise", "react"],
   parserOptions: {
     sourceType: "module",
     ecmaFeatures: {},
@@ -27,7 +19,6 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    "jest/globals": true,
   },
   rules: {
     "prettier/prettier": "error",
@@ -48,11 +39,11 @@ module.exports = {
     "import/order": ["error", { "newlines-between": "always" }],
     "import/newline-after-import": "error",
     "import/no-anonymous-default-export": "error",
-    "jest/no-disabled-tests": "warn",
-    "jest/no-focused-tests": "error",
-    "jest/no-identical-title": "error",
-    "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "off",
   },
   globals: {},
+  settings: {
+    react: {
+      version: "detect", // React version. "detect" automatically picks the version you have installed.
+    },
+  },
 };
