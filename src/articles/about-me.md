@@ -35,5 +35,5 @@ I like :
 Besides work:
 
 - I **cook**.
-- I'm **acting** at the teather. I've played roles in 8 differents plays.
+- I'm **acting** at the theater. I've played roles in 7 differents plays over the last 12 years.
 - I'm a father and a husband.
