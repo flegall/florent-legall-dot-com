@@ -14,3 +14,11 @@
 .markdown :global li {
   margin-bottom: 0rem;
 }
+
+.markdown :global ul p {
+  margin-bottom: 0rem;
+}
+
+.markdown :global ul ul {
+  margin-top: 0rem;
+}
