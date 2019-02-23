@@ -8,6 +8,8 @@ tags:
   - dependencies
   - tech debt
   - change management
+  - versions
+  - semver
 ---
 
 Over the last two decades, most software development projects tend to include more and more open-source dependencies. We sometimes don't fully realize it, but with the availability of so many great open source libraries and tools, we tend to depend a lot on external dependencies.
@@ -20,7 +22,7 @@ This raises a first question :
 Also, dependencies evolves at a different pace than the project we build. Changes are of many kinds : defects are corrected, security fixes are implemented, new features gets added, new APIs are proposed and sometimes breaking changes happen, some APIs get deprecated.
 
 This raises a second question :
-**When should we adopt those changes ?**
+**When should we update the external dependencies ?**
 
 ## Choose wisely your dependencies
 
@@ -31,22 +33,21 @@ This raises a second question :
 
 **The rest of your dependencies is totally up to you**.
 
-On most JavaScript projects you will find utilily belts like [lodash](https://lodash.com/), [https://momentjs.com/](moment). These are fine and well-supported libraries, however I wouldn't be surprized if projects don't need this.
+On most JavaScript projects you will find utilily belts like [lodash](https://lodash.com/), [https://momentjs.com/](moment). These are fine and well-supported libraries, however I wouldn't be surprized if all projects don't need this.
 
-Some projects require a lot of asynchronicity / reactivity and will use [RxJS](https://rxjs-dev.firebaseapp.com/).
+Some projects require a lot of asynchronicity / reactivity and will use [RxJS](https://rxjs-dev.firebaseapp.com/) and that's perfectly fine too.
 
-**Before including a dependency it's fair to ask oneself a few questions :**
+**Before including a dependency it's fair to ask yourself a few questions :**
 
 - What will it bring ?
   - That's usually the easiest to answer, but that's clearly not enough to take a decision.
 - How flexible is it ?
-  - In particular, what can I do with it without the need of using it in a hacky way ? forking it ?
-  - This is the number one turn-off reason for me. For instance, the choices made and lack of flexibility in a dependency are the reasons why I usually avoid having a user-interface library (like [Material UI](https://material-ui.com/)) or a CSS framework (like [Bootstrap](https://getbootstrap.com/)).
+  - In particular, what can I do with it without the need of using it in a hacky way or forking it ?
+  - This is the number one turn-off reason for me. The combined design choices and lack of flexibility in a dependency are the main reasons why I avoid including a dependency. For instance this is why I usually avoid having a readymade user-interface library in a project (like [Material UI](https://material-ui.com/)) or a CSS framework (like [Bootstrap](https://getbootstrap.com/)).
 - How much will my code be coupled to it ?
-  - It's usually not a turn-off, libraries and tools are sometimes meants to be totally coupled with your code.
-  - Keep in mind that it it's the case, the dependency will be way more expensive to replace.
+  - It's usually not a turn-off, but a weight to take into account. Libraries and tools are sometimes meant to be totally coupled with your code and that's fine !
+  - Keep in mind that if it's the case, the dependency will be way more expensive to replace.
 - Are updates/upgrades usually smooth ?
-
   - This is hard to guess. For that I will look at the changelog, look for breaking changes, look for automated upgrade paths aka [codemods](https://github.com/facebook/codemod). This is a good sign that upgrades will be smooth.
   - Also look if a company is building it and using it for its own products, if they are using it seriously, they probably care more about the upgrade path.
 
