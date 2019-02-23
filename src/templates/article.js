@@ -29,20 +29,18 @@ const ArticlePage = ({ data }: Props) => {
   return (
     <Layout>
       <SEO title={title} keywords={tags} description={description} />
-      <>
-        <h1>{title}</h1>
-        <p style={{ textAlign: "right" }}>
-          {author} - {date}
-        </p>
-        <div
-          style={{ display: "flex", flexDirection: "row-reverse" }}
-          dangerouslySetInnerHTML={{ __html: tableOfContents }}
-        />
-        <div
-          className={articleStyles.markdown}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </>
+      <h1>{title}</h1>
+      <p style={{ textAlign: "right" }}>
+        {author} - {date}
+      </p>
+      <div
+        style={{ display: "flex", flexDirection: "row-reverse" }}
+        dangerouslySetInnerHTML={{ __html: tableOfContents }}
+      />
+      <div
+        className={articleStyles.markdown}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </Layout>
   );
 };
