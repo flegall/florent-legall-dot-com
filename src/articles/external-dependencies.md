@@ -26,24 +26,30 @@ This raises a second question :
 
 ## Choose wisely your dependencies
 
-**Some dependencies are unavoidable**. For instance on a JavaScript frontend project, at the very minimum you will usually need :
+### Architectural dependencies
 
-- a frontend framework/library (like [VueJS](https://vuejs.org/), [Angular](https://angular.io/) or [ReactJS](https://reactjs.org/)). Doing a large project without such a tool nowadays seems like a very strange idea.
-- a decent test & build toolchain (tools like [webpack](https://webpack.js.org/), [jest](https://jestjs.io/), [eslint](https://eslint.org/), [typescript](https://www.typescriptlang.org/) or [flow](https://flow.org/) if you're like me into static typing).
+It's quite obvious that there are base dependencies derived from your architecture choices :
+your toolchain (compiler/builder, test framework, linter), your language sdk, your http / application server, your frontend library or framework, your database.
 
-**The rest of your dependencies is totally up to you**.
+These dependencies are usually not questionned as the architure defines them.
 
-On most JavaScript projects you will find utilily belts like [lodash](https://lodash.com/), [https://momentjs.com/](moment). These are fine and well-supported libraries, however I wouldn't be surprized if all projects don't need this.
+### Opportunist dependencies
 
-Some projects require a lot of asynchronicity / reactivity and will use [RxJS](https://rxjs-dev.firebaseapp.com/) and that's perfectly fine too.
+Many dependencies are not always decided upfront. They are usually picked opportunistically. One tool/library seems good at its job, it doesn't seem to cause too much trouble (at least at first).
 
-**Before including a dependency it's fair to ask yourself a few questions :**
+Some of these choices are harmless as they have little impact on the codebase. Some have more impact.
+
+I've done this mistake of picking opportunist dependencies quite a few times.
+
+### Including checklist
+
+Before including a dependency it's fair to ask yourself a few questions :
 
 - What will it bring ?
   - That's usually the easiest to answer, but that's clearly not enough to take a decision.
 - How flexible is it ?
   - In particular, what can I do with it without the need of using it in a hacky way or forking it ?
-  - This is the number one turn-off reason for me. The combined design choices and lack of flexibility in a dependency are the main reasons why I avoid including a dependency. For instance this is why I usually avoid having a readymade user-interface library in a project (like [Material UI](https://material-ui.com/)) or a CSS framework (like [Bootstrap](https://getbootstrap.com/)).
+  - This is the number one turn-off reason for me.
 - How much will my code be coupled to it ?
   - It's usually not a turn-off, but a weight to take into account. Libraries and tools are sometimes meant to be totally coupled with your code and that's fine !
   - Keep in mind that if it's the case, the dependency will be way more expensive to replace.
@@ -78,6 +84,7 @@ Most teams I've worked with prefer the second option.
 
 Most tools will accept both strategies.
 Some tools officially recommend the first one ([cocoapods](https://guides.cocoapods.org/using/using-cocoapods.html), [godep](https://github.com/tools/godep#how-to-use-godep-with-a-new-project)).
+Some tools will only accept the latest one ([maven](https://maven.apache.org/) and all its derived products)
 Recently Yarn proposed a way to get rid of the node_modules directory : https://yarnpkg.com/en/docs/pnp/
 
 **Choose the one your team and your tools work best with.**

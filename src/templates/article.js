@@ -34,6 +34,7 @@ const ArticlePage = ({ data }: Props) => {
         {author} - {date}
       </p>
       <div
+        className={articleStyles.toc}
         style={{ display: "flex", flexDirection: "row-reverse" }}
         dangerouslySetInnerHTML={{ __html: tableOfContents }}
       />

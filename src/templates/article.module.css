@@ -22,3 +22,8 @@
 .markdown :global ul ul {
   margin-top: 0rem;
 }
+
+/* hide level 2 entries in toc */
+.toc :global ul > li > ul {
+  display: none;
+}
