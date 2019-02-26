@@ -74,4 +74,26 @@ Recently Yarn proposed a way to get rid of the node_modules directory : https://
 
 ## When to update ?
 
-## Automating your updates
+Depending on your dependencies release pace, if you don't update your project will end up within some time with outdated dependencies.
+
+This can cause you several troubles :
+
+- With time, **updating is more difficult** :
+  - Breaking changes happen, I can hardly name a dependency that didn't introduce a breaking change in their history.
+  - APIs get deprecated, some code still works, but there are better, safer or faster ways of doing the same with a new API. And this involves changing your code.
+  - Big updates are more difficult to perform than small incremental updates
+- **Bug fixes are usually not backported** : this means that if you want to benefit from bugfixes you will have to update your dependencies.
+- **Security fixes are usually backported only to supported versions**: this also means that you may have to update your dependencies.
+- **Your project becomes less attractive to developpers**: it still uses that old version of the language, that old framework that used to shine 5/10 years ago.
+
+Updates on the other hand are sometimes costly to apply :
+
+- They sometimes require **changing a lot of code**.
+- They sometimes require **testing** to check if the update did not introduce a technical / functional / performance regression.
+
+**So ? When should you update ?**
+
+There is no definite answer to this. What I do :
+
+- On projects with an automated test suite I trust, I schedule updates to be merged automatically. I receive [pull requests](https://github.com/flegall/florent-legall-dot-com/pull/9) from [renovate](https://renovatebot.com/). These pull requests get merged automatically if tests pass.
+- On projects with less automated or less trusted tests, I update manually every two weeks a few dependencies. I chose the ones to update.
