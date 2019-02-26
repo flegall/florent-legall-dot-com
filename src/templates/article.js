@@ -16,6 +16,7 @@ type Props = {
         +date: string,
         +tags: $ReadOnlyArray<string>,
         +description: string,
+        +published: boolean,
       },
       +html: string,
       +tableOfContents: string,
@@ -25,11 +26,31 @@ type Props = {
 const ArticlePage = ({ data }: Props) => {
   const post = data.markdownRemark;
   const { html, tableOfContents } = post;
-  const { title, author, date, tags, description } = post.frontmatter;
+  const {
+    title,
+    author,
+    date,
+    tags,
+    description,
+    published,
+  } = post.frontmatter;
   return (
     <Layout>
       <SEO title={title} keywords={tags} description={description} />
       <h1>{title}</h1>
+      {published === false && (
+        <div
+          style={{
+            backgroundColor: "rgb(239, 225, 119)",
+            padding: "20px",
+            marginBottom: "20px",
+            fontSize: "1.1rem",
+          }}
+        >
+          Attention ! This article is not published yet, it{"'"}s still a draft
+          ✍
+        </div>
+      )}
       <p style={{ textAlign: "right" }}>
         {author} - {date}
       </p>
@@ -57,6 +78,7 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         tags
         description
+        published
       }
     }
   }
