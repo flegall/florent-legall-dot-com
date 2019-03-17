@@ -29,7 +29,7 @@ I've written :
 I like :
 
 - **static typing** (Scala, Flow, TypeScript).
-- all kinds of **driven development/design** (type-driven, test-driven, domain-driven, behaviour-driven).
+- all kinds of **driven development/design** (type-driven, test-driven, domain-driven, behaviour-driven, data-driven).
 - **pair/mob programming** : having more than one brain in front of a single monitor.
 
 Besides work:
