@@ -1078,9 +1078,9 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/gravatar@^1.8.0":
+"@types/gravatar@1.8.0":
   version "1.8.0"
-  resolved "https://front-stb-dev.canal-bis.com:443/npm-fronttv/@types%2fgravatar/-/gravatar-1.8.0.tgz#b69cf72ccd940be4e1af25c5f4c25332a56d6c97"
+  resolved "https://registry.yarnpkg.com/@types/gravatar/-/gravatar-1.8.0.tgz#b69cf72ccd940be4e1af25c5f4c25332a56d6c97"
   integrity sha512-uCVqmU/Xf4h85QMd5DD5aTpRe37ess9hy/S9GW6omiJ1sR9ZAULO+gd3EWf4wKb6GJdUYe4WYD7zNhtgVzMG+g==
 
 "@types/history@*":
@@ -1108,9 +1108,9 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.10.3.tgz#b85d16331cf5ffe434600816593f86e10ccc0e73"
   integrity sha512-HeyK+csRk7Khhg9krpMGJeT9pLzjsmiJFHYRzYpPv/dQ5tPclQsbvceiX/HKynRt/9lMLorWUYTbBHC3hRI4sg==
 
-"@types/pluralize@^0.0.29":
+"@types/pluralize@0.0.29":
   version "0.0.29"
-  resolved "https://front-stb-dev.canal-bis.com:443/npm-fronttv/@types%2fpluralize/-/pluralize-0.0.29.tgz#6ffa33ed1fc8813c469b859681d09707eb40d03c"
+  resolved "https://registry.yarnpkg.com/@types/pluralize/-/pluralize-0.0.29.tgz#6ffa33ed1fc8813c469b859681d09707eb40d03c"
   integrity sha512-BYOID+l2Aco2nBik+iYS4SZX0Lf20KPILP5RGmM1IgzdwNdTs0eebiFriOPcej1sX9mLnSoiNte5zcFxssgpGA==
 
 "@types/prop-types@*":
@@ -1131,16 +1131,16 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react-gravatar@^2.6.7":
+"@types/react-gravatar@2.6.7":
   version "2.6.7"
-  resolved "https://front-stb-dev.canal-bis.com:443/npm-fronttv/@types%2freact-gravatar/-/react-gravatar-2.6.7.tgz#1ef929509cf4e7a6b423eb77e11c54ddbfa97b95"
+  resolved "https://registry.yarnpkg.com/@types/react-gravatar/-/react-gravatar-2.6.7.tgz#1ef929509cf4e7a6b423eb77e11c54ddbfa97b95"
   integrity sha512-/NYulxNKmAeiRtf2VkB8SDvhXb2b3n1NecvIue/uoIE7XB18/+sAXitx9JiTl01uFBp2aj/XuiC8+M6P5sWuaw==
   dependencies:
     "@types/react" "*"
 
-"@types/react-helmet@^5.0.8":
+"@types/react-helmet@5.0.8":
   version "5.0.8"
-  resolved "https://front-stb-dev.canal-bis.com:443/npm-fronttv/@types%2freact-helmet/-/react-helmet-5.0.8.tgz#f080eea6652e44f60b4574463d238f268d81d9af"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-5.0.8.tgz#f080eea6652e44f60b4574463d238f268d81d9af"
   integrity sha512-ZTr12eDAYI0yUiMx1K82EHqRYa8J1BOOLus+0gL+AkksUiIPwLE0wLiXa9FNqD8r9GXAi+yRPZImkRh1JNlTkQ==
   dependencies:
     "@types/react" "*"
@@ -1158,9 +1158,9 @@
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.32.tgz#0d3cb31022f8427ea58c008af32b80da126ca4e3"
   integrity sha1-DTyzECL4Qn6ljACK8yuA2hJspOM=
 
-"@types/typography@^0.16.2":
+"@types/typography@0.16.2":
   version "0.16.2"
-  resolved "https://front-stb-dev.canal-bis.com:443/npm-fronttv/@types%2ftypography/-/typography-0.16.2.tgz#dfe68caf692185e1b84d9e583b44953b03b7d135"
+  resolved "https://registry.yarnpkg.com/@types/typography/-/typography-0.16.2.tgz#dfe68caf692185e1b84d9e583b44953b03b7d135"
   integrity sha512-/lHKjwY0SekteqdOtGsYiXtT5T9RdF50kQGzp8wDRx8DtrJIXK6VVrJ+aAWYii51dZdXTGriXgCDtup6T+zz1Q==
 
 "@webassemblyjs/ast@1.7.11":
@@ -5245,9 +5245,9 @@ gatsby-plugin-sharp@2.0.34:
     sharp "^0.21.3"
     svgo "^1.2.0"
 
-gatsby-plugin-typescript@^2.0.12:
+gatsby-plugin-typescript@2.0.12:
   version "2.0.12"
-  resolved "https://front-stb-dev.canal-bis.com:443/npm-fronttv/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.0.12.tgz#4e3f137b9b003d50dc87dedc15dff55ca74a6197"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.0.12.tgz#4e3f137b9b003d50dc87dedc15dff55ca74a6197"
   integrity sha512-Ep84eukNwAM1zZTEhRuegAAENHtzFKc1He9L89eh/tgvcgfzoJRaA2CaI3Dwdgd6/xvd42KsJLD/vOt31y/IFQ==
   dependencies:
     "@babel/preset-typescript" "^7.0.0"
@@ -12037,9 +12037,9 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.4.3:
+typescript@3.4.3:
   version "3.4.3"
-  resolved "https://front-stb-dev.canal-bis.com:443/npm-fronttv/typescript/-/typescript-3.4.3.tgz#0eb320e4ace9b10eadf5bc6103286b0f8b7c224f"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.3.tgz#0eb320e4ace9b10eadf5bc6103286b0f8b7c224f"
   integrity sha512-FFgHdPt4T/duxx6Ndf7hwgMZZjZpB+U0nMNGVCYPq0rEzWKjEDobm4J6yb3CS7naZ0yURFqdw9Gwc7UOh/P9oQ==
 
 typography-breakpoint-constants@^0.16.19:
