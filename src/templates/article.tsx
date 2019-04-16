@@ -6,22 +6,22 @@ import SEO from "../components/seo";
 
 const articleStyles = require("./article.module.css");
 
-type Props = {
-  readonly data: {
-    readonly markdownRemark: {
-      readonly frontmatter: {
-        readonly title: string;
-        readonly author: string;
-        readonly date: string;
-        readonly tags: ReadonlyArray<string>;
-        readonly description: string;
-        readonly published: boolean;
-      };
-      readonly html: string;
-      readonly tableOfContents: string;
-    };
-  };
-};
+type Props = Readonly<{
+  data: Readonly<{
+    markdownRemark: Readonly<{
+      frontmatter: Readonly<{
+        title: string;
+        author: string;
+        date: string;
+        tags: ReadonlyArray<string>;
+        description: string;
+        published: boolean;
+      }>;
+      html: string;
+      tableOfContents: string;
+    }>;
+  }>;
+}>;
 const ArticlePage = ({ data }: Props) => {
   const post = data.markdownRemark;
   const { html, tableOfContents } = post;

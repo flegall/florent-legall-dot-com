@@ -5,26 +5,26 @@ import pluralize from "pluralize";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-type Props = {
-  readonly data: {
-    readonly allMarkdownRemark: {
-      readonly edges: ReadonlyArray<{
-        readonly node: {
-          readonly id: string;
-          readonly excerpt: string;
-          readonly frontmatter: {
-            readonly date: string;
-            readonly title: string;
-            readonly author: string;
-            readonly description: string;
-          };
-          readonly fields: { readonly slug: string };
-          readonly timeToRead: number;
-        };
+type Props = Readonly<{
+  data: Readonly<{
+    allMarkdownRemark: Readonly<{
+      edges: ReadonlyArray<{
+        node: Readonly<{
+          id: string;
+          excerpt: string;
+          frontmatter: Readonly<{
+            date: string;
+            title: string;
+            author: string;
+            description: string;
+          }>;
+          fields: Readonly<{ slug: string }>;
+          timeToRead: number;
+        }>;
       }>;
-    };
-  };
-};
+    }>;
+  }>;
+}>;
 const IndexPage = ({ data }: Props) => (
   <Layout>
     <SEO title="Home" keywords={[`blog`, `software`, `engineer`]} />

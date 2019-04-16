@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
-const Header: React.FunctionComponent<{ siteTitle: string }> = ({
+const Header: React.FunctionComponent<Readonly<{ siteTitle: string }>> = ({
   siteTitle,
 }) => (
   <header

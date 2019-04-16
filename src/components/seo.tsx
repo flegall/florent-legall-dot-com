@@ -3,16 +3,18 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import gravatar from "gravatar";
 
-type Props = {
-  readonly description?: string;
-  readonly lang: string;
-  readonly meta: ReadonlyArray<{
-    readonly name: string;
-    readonly content: string;
-  }>;
-  readonly keywords: ReadonlyArray<string>;
-  readonly title: string;
-};
+type Props = Readonly<{
+  description?: string;
+  lang: string;
+  meta: ReadonlyArray<
+    Readonly<{
+      name: string;
+      content: string;
+    }>
+  >;
+  keywords: ReadonlyArray<string>;
+  title: string;
+}>;
 function SEO({ description, lang, meta, keywords, title }: Props) {
   return (
     <StaticQuery
