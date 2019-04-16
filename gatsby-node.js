@@ -36,7 +36,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   for (const { node } of result.data.allMarkdownRemark.edges) {
     await createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/article.js`),
+      component: path.resolve(`./src/templates/article.tsx`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.

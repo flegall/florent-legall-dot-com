@@ -1,27 +1,26 @@
-// @flow strict-local
 import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import articleStyles from "./article.module.css";
+const articleStyles = require("./article.module.css");
 
 type Props = {
-  +data: {
-    +markdownRemark: {
-      +frontmatter: {
-        +title: string,
-        +author: string,
-        +date: string,
-        +tags: $ReadOnlyArray<string>,
-        +description: string,
-        +published: boolean,
-      },
-      +html: string,
-      +tableOfContents: string,
-    },
-  },
+  readonly data: {
+    readonly markdownRemark: {
+      readonly frontmatter: {
+        readonly title: string;
+        readonly author: string;
+        readonly date: string;
+        readonly tags: ReadonlyArray<string>;
+        readonly description: string;
+        readonly published: boolean;
+      };
+      readonly html: string;
+      readonly tableOfContents: string;
+    };
+  };
 };
 const ArticlePage = ({ data }: Props) => {
   const post = data.markdownRemark;

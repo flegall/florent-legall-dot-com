@@ -1,15 +1,17 @@
-// @flow strict-local
 import React from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import gravatar from "gravatar";
 
 type Props = {
-  +description?: string,
-  +lang: string,
-  +meta: $ReadOnlyArray<string>,
-  +keywords: $ReadOnlyArray<string>,
-  +title: string,
+  readonly description?: string;
+  readonly lang: string;
+  readonly meta: ReadonlyArray<{
+    readonly name: string;
+    readonly content: string;
+  }>;
+  readonly keywords: ReadonlyArray<string>;
+  readonly title: string;
 };
 function SEO({ description, lang, meta, keywords, title }: Props) {
   return (
@@ -75,7 +77,7 @@ function SEO({ description, lang, meta, keywords, title }: Props) {
             <link
               rel="icon"
               type="image/x-icon"
-              href={gravatar.url("florent.legall@gmail.com", { size: 16 })}
+              href={gravatar.url("florent.legall@gmail.com", { size: "16" })}
             />
           </Helmet>
         );

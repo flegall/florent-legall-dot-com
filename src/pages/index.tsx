@@ -1,4 +1,3 @@
-// @flow strict-local
 import React from "react";
 import { Link, graphql } from "gatsby";
 import pluralize from "pluralize";
@@ -7,24 +6,24 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 type Props = {
-  +data: {
-    +allMarkdownRemark: {
-      +edges: $ReadOnlyArray<{
-        +node: {
-          +id: string,
-          +excerpt: string,
-          +frontmatter: {
-            +date: string,
-            +title: string,
-            +author: string,
-            +description: string,
-          },
-          +fields: { +slug: string },
-          +timeToRead: number,
-        },
-      }>,
-    },
-  },
+  readonly data: {
+    readonly allMarkdownRemark: {
+      readonly edges: ReadonlyArray<{
+        readonly node: {
+          readonly id: string;
+          readonly excerpt: string;
+          readonly frontmatter: {
+            readonly date: string;
+            readonly title: string;
+            readonly author: string;
+            readonly description: string;
+          };
+          readonly fields: { readonly slug: string };
+          readonly timeToRead: number;
+        };
+      }>;
+    };
+  };
 };
 const IndexPage = ({ data }: Props) => (
   <Layout>
@@ -33,7 +32,7 @@ const IndexPage = ({ data }: Props) => (
       ({
         node: {
           id,
-          frontmatter: { date, title, author, description },
+          frontmatter: { date, title, description },
           fields: { slug },
           timeToRead,
         },

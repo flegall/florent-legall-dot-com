@@ -1,8 +1,9 @@
-// @flow strict-local
 import { Link } from "gatsby";
 import React from "react";
 
-const Header = ({ siteTitle }: { siteTitle: string }) => (
+const Header: React.FunctionComponent<{ siteTitle: string }> = ({
+  siteTitle,
+}) => (
   <header
     style={{
       background: `rgb(252, 164, 227)`,

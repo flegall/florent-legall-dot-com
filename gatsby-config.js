@@ -6,7 +6,14 @@ module.exports = {
     siteUrl: "https://florent-legall.com",
   },
   plugins: [
-    `gatsby-plugin-flow`,
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `React`, // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-source-filesystem",

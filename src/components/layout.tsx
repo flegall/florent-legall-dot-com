@@ -1,11 +1,10 @@
-// @flow strict-local
 import * as React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Gravatar from "react-gravatar";
 
 import Header from "./header";
 
-const Layout = ({ children }: { children?: React.Node }) => (
+const Layout: React.FunctionComponent = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
