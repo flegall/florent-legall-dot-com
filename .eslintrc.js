@@ -1,9 +1,7 @@
 module.exports = {
   extends: [
     "standard",
-    "plugin:flowtype/recommended",
     "prettier",
-    "prettier/flowtype",
     "prettier/standard",
     "plugin:import/errors",
     "plugin:import/warnings",
@@ -11,7 +9,7 @@ module.exports = {
     "plugin:promise/recommended",
     "plugin:react/recommended",
   ],
-  plugins: ["flowtype", "prettier", "standard", "import", "promise", "react"],
+  plugins: ["prettier", "standard", "import", "promise", "react"],
   parserOptions: {
     sourceType: "module",
     ecmaFeatures: {},
