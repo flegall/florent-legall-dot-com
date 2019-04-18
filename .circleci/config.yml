@@ -24,7 +24,7 @@ jobs:
             - node_modules
             - ~/.cache/yarn
           key: v8-dependencies-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-      - run: yarn tsc && yarn build
+      - run: yarn ci
 
 workflows:
   version: 2
