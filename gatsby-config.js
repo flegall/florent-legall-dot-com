@@ -4,6 +4,7 @@ module.exports = {
     description: `Notes on software development in english and sometimes in french.`,
     author: `@flornt`,
     siteUrl: "https://florent-legall.com",
+    lastDeployment: new Date().toISOString(),
   },
   plugins: [
     {

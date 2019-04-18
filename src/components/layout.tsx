@@ -1,6 +1,7 @@
 import * as React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Gravatar from "react-gravatar";
+import { format } from "timeago.js";
 
 import Header from "./header";
 
@@ -12,6 +13,7 @@ const Layout: React.FunctionComponent = ({ children }) => (
           siteMetadata {
             title
             description
+            lastDeployment
           }
         }
       }
@@ -61,6 +63,17 @@ const Layout: React.FunctionComponent = ({ children }) => (
               <span>
                 <a href="/rss.xml">rss.xml</a>
               </span>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                direction: "rtl",
+                fontSize: "0.7rem",
+              }}
+            >
+              Last build{" "}
+              {format(data.site.siteMetadata.lastDeployment, "en_US")}
             </div>
           </footer>
         </div>

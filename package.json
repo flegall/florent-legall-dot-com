@@ -36,6 +36,7 @@
     "react-gravatar": "2.6.3",
     "react-helmet": "5.2.0",
     "react-typography": "0.16.19",
+    "timeago.js": "^4.0.0-beta.2",
     "typography": "0.16.19",
     "typography-theme-ocean-beach": "0.16.19"
   },
@@ -70,6 +71,7 @@
   },
   "devDependencies": {
     "@types/gravatar": "1.8.0",
+    "@types/jquery": "^3.3.29",
     "@types/pluralize": "0.0.29",
     "@types/react-gravatar": "2.6.7",
     "@types/react-helmet": "5.0.8",
