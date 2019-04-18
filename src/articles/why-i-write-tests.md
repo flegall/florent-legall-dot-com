@@ -29,14 +29,27 @@ While this is a very valid reason, this is not the only one reason why I write t
 
 ## When tests guide me
 
-Very often when working on a feature or on a defect to fix, I usually write all use cases I have in mind using a full sentence and an empty code block.
+Very often when working on a feature or a complex defect to fix, I usually write all use cases I have in mind using a full sentence as a test name and an empty code block as an implementation :
 
 ```js
 describe("a vacuum cleaner", () => {
-  it("should start when pushing the power button", () => {});
-  it(`should stop when:
-      - the vacuum cleaner is started
-      - pushing the power button`, () => {});
+  it("starts when pushing the power button if it is not started", () => {});
+  it("stops when pushing the power button if it is started", () => {});
+  it("changes speed when turning the speed button if it is started", () => {});
+  // And so on ...
+});
+```
+
+Of course if it gets more complicated, I can use multiple line sentences :
+
+```js
+describe("a tv recorder", () => {
+  it(`will record a tv program when pressing on the "record" button if : 
+      - there is enough space on device.
+      - there is one free tuner available on the set-top-box`, () => {});
+  it(`will not record a tv program when pressing on the "record" button 
+      - if there is not enough space on the hard disk.
+      - then the error message "no space left on hard disk" will be shown.`, () => {});
 });
 ```
 
