@@ -49,7 +49,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "yarn run develop",
-    "preserve": "yarn build",
     "serve": "gatsby serve --port 5020",
     "eslint": "eslint . --cache",
     "tsc": "tsc",
@@ -59,9 +58,8 @@
     "cy:run": "CYPRESS_BASE_URL=http://localhost:5020 cypress run",
     "pretest:e2e": "yarn cy:install",
     "test:e2e": "start-server-and-test serve http://localhost:5020 cy:run",
-    "test:ci": "npm-run-all --parallel tsc eslint test:e2e",
-    "test:full": "npm-run-all --parallel tsc eslint test:e2e",
-    "netlify": "npm-run-all --parallel tsc eslint test:e2e"
+    "test:circle": "npm-run-all --parallel tsc eslint build",
+    "build:full": "npm-run-all --parallel tsc eslint build && yarn test:e2e"
   },
   "repository": {
     "type": "git",
@@ -98,7 +96,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && yarn test:full"
+      "pre-commit": "lint-staged && yarn build:full"
     }
   },
   "lint-staged": {

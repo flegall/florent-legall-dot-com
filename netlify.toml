@@ -4,4 +4,4 @@
     Access-Control-Allow-Origin = "*"
 
 [build]
-  command = "yarn netlify"
+  command = "yarn build:full"
