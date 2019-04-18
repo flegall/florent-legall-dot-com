@@ -57,9 +57,10 @@
     "cy:install": "cypress install",
     "cy:open": "cypress open",
     "cy:run": "CYPRESS_BASE_URL=http://localhost:5020 cypress run",
-    "pretest": "yarn cy:install",
-    "test": "start-server-and-test serve http://localhost:5020 cy:run",
-    "ci": "yarn tsc && yarn eslint && yarn test"
+    "pretest:e2e": "yarn cy:install",
+    "test:e2e": "start-server-and-test serve http://localhost:5020 cy:run",
+    "test:ci": "yarn tsc && yarn eslint && yarn build",
+    "test:full": "yarn tsc && yarn eslint && yarn test:e2e"
   },
   "repository": {
     "type": "git",
@@ -95,7 +96,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && yarn ci"
+      "pre-commit": "lint-staged && yarn test:full"
     }
   },
   "lint-staged": {
