@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Gravatar from "react-gravatar";
 import { format } from "timeago.js";
@@ -64,19 +64,31 @@ const Layout: React.FunctionComponent = ({ children }) => {
               <a href="/rss.xml">rss.xml</a>
             </span>
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              direction: "rtl",
-              fontSize: "0.7rem",
-            }}
-          >
-            Last build {format(data.site.siteMetadata.lastDeployment, "en_US")}
-          </div>
+          <LastDeployment
+            lastDeployment={data.site.siteMetadata.lastDeployment}
+          />
         </footer>
       </div>
     </>
+  );
+};
+
+const LastDeployment: React.FC<{ lastDeployment: string }> = ({
+  lastDeployment,
+}) => {
+  const isBrowser = typeof window !== `undefined`;
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        direction: "rtl",
+        fontSize: "0.7rem",
+      }}
+    >
+      {isBrowser ? <>Last build {format(lastDeployment, "en_US")}</> : <></>}
+    </div>
   );
 };
 
