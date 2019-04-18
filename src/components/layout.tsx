@@ -6,21 +6,10 @@ import { format } from "timeago.js";
 import Header from "./header";
 
 const Layout: React.FunctionComponent = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          description
-          lastDeployment
-        }
-      }
-    }
-  `);
-
+  const { title, description } = useSiteInfos();
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={title} />
       <div
         style={{
           margin: `0 auto`,
@@ -44,7 +33,7 @@ const Layout: React.FunctionComponent = ({ children }) => {
             <p style={{ alignSelf: "center", marginLeft: "30px" }}>
               <b>{"Florent Le Gall's personal blog"}</b>
               <br />
-              {data.site.siteMetadata.description}
+              {description}
             </p>
           </div>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -64,19 +53,16 @@ const Layout: React.FunctionComponent = ({ children }) => {
               <a href="/rss.xml">rss.xml</a>
             </span>
           </div>
-          <LastDeployment
-            lastDeployment={data.site.siteMetadata.lastDeployment}
-          />
+          <LastDeployment />
         </footer>
       </div>
     </>
   );
 };
 
-const LastDeployment: React.FC<{ lastDeployment: string }> = ({
-  lastDeployment,
-}) => {
+const LastDeployment = () => {
   const isBrowser = typeof window !== `undefined`;
+  const { lastDeployment } = useSiteInfos();
 
   return (
     <div
@@ -90,6 +76,29 @@ const LastDeployment: React.FC<{ lastDeployment: string }> = ({
       {isBrowser ? <>Last build {format(lastDeployment, "en_US")}</> : <></>}
     </div>
   );
+};
+
+const useSiteInfos = (): {
+  title: string;
+  description: string;
+  lastDeployment: string;
+} => {
+  const {
+    site: {
+      siteMetadata: { title, description, lastDeployment },
+    },
+  } = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+          description
+          lastDeployment
+        }
+      }
+    }
+  `);
+  return { title, description, lastDeployment };
 };
 
 export default Layout;
