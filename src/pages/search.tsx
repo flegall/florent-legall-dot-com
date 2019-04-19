@@ -28,8 +28,6 @@ const SearchPage = () => {
     .map(({ ref }) => index.documentStore.getDoc(ref))
     .filter(({ published }) => published === true);
 
-  console.log(docs);
-
   return (
     <Layout>
       <SEO title="Search" keywords={[`blog`, `software`, `engineer`]} />
