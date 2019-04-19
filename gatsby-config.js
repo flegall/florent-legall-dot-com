@@ -1,3 +1,6 @@
+const unified = require("unified");
+const parse = require("remark-parse");
+
 module.exports = {
   siteMetadata: {
     title: `Software kitchen`,
@@ -82,6 +85,30 @@ module.exports = {
       },
     },
     {
+      resolve: "@gatsby-contrib/gatsby-plugin-elasticlunr-search",
+      options: {
+        // Fields to index
+        fields: ["title", "description", "tags", "content"],
+        // How to resolve each field`s value for a supported node type
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields` values
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            tags: node => node.frontmatter.tags,
+            published: node => node.frontmatter.published,
+            slug: node => node.fields.slug,
+            description: node => node.frontmatter.description,
+            content: node =>
+              mdToString(
+                unified()
+                  .use(parse)
+                  .parse(node.rawMarkdownBody),
+              ),
+          },
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
@@ -154,3 +181,20 @@ module.exports = {
     `gatsby-plugin-netlify`,
   ],
 };
+
+// Get the text content of a node.  If the node itself does not expose
+// plain-text fields, `toString` will recursivly try its children.
+function mdToString(node) {
+  return (
+    valueOf(node) ||
+    (node.children && node.children.map(mdToString).join(" ")) ||
+    ""
+  );
+
+  // Get the value of `node`.  Checks, `value`, `alt`, and `title`, in that order.
+  function valueOf(node) {
+    return (
+      (node && node.value ? node.value : node.alt ? node.alt : node.title) || ""
+    );
+  }
+}
