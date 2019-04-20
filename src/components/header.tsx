@@ -1,5 +1,5 @@
 import { Link, navigate } from "gatsby";
-import React, { useCallback, useRef, useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import { Location, WindowLocation } from "@reach/router";
 
 import { useSearchContext } from "../search-state";
@@ -35,14 +35,6 @@ const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
     [setSearchText],
   );
 
-  // Focus on the input field when opening /search
-  const inputEl = useRef<HTMLInputElement>(null);
-  useEffect(() => {
-    if (inputEl.current && location.pathname === "/search") {
-      inputEl.current.focus();
-    }
-  }, []);
-
   // Clear search text when leaving /search
   useEffect(
     () => () => {
@@ -50,7 +42,7 @@ const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
         setSearchText("");
       }
     },
-    [location.pathname],
+    [location.pathname, setSearchText],
   );
 
   return (
@@ -68,7 +60,6 @@ const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
         </g>
       </svg>
       <input
-        ref={inputEl}
         type="search"
         placeholder="Search"
         autoComplete="off"

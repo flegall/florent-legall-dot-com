@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const articleStyles = require("./article.module.css");
@@ -34,7 +33,7 @@ const ArticlePage = ({ data }: Props) => {
     published,
   } = post.frontmatter;
   return (
-    <Layout>
+    <>
       <SEO title={title} keywords={tags} description={description} />
       <h1>{title}</h1>
       {published === false && (
@@ -62,7 +61,7 @@ const ArticlePage = ({ data }: Props) => {
         className={articleStyles.markdown}
         dangerouslySetInnerHTML={{ __html: html }}
       />
-    </Layout>
+    </>
   );
 };
 

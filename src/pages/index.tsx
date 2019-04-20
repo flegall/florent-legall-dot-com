@@ -2,7 +2,6 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import pluralize from "pluralize";
 
-import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 type Props = Readonly<{
@@ -26,7 +25,7 @@ type Props = Readonly<{
   }>;
 }>;
 const IndexPage = ({ data }: Props) => (
-  <Layout>
+  <>
     <SEO title="Home" keywords={[`blog`, `software`, `engineer`]} />
     {data.allMarkdownRemark.edges.map(
       ({
@@ -47,7 +46,7 @@ const IndexPage = ({ data }: Props) => (
         </p>
       ),
     )}
-  </Layout>
+  </>
 );
 
 export const query = graphql`

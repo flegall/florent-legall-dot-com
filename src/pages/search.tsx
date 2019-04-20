@@ -2,7 +2,6 @@ import React, { useMemo } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { Index } from "elasticlunr";
 
-import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { useSearchContext } from "../search-state";
 
@@ -16,20 +15,25 @@ const SearchPage = () => {
       }
     }
   `);
+
+  const { searchText } = useSearchContext();
+
   const index = useMemo<IndexType>(() => Index.load(searchIndex), [
     searchIndex,
   ]);
 
-  const { searchText } = useSearchContext();
-
-  const docs = index
-    .search(searchText, { expand: true })
-    // Map over each ID and return the full document
-    .map(({ ref }) => index.documentStore.getDoc(ref))
-    .filter(({ published }) => published === true);
+  const docs = useMemo(
+    () =>
+      index
+        .search(searchText, { expand: true })
+        // Map over each ID and return the full document
+        .map(({ ref }) => index.documentStore.getDoc(ref))
+        .filter(({ published }) => published === true),
+    [index, searchText],
+  );
 
   return (
-    <Layout>
+    <>
       <SEO title="Search" keywords={[`blog`, `software`, `engineer`]} />
       <h2>Search results</h2>
       {docs.length > 0 ? (
@@ -42,7 +46,7 @@ const SearchPage = () => {
       ) : (
         <span>Sorry no results found.</span>
       )}
-    </Layout>
+    </>
   );
 };
 

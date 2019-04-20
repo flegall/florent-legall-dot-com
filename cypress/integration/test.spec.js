@@ -4,7 +4,7 @@ describe("florent-legall.com", () => {
     cy.get("[data-testid=REACT_SPA_READY]");
   });
 
-  it("there are links to other pages in the home page", () => {
+  it("links to articles pages work", () => {
     cy.title().should("equal", "Home | Software kitchen");
     cy.getByText(/About me/i).within(() => {
       cy.get("a").click();
@@ -17,10 +17,9 @@ describe("florent-legall.com", () => {
     cy.title().should("equal", "Home | Software kitchen");
   });
 
-  it("there is a search engine", () => {
-    cy.getByPlaceholderText("Search").type("c");
+  it("search engine works", () => {
+    cy.getByPlaceholderText("Search").type("cook");
     cy.url().should("include", "/search");
-    cy.getByPlaceholderText("Search").type("ook");
 
     cy.getByText(/About me/i).within(() => {
       cy.get("a").click();
