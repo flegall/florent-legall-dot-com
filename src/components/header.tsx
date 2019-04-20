@@ -26,7 +26,7 @@ const Header: React.FunctionComponent<Readonly<{ siteTitle: string }>> = ({
 const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
   const { searchText, setSearchText } = useSearchContext();
 
-  // Browse to /search
+  // When text is entered, setSearchText and browse to /search
   const setSearchTextFromEvent = useCallback(
     e => {
       setSearchText(e.target.value);
