@@ -51,6 +51,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "yarn run develop",
+    "start:prod": "yarn build && yarn serve",
     "serve": "gatsby serve --port 5020",
     "eslint": "eslint . --cache",
     "tsc": "tsc",

@@ -24,25 +24,22 @@ const Header: React.FunctionComponent<Readonly<{ siteTitle: string }>> = ({
 );
 
 const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
-  const { searchText, setSearchText } = useSearchContext();
+  const { searchText, search, clearSearch } = useSearchContext();
 
   // When text is entered, setSearchText and browse to /search
-  const setSearchTextFromEvent = useCallback(
-    e => {
-      setSearchText(e.target.value);
-      navigate("/search");
-    },
-    [setSearchText],
-  );
+  const setSearchTextFromEvent = useCallback(e => {
+    search(e.target.value);
+    navigate("/search/");
+  }, []);
 
   // Clear search text when leaving /search
   useEffect(
     () => () => {
-      if (location.pathname === "/search") {
-        setSearchText("");
+      if (location.pathname === "/search/") {
+        clearSearch();
       }
     },
-    [location.pathname, setSearchText],
+    [location.pathname],
   );
 
   return (
