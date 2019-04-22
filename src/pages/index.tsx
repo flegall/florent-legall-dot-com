@@ -4,6 +4,8 @@ import pluralize from "pluralize";
 
 import SEO from "../components/seo";
 
+const styles = require("./index.module.css");
+
 type Props = Readonly<{
   data: Readonly<{
     allMarkdownRemark: Readonly<{
@@ -39,7 +41,7 @@ const IndexPage = ({ data }: Props) => (
         <p key={id}>
           <Link to={slug}>{title}</Link> <br />
           {description} <br />
-          <span style={{ fontSize: "0.8rem" }}>
+          <span className={styles.dateAndTimeToRead}>
             {date} • {timeToRead} {pluralize("minute", timeToRead)} read
           </span>{" "}
           <br />

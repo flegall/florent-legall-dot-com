@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 
 import SEO from "../components/seo";
 
-const articleStyles = require("./article.module.css");
+const styles = require("./article.module.css");
 
 type Props = Readonly<{
   data: Readonly<{
@@ -37,28 +37,20 @@ const ArticlePage = ({ data }: Props) => {
       <SEO title={title} keywords={tags} description={description} />
       <h1>{title}</h1>
       {published === false && (
-        <div
-          style={{
-            backgroundColor: "rgb(239, 225, 119)",
-            padding: "20px",
-            marginBottom: "20px",
-            fontSize: "1.1rem",
-          }}
-        >
+        <div className={styles.unpublished}>
           Attention ! This article is not published yet, it{"'"}s still a draft
           ✍
         </div>
       )}
-      <p style={{ textAlign: "right" }}>
+      <p className={styles.authorAndDate}>
         {author} - {date}
       </p>
       <div
-        className={articleStyles.toc}
-        style={{ display: "flex", flexDirection: "row-reverse" }}
+        className={styles.toc}
         dangerouslySetInnerHTML={{ __html: tableOfContents }}
       />
       <div
-        className={articleStyles.markdown}
+        className={styles.markdown}
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </>

@@ -5,38 +5,29 @@ import { format } from "timeago.js";
 
 import Header from "./header";
 
+const styles = require("./layout.module.css");
+
 const Layout: React.FunctionComponent = ({ children }) => {
   const { title, description } = useSiteInfos();
   return (
     <>
       <Header siteTitle={title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <div className={styles.main}>
         <main>{children}</main>
-        <footer
-          style={{
-            paddingTop: 64,
-          }}
-        >
-          <div style={{ display: "flex" }}>
+        <footer className={styles.footer}>
+          <div className={styles.footer_titleContainer}>
             <Gravatar
               email="florent.legall@gmail.com"
               size={100}
-              style={{ borderRadius: "50%" }}
+              className={styles.footer_titleIcon}
             />
-            <p style={{ alignSelf: "center", marginLeft: "30px" }}>
+            <p className={styles.footer_titleText}>
               <b>{"Florent Le Gall's personal blog"}</b>
               <br />
               {description}
             </p>
           </div>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div className={styles.footer_linksContainer}>
             <span>
               <a href="https://twitter.com/flornt">twitter</a> •{" "}
               <a href="https://github.com/flegall">github</a> •{" "}
@@ -65,14 +56,7 @@ const LastDeployment = () => {
   const { lastDeployment } = useSiteInfos();
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        direction: "rtl",
-        fontSize: "0.7rem",
-      }}
-    >
+    <div className={styles.footer_lastDeployment}>
       {isBrowser ? <>Last build {format(lastDeployment, "en_US")}</> : <></>}
     </div>
   );

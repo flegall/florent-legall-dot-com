@@ -4,7 +4,7 @@ import { Location, WindowLocation } from "@reach/router";
 
 import { useSearchContext } from "../search-state";
 
-const styles = require("./headers.module.css");
+const styles = require("./header.module.css");
 
 const Header: React.FunctionComponent<Readonly<{ siteTitle: string }>> = ({
   siteTitle,
@@ -12,7 +12,7 @@ const Header: React.FunctionComponent<Readonly<{ siteTitle: string }>> = ({
   <header className={styles.header}>
     <div className={styles.headerBand}>
       <div className={styles.headerContainer}>
-        <h2 style={{ margin: 0 }}>
+        <h2 className={styles.header_linkToWelcome}>
           <Link to="/" className={styles.linkToWelcome}>
             {siteTitle}
           </Link>
@@ -66,7 +66,6 @@ const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
         aria-autocomplete="list"
         aria-expanded="false"
         dir="auto"
-        style={{ position: "relative", verticalAlign: "top" }}
         className={styles.searchInput}
         value={searchText}
         onChange={onSearchTextChanged}

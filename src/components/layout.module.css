@@ -1,0 +1,35 @@
+.main {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0px;
+}
+
+.footer {
+  padding-top: 64px;
+}
+
+.footer_titleContainer {
+  display: flex;
+}
+
+.footer_titleIcon {
+  border-radius: 50%;
+}
+
+.footer_titleText {
+  align-self: center;
+  margin-left: 30px;
+}
+
+.footer_linksContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_lastDeployment {
+  display: flex;
+  justify-content: space-between;
+  direction: rtl;
+  font-size: 0.7rem;
+}
