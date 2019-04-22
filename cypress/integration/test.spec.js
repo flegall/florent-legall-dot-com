@@ -7,13 +7,13 @@ describe("florent-legall.com", () => {
   it("links to articles pages work", () => {
     cy.title().should("equal", "Home | Software kitchen");
     cy.getByText(/About me/i).within(() => {
-      cy.get("a").click();
+      cy.get("a").click({ force: true });
     });
 
     cy.url().should("include", "/articles/about-me/");
     cy.title().should("equal", "About me | Software kitchen");
 
-    cy.get("h2 > a").click();
+    cy.get("h2 > a").click({ force: true });
     cy.title().should("equal", "Home | Software kitchen");
   });
 
@@ -22,7 +22,7 @@ describe("florent-legall.com", () => {
     cy.url().should("include", "/search");
 
     cy.getByText(/About me/i).within(() => {
-      cy.get("a").click();
+      cy.get("a").click({ force: true });
     });
 
     cy.url().should("include", "/articles/about-me/");
