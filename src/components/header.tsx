@@ -65,6 +65,7 @@ const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
         role="combobox"
         aria-autocomplete="list"
         aria-expanded="false"
+        aria-label="Search"
         dir="auto"
         className={styles.searchInput}
         value={searchText}
