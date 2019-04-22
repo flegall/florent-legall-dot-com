@@ -59,10 +59,9 @@
     "cy:install": "cypress install",
     "cy:open": "cypress open",
     "cy:run": "CYPRESS_BASE_URL=http://localhost:5020 cypress run",
-    "pretest:e2e": "yarn cy:install",
     "test:e2e": "start-server-and-test serve http://localhost:5020 cy:run",
     "test:circle": "npm-run-all --parallel tsc eslint build",
-    "build:full": "npm-run-all --parallel tsc eslint build && yarn test:e2e"
+    "build:full": "npm-run-all --parallel tsc eslint build cy:install && yarn test:e2e"
   },
   "repository": {
     "type": "git",
