@@ -5,6 +5,8 @@ import { Index } from "elasticlunr";
 import SEO from "../components/seo";
 import { useSearchContext } from "../search-state";
 
+const styles = require("./search.module.css");
+
 const SearchPage = () => {
   const {
     siteSearchIndex: { index: searchIndex },
@@ -32,10 +34,18 @@ const SearchPage = () => {
     [index, searchText],
   );
 
+  if (searchText === "") {
+    return (
+      <>
+        <h4 className={styles.title}>Use the search field above</h4>
+      </>
+    );
+  }
+
   return (
     <>
       <SEO title="Search" keywords={[`blog`, `software`, `engineer`]} />
-      <h2>Search results</h2>
+      <h4 className={styles.title}>Related articles</h4>
       {docs.length > 0 ? (
         docs.map(({ id, slug, title, description }) => (
           <p key={id}>
