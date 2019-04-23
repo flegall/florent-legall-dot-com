@@ -98,7 +98,7 @@
     "prettier": "1.17.0",
     "remark-parse": "6.0.3",
     "start-server-and-test": "1.9.0",
-    "typescript": "3.4.4",
+    "typescript": "3.4.5",
     "unified": "7.1.0"
   },
   "husky": {
