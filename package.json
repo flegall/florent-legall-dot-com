@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Florent Le Gall <florent.legall@gmail.com>",
   "dependencies": {
-    "@babel/core": "7.4.3",
+    "@babel/core": "7.4.4",
     "constate": "1.1.1",
     "gatsby": "2.3.31",
     "gatsby-image": "2.0.40",
