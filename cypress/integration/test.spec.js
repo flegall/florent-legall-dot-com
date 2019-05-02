@@ -6,7 +6,7 @@ describe("florent-legall.com", () => {
 
   it("links to articles pages work", () => {
     cy.title().should("equal", "Home | Software kitchen");
-    cy.getByText(/About me/i).within(() => {
+    cy.getAllByText(/About me/i).within(() => {
       cy.get("a").click({ force: true });
     });
 
@@ -21,7 +21,7 @@ describe("florent-legall.com", () => {
     cy.getByPlaceholderText("Search").type("cook");
     cy.url().should("include", "/search");
 
-    cy.getByText(/About me/i).within(() => {
+    cy.getAllByText(/About me/i).within(() => {
       cy.get("a").click({ force: true });
     });
 
