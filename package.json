@@ -7,7 +7,7 @@
   "dependencies": {
     "@babel/core": "7.4.4",
     "constate": "1.1.1",
-    "gatsby": "2.4.1",
+    "gatsby": "2.4.2",
     "gatsby-image": "2.0.41",
     "gatsby-plugin-catch-links": "2.0.13",
     "gatsby-plugin-feed": "2.2.0",
