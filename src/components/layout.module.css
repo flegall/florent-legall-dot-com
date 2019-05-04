@@ -5,8 +5,16 @@
   padding-top: 0px;
 }
 
-.footer {
-  padding-top: 64px;
+@media (max-width: 400px) {
+  .footer {
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: 401px) {
+  .footer {
+    padding-top: 24px;
+  }
 }
 
 .footer_titleContainer {
