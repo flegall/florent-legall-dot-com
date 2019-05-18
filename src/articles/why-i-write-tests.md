@@ -20,8 +20,8 @@ In many software development teams, a large amount of people don't like writing 
 This is **sad** and has many **downsides**:
 
 - This makes **testing less attractive** to people as the current tests are of lower quality.
-- This makes **bugfixing more difficult**, as it's more difficult to step in the test suites, understand how the application gets tested and reproduce issues.
-- All in all, this contributes to **a vicious circle** where writing and maintaining tests is seen as a chore.
+- This makes **bugfixing more difficult**, as it's more difficult to step in the test suites, it's a lot harder to write a test case that reproduce the issue.
+- All in all, this contributes to **a vicious circle** where writing and maintaining tests is seen as a chore, tests are of poor quality.
 
 For most people, automated tests are seen as a way to reach **quality assurance**. Automated tests are indeed **a net to prevent mistakes and defects**. And it will work not only on what we build now, but also in what we will build in the future to **avoid regressions**.
 
