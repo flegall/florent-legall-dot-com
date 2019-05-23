@@ -7,7 +7,7 @@
   "dependencies": {
     "@babel/core": "7.4.5",
     "constate": "1.1.1",
-    "gatsby": "2.7.0",
+    "gatsby": "2.7.1",
     "gatsby-image": "2.1.0",
     "gatsby-plugin-catch-links": "2.0.15",
     "gatsby-plugin-feed": "2.2.1",
@@ -16,7 +16,7 @@
     "gatsby-plugin-netlify": "2.0.17",
     "gatsby-plugin-offline": "2.1.1",
     "gatsby-plugin-react-helmet": "3.0.12",
-    "gatsby-plugin-sharp": "2.0.37",
+    "gatsby-plugin-sharp": "2.1.0",
     "gatsby-plugin-typography": "2.2.13",
     "gatsby-plugin-webpack-bundle-analyzer": "1.0.5",
     "gatsby-remark-autolink-headers": "2.0.16",
