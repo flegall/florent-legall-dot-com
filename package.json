@@ -71,7 +71,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "devDependencies": {
-    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.2.1",
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.3.0",
     "@types/gravatar": "1.8.0",
     "@types/jquery": "3.3.29",
     "@types/pluralize": "0.0.29",
