@@ -7,7 +7,7 @@
   "dependencies": {
     "@babel/core": "7.4.5",
     "constate": "1.1.1",
-    "gatsby": "2.8.4",
+    "gatsby": "2.8.5",
     "gatsby-image": "2.1.2",
     "gatsby-plugin-catch-links": "2.0.15",
     "gatsby-plugin-feed": "2.2.2",
@@ -23,7 +23,7 @@
     "gatsby-remark-copy-linked-files": "2.0.13",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "3.0.14",
-    "gatsby-remark-prismjs": "3.2.9",
+    "gatsby-remark-prismjs": "3.2.10",
     "gatsby-remark-responsive-iframe": "2.1.1",
     "gatsby-remark-smartypants": "2.0.9",
     "gatsby-source-filesystem": "2.0.38",
