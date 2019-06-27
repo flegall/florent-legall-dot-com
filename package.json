@@ -79,7 +79,7 @@
     "@types/react-helmet": "5.0.8",
     "@types/typography": "0.16.2",
     "@testing-library/cypress": "4.0.4",
-    "cypress": "3.3.1",
+    "cypress": "3.3.2",
     "elasticlunr": "0.9.5",
     "eslint": "5.16.0",
     "eslint-config-prettier": "5.1.0",
