@@ -99,7 +99,7 @@
     "remark-parse": "6.0.3",
     "start-server-and-test": "1.9.1",
     "typescript": "3.5.2",
-    "unified": "7.1.0"
+    "unified": "8.0.1"
   },
   "husky": {
     "hooks": {
