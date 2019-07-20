@@ -15,11 +15,12 @@ tags:
 
 Are you **enjoying** it ?
 
-In many software development teams, a large amount of people do not like writing tests. This doesn't mean they don't write tests, but they treat this activity as a chore and delay it after implementation. As a result the tests that get written are of **lower quality than the production code** they tests.
+In many software development teams, a large amount of people do not like writing tests. This doesn't mean they don't write tests, but they treat this activity as a chore and delay it after implementation. As a result the tests that get written are of **lower quality than the production code** they are written against.
 
 This is **sad** and has many **downsides**:
 
-- This makes **testing less attractive** to people as the current tests are of lower quality.
+- This makes **testing feel less attractive** to people as the current tests are of lower quality.
+- This makes **improving tests feel less attractive** too.
 - This makes **bugfixing more difficult**, as it's more difficult to step in the test suites, it's a lot harder to write a test case that reproduce the issue.
 - All in all, this contributes to **a vicious circle** where writing and maintaining tests is seen as a chore, tests are of poor quality.
 
@@ -42,13 +43,13 @@ describe("a vacuum cleaner", () => {
 
 This allows me to list all use cases I have in mind when beginning work. It makes the work way less intimidating.
 
-After that I can start implementing each use case one by one, I will at some point add more tests as the initial lists was maybe incomplete. I can then see how much progress I've made so far.
-
-We can indeed see this as a todo list.
+After that I can start implementing each use case one by one. I will at some point add more tests as the initial lists was probably incomplete. I can also see how much progress I've made so far as if it was a todo list.
 
 ## When tests help me to think and design the software I'm building
 
-## When tests document the product I'm building
+## When tests document how the product I'm building should behave
+
+I can easily describe with sentences how the software product I'm writing should behave.
 
 ```js
 describe("a tv recorder", () => {
@@ -60,6 +61,8 @@ describe("a tv recorder", () => {
       - then the error message "no space left on hard disk" will be shown.`, () => {});
 });
 ```
+
+In this example I'm using the [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) ES6 feature, this allows me to use multiple line sentences with bullet points.
 
 ## When tests make sure I can change what I'm building
 
