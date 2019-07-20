@@ -103,17 +103,19 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && yarn build:full"
+      "pre-commit": "lint-staged && yarn build:full",
+      "post-checkout": "yarn"
     }
   },
   "lint-staged": {
-    "linters": {
-      "*.{js,json,css,md,ts,tsx}": [
-        "prettier --write",
-        "git add"
-      ],
-      "*.js": "eslint --cache"
-    },
-    "concurrent": false
+    "*.{json,css,md,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --cache",
+      "prettier --write",
+      "git add"
+    ]
   }
 }
