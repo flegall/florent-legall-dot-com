@@ -71,14 +71,15 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.5.5",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.3.0",
+    "@testing-library/cypress": "4.0.4",
     "@types/gravatar": "1.8.0",
     "@types/jquery": "3.3.30",
     "@types/pluralize": "0.0.29",
     "@types/react-gravatar": "2.6.7",
     "@types/react-helmet": "5.0.8",
     "@types/typography": "0.16.2",
-    "@testing-library/cypress": "4.0.4",
     "cypress": "3.4.0",
     "elasticlunr": "0.9.5",
     "eslint": "6.0.1",
