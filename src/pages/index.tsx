@@ -1,53 +1,13 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
-import pluralize from "pluralize";
+import { graphql } from "gatsby";
 
 import SEO from "../components/seo";
+import Articles from "../components/articles";
 
-const styles = require("./index.module.css");
-
-type Props = Readonly<{
-  data: Readonly<{
-    allMarkdownRemark: Readonly<{
-      edges: ReadonlyArray<{
-        node: Readonly<{
-          id: string;
-          excerpt: string;
-          frontmatter: Readonly<{
-            date: string;
-            title: string;
-            author: string;
-            description: string;
-          }>;
-          fields: Readonly<{ slug: string }>;
-          timeToRead: number;
-        }>;
-      }>;
-    }>;
-  }>;
-}>;
-const IndexPage = ({ data }: Props) => (
+const IndexPage = () => (
   <>
     <SEO title="Home" keywords={[`blog`, `software`, `engineer`]} />
-    {data.allMarkdownRemark.edges.map(
-      ({
-        node: {
-          id,
-          frontmatter: { date, title, description },
-          fields: { slug },
-          timeToRead,
-        },
-      }) => (
-        <p key={id}>
-          <Link to={slug}>{title}</Link> <br />
-          {description} <br />
-          <span className={styles.dateAndTimeToRead}>
-            {date} • {timeToRead} {pluralize("minute", timeToRead)} read
-          </span>{" "}
-          <br />
-        </p>
-      ),
-    )}
+    <Articles published={true} />
   </>
 );
 
