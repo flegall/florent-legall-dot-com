@@ -27,4 +27,15 @@ describe("florent-legall.com", () => {
 
     cy.url().should("include", "/articles/about-me/");
   });
+
+  it("drafts page works", () => {
+    cy.visit("/drafts/");
+    cy.get("[data-testid=REACT_SPA_READY]");
+
+    cy.title().should("equal", "Drafts | Software kitchen");
+
+    cy.getByText(
+      "Attention ! These articles are not published yet, they are still a draft ✍",
+    ).should("exist");
+  });
 });

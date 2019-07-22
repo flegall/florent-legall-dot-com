@@ -7,7 +7,7 @@ const draftsStyles = require("./drafts.module.css");
 
 const Drafts = () => (
   <>
-    <SEO title="Home" keywords={[`blog`, `software`, `engineer`]} />
+    <SEO title="Drafts" keywords={[`blog`, `software`, `engineer`]} />
     <div className={draftsStyles.unpublished}>
       Attention ! These articles are not published yet, they are still a draft
       ✍
