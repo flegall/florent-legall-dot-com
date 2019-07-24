@@ -2,12 +2,13 @@ import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import pluralize from "pluralize";
 import * as t from "io-ts";
-import { ioTypeCheck } from "../utils";
+import { useTypeChecker } from "../utils";
 
 const styles = require("./articles.module.css");
 
 const Articles = ({ published }: { published: boolean }) => {
-  const data = articlesTypeChecker(
+  const data = useTypeChecker(
+    ArticlesQueryResultType,
     useStaticQuery(graphql`
       query {
         allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
@@ -88,6 +89,5 @@ const ArticlesQueryResultType = t.readonly(
     ),
   }),
 );
-const articlesTypeChecker = ioTypeCheck(ArticlesQueryResultType);
 
 export default Articles;

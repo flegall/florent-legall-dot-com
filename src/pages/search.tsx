@@ -5,14 +5,15 @@ import * as t from "io-ts";
 
 import SEO from "../components/seo";
 import { useSearchContext } from "../search-state";
-import { ioTypeCheck } from "../utils";
+import { useTypeChecker } from "../utils";
 
 const styles = require("./search.module.css");
 
 const SearchPage = () => {
   const {
     siteSearchIndex: { index: searchIndex },
-  } = siteIndexTypeChecker(
+  } = useTypeChecker(
+    SiteIndexType,
     useStaticQuery(graphql`
       query SearchIndexQuery {
         siteSearchIndex {
@@ -93,6 +94,5 @@ const SiteIndexType = t.readonly(
     ),
   }),
 );
-const siteIndexTypeChecker = ioTypeCheck(SiteIndexType);
 
 export default SearchPage;

@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from "gatsby";
 import * as t from "io-ts";
 
-import { ioTypeCheck } from "./utils";
+import { useTypeChecker } from "./utils";
 
 export const useSiteInfos = (): {
   title: string;
@@ -13,7 +13,8 @@ export const useSiteInfos = (): {
     site: {
       siteMetadata: { title, description, lastDeployment, author },
     },
-  } = siteQueryTypeChecker(
+  } = useTypeChecker(
+    SiteQueryResultType,
     useStaticQuery(graphql`
       query SiteTitleQuery {
         site {
@@ -46,4 +47,3 @@ const SiteQueryResultType = t.readonly(
     ),
   }),
 );
-const siteQueryTypeChecker = ioTypeCheck(SiteQueryResultType);

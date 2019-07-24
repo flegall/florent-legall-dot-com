@@ -1,6 +1,6 @@
+import { useMemo } from "react";
 import { Type } from "io-ts";
 import { PathReporter } from "io-ts/lib/PathReporter";
-
 import { isLeft } from "fp-ts/lib/Either";
 
 export function ioTypeCheck<A, O, I>(
@@ -19,4 +19,11 @@ export function ioTypeCheck<A, O, I>(
       return valueOrError.right;
     }
   };
+}
+
+export function useTypeChecker<A, O, I>(type: Type<A, O, I>, data: unknown): A {
+  return useMemo(() => {
+    const typeChecker = ioTypeCheck(type);
+    return typeChecker(data);
+  }, [data, type]);
 }
