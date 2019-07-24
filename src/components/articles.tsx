@@ -1,32 +1,36 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import pluralize from "pluralize";
+import * as t from "io-ts";
+import { ioTypeCheck } from "../utils";
 
 const styles = require("./articles.module.css");
 
 const Articles = ({ published }: { published: boolean }) => {
-  const data: ArticlesQueryResult = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-        edges {
-          node {
-            id
-            fields {
-              slug
+  const data = articlesTypeChecker(
+    useStaticQuery(graphql`
+      query {
+        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                date(formatString: "MMMM DD, YYYY")
+                author
+                description
+                published
+              }
+              timeToRead
             }
-            frontmatter {
-              title
-              date(formatString: "MMMM DD, YYYY")
-              author
-              description
-              published
-            }
-            timeToRead
           }
         }
       }
-    }
-  `);
+    `),
+  );
   return (
     <>
       {data.allMarkdownRemark.edges
@@ -54,24 +58,36 @@ const Articles = ({ published }: { published: boolean }) => {
   );
 };
 
-type ArticlesQueryResult = Readonly<{
-  allMarkdownRemark: Readonly<{
-    edges: ReadonlyArray<{
-      node: Readonly<{
-        id: string;
-        excerpt: string;
-        frontmatter: Readonly<{
-          date: string;
-          title: string;
-          author: string;
-          description: string;
-          published: boolean;
-        }>;
-        fields: Readonly<{ slug: string }>;
-        timeToRead: number;
-      }>;
-    }>;
-  }>;
-}>;
+const ArticlesQueryResultType = t.readonly(
+  t.type({
+    allMarkdownRemark: t.readonly(
+      t.type({
+        edges: t.readonlyArray(
+          t.readonly(
+            t.type({
+              node: t.readonly(
+                t.type({
+                  id: t.string,
+                  fields: t.readonly(t.type({ slug: t.string })),
+                  timeToRead: t.number,
+                  frontmatter: t.readonly(
+                    t.type({
+                      date: t.string,
+                      title: t.string,
+                      author: t.string,
+                      description: t.string,
+                      published: t.boolean,
+                    }),
+                  ),
+                }),
+              ),
+            }),
+          ),
+        ),
+      }),
+    ),
+  }),
+);
+const articlesTypeChecker = ioTypeCheck(ArticlesQueryResultType);
 
 export default Articles;

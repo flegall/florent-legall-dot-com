@@ -7,6 +7,7 @@
   "dependencies": {
     "@babel/core": "7.5.5",
     "constate": "1.2.0",
+    "fp-ts": "2.0.3",
     "gatsby": "2.13.39",
     "gatsby-image": "2.2.6",
     "gatsby-plugin-catch-links": "2.1.2",
@@ -30,6 +31,7 @@
     "gatsby-transformer-remark": "2.6.9",
     "gatsby-transformer-sharp": "2.2.4",
     "gravatar": "1.8.0",
+    "io-ts": "2.0.0",
     "pluralize": "8.0.0",
     "prismjs": "1.17.1",
     "react": "16.8.6",
@@ -55,13 +57,14 @@
     "serve": "gatsby serve --port 5020",
     "eslint": "eslint . --cache",
     "tsc": "tsc",
+    "test": "jest",
     "format": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.css\" \"**/*.md\"",
     "cy:install": "cypress install",
     "cy:open": "cypress open",
     "cy:run": "CYPRESS_BASE_URL=http://localhost:5020 cypress run",
     "test:e2e": "start-server-and-test serve http://localhost:5020 cy:run",
-    "test:circle": "npm-run-all --parallel tsc eslint build",
-    "build:full": "npm-run-all --parallel tsc eslint build cy:install && yarn test:e2e"
+    "test:circle": "npm-run-all --parallel test tsc eslint build",
+    "build:full": "npm-run-all --parallel test tsc eslint build cy:install && yarn test:e2e"
   },
   "repository": {
     "type": "git",
@@ -72,9 +75,11 @@
   },
   "devDependencies": {
     "@babel/preset-env": "7.5.5",
+    "@babel/preset-typescript": "7.3.3",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.3.0",
     "@testing-library/cypress": "4.0.4",
     "@types/gravatar": "1.8.0",
+    "@types/jest": "24.0.15",
     "@types/jquery": "3.3.30",
     "@types/pluralize": "0.0.29",
     "@types/react-gravatar": "2.6.7",
@@ -94,6 +99,7 @@
     "eslint-plugin-standard": "4.0.0",
     "gatsby-plugin-typescript": "2.1.2",
     "husky": "3.0.1",
+    "jest": "24.8.0",
     "lint-staged": "9.2.0",
     "npm-run-all": "4.1.5",
     "prettier": "1.18.2",
