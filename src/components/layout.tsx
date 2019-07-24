@@ -1,7 +1,8 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import Gravatar from "react-gravatar";
 import { format } from "timeago.js";
+
+import { useSiteInfos } from "../site-infos";
 
 import Header from "./header";
 
@@ -60,29 +61,6 @@ const LastDeployment = () => {
       {isBrowser ? <>Last build {format(lastDeployment, "en_US")}</> : <></>}
     </div>
   );
-};
-
-const useSiteInfos = (): {
-  title: string;
-  description: string;
-  lastDeployment: string;
-} => {
-  const {
-    site: {
-      siteMetadata: { title, description, lastDeployment },
-    },
-  } = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          description
-          lastDeployment
-        }
-      }
-    }
-  `);
-  return { title, description, lastDeployment };
 };
 
 export default Layout;

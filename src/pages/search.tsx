@@ -1,22 +1,26 @@
 import React, { useMemo } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { Index } from "elasticlunr";
+import * as t from "io-ts";
 
 import SEO from "../components/seo";
 import { useSearchContext } from "../search-state";
+import { ioTypeCheck } from "../utils";
 
 const styles = require("./search.module.css");
 
 const SearchPage = () => {
   const {
     siteSearchIndex: { index: searchIndex },
-  } = useStaticQuery(graphql`
-    query SearchIndexQuery {
-      siteSearchIndex {
-        index
+  } = siteIndexTypeChecker(
+    useStaticQuery(graphql`
+      query SearchIndexQuery {
+        siteSearchIndex {
+          index
+        }
       }
-    }
-  `);
+    `),
+  );
 
   const { searchText } = useSearchContext();
 
@@ -79,5 +83,16 @@ type IndexType = {
     }>;
   };
 };
+
+const SiteIndexType = t.readonly(
+  t.type({
+    siteSearchIndex: t.readonly(
+      t.type({
+        index: t.unknown,
+      }),
+    ),
+  }),
+);
+const siteIndexTypeChecker = ioTypeCheck(SiteIndexType);
 
 export default SearchPage;

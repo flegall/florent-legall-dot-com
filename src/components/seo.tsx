@@ -1,7 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
 import gravatar from "gravatar";
+
+import { useSiteInfos } from "../site-infos";
 
 type Props = Readonly<{
   description?: string;
@@ -16,19 +17,12 @@ type Props = Readonly<{
   title: string;
 }>;
 function SEO({ description, lang, meta, keywords, title }: Props) {
-  const data = useStaticQuery(graphql`
-    query DefaultSEOQuery {
-      site {
-        siteMetadata {
-          title
-          description
-          author
-        }
-      }
-    }
-  `);
-  const metaDescription =
-    description != null ? description : data.site.siteMetadata.description;
+  const {
+    description: siteDescription,
+    title: siteTitle,
+    author: siteAuthor,
+  } = useSiteInfos();
+  const metaDescription = description != null ? description : siteDescription;
 
   return (
     <Helmet
@@ -36,7 +30,7 @@ function SEO({ description, lang, meta, keywords, title }: Props) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+      titleTemplate={`%s | ${siteTitle}`}
       meta={[
         {
           name: `description`,
@@ -60,7 +54,7 @@ function SEO({ description, lang, meta, keywords, title }: Props) {
         },
         {
           name: `twitter:creator`,
-          content: data.site.siteMetadata.author,
+          content: siteAuthor,
         },
         {
           name: `twitter:title`,
