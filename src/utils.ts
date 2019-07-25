@@ -21,9 +21,7 @@ export function ioTypeCheck<A, O, I>(
   };
 }
 
-export function useTypeChecker<A, O, I>(type: Type<A, O, I>, data: unknown): A {
-  return useMemo(() => {
-    const typeChecker = ioTypeCheck(type);
-    return typeChecker(data);
-  }, [data, type]);
-}
+export const useTypeChecker = <A, O, I>(
+  type: Type<A, O, I>,
+  data: unknown,
+): A => useMemo(() => ioTypeCheck(type)(data), [data, type]);
