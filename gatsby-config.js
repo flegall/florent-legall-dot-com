@@ -33,7 +33,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 920,
             },
           },
           {
@@ -43,6 +43,14 @@ module.exports = {
             },
           },
           "gatsby-remark-autolink-headers",
+          {
+            resolve: "gatsby-remark-embed-snippet",
+            options: {
+              // Example code links are relative to this dir.
+              // eg examples/path/to/file.js
+              directory: `${__dirname}/src/articles`,
+            },
+          },
           {
             resolve: "gatsby-remark-prismjs",
             options: {

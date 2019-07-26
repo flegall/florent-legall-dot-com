@@ -51,18 +51,16 @@ After that I can start implementing each use case one by one. I will at some poi
 
 I can easily describe with sentences how the software product I'm writing should behave.
 
-```js
-describe("a tv recorder", () => {
-  it(`will record a tv program when pressing on the "record" button if : 
-      - there is enough space on device.
-      - there is at least one free tuner available on the set-top-box`, () => {});
-  it(`will not record a tv program when pressing on the "record" button 
-      - if there is not enough space on the hard disk.
-      - then the error message "no space left on hard disk" will be shown.`, () => {});
-});
-```
+`embed:why-i-write-tests/why-write-tests.ts`
 
-In this example I'm using the [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) ES6 feature, this allows me to use multiple line sentences with bullet points.
+I'm using the [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) ES feature, this allows me to use multiple line sentences with bullet points in tests descriptions.
+
+When running the tests, I get the following readable report :
+![](./jest.png)
+
+This way I can write complete sentences explaining how the product should behave. This technique ressembles to [behavior-driven development](https://en.wikipedia.org/wiki/Behavior-driven_development) in a way that it provides exemples on how the application should behave.
+
+However, these sentences are not executable specifications such as [cucumber](https://cucumber.io/), [jgiven](http://jgiven.org/) or [jsgiven](https://jsgiven.org/). In executable specifications, the scenario is executed, here we just give sentences to describe our product, but it still gives tests more sense.
 
 ## When tests make sure I can change what I'm building
 
