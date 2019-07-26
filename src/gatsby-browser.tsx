@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-import "prismjs/themes/prism-solarizedlight.css";
+import "prismjs/themes/prism-tomorrow.css";
 
 import { SearchContextProvider } from "./search-state";
 import Layout from "./components/layout";

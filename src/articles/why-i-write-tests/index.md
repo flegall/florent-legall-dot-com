@@ -32,14 +32,7 @@ While this is a very valid reason, this is not the only one reason why I write t
 
 Very often when working on a feature or a complex defect to fix, I usually write all use cases I have in mind using a full sentence as a test name and an empty code block as an implementation.
 
-```js
-describe("a vacuum cleaner", () => {
-  it("starts when pushing the power button if it is not started", () => {});
-  it("stops when pushing the power button if it is started", () => {});
-  it("changes speed when turning the speed button if it is started", () => {});
-  // And so on ...
-});
-```
+`embed:why-i-write-tests/todos.test.ts`
 
 This allows me to list all use cases I have in mind when beginning work. It makes the work way less intimidating.
 
@@ -51,7 +44,7 @@ After that I can start implementing each use case one by one. I will at some poi
 
 I can easily describe with sentences how the software product I'm writing should behave.
 
-`embed:why-i-write-tests/why-write-tests.ts`
+`embed:why-i-write-tests/bdd.test.ts`
 
 I'm using the [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) ES feature, this allows me to use multiple line sentences with bullet points in tests descriptions.
 
