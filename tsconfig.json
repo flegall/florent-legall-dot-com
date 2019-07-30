@@ -23,7 +23,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     // Browser libs
-    "lib": ["dom", "es2017"]
+    "lib": ["dom", "es2017"],
+    "listFiles": true,
+    "diagnostics": true
   },
   "include": ["./src/**/*"]
 }
