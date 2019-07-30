@@ -6043,7 +6043,7 @@ gatsby-plugin-catch-links@2.1.2:
     "@babel/runtime" "^7.0.0"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-feed@^2.3.6:
+gatsby-plugin-feed@2.3.6:
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.3.6.tgz#2547d28e436b6418021995b6fbb9fd6f85a89793"
   integrity sha512-iBywR85MF6zJ13wH45L5wKwkruwTQNG5CXoSeL8gMRZJvYRhTsoMTihK9YDVEemct1vRtZmzDWabSBGsKuNlZQ==
@@ -6345,7 +6345,7 @@ gatsby-transformer-sharp@2.2.5:
     semver "^5.6.0"
     sharp "^0.22.1"
 
-gatsby@^2.13.44:
+gatsby@2.13.44:
   version "2.13.44"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.13.44.tgz#37782acb3dab87f090d89367b9cba756853b8f7e"
   integrity sha512-FS3w+SLKRegmLcJfSK0MQOitvU0mgpKb0QoHGr7KPO7/Zps6a0qcaK0rQCMySA/a3ZyUnrWyl5Lk1AOrRhqUAA==
