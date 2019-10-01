@@ -98,7 +98,7 @@
     "eslint-plugin-node": "9.2.0",
     "eslint-plugin-prettier": "3.1.1",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.15.0",
+    "eslint-plugin-react": "7.15.1",
     "eslint-plugin-standard": "4.0.1",
     "gatsby-plugin-typescript": "2.1.11",
     "husky": "3.0.7",
