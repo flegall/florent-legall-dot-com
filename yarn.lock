@@ -14877,10 +14877,10 @@ thunky@^1.0.2:
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-1.0.3.tgz#f5df732453407b09191dae73e2a8cc73f381a826"
   integrity sha512-YwT8pjmNcAXBZqrubu22P4FYsh2D4dxRmnWBOL8Jk8bUcRUtc5326kx32tuTmFDAZtLOGEVNl8POAR8j896Iow==
 
-timeago.js@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/timeago.js/-/timeago.js-4.0.0.tgz#2c9a47cbae7a893288ecaf81b44d09cd24d4f790"
-  integrity sha512-/0glwk8XNsTwOtYJPm0Au1ySLakU8yH8aNuV2EAN84qDjdvyTByX/GFq4qFr6Js4lO5HAIx5vCYvijghX/jj9A==
+timeago.js@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/timeago.js/-/timeago.js-4.0.1.tgz#4be4aa19565ceaeb0da31fe14e01ce6ca4742da6"
+  integrity sha512-ePzZuMoJqUc44hJbUYtY1qtzU7IammxooDCcFKogLkS5Nj+iCabR0ZlmNOFX8Dm1r5EpvR5q/PotOJli/mEPew==
 
 timed-out@^4.0.0, timed-out@^4.0.1:
   version "4.0.1"
