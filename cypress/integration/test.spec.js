@@ -6,7 +6,7 @@ describe("florent-legall.com", () => {
 
   it("links to articles pages work", () => {
     cy.title().should("equal", "Home | Software kitchen");
-    cy.getAllByText(/About me/i).within(() => {
+    cy.findAllByText(/About me/i).within(() => {
       cy.get("a").click({ force: true });
     });
 
@@ -18,10 +18,10 @@ describe("florent-legall.com", () => {
   });
 
   it("search engine works", () => {
-    cy.getByPlaceholderText("Search").type("cook");
+    cy.findByPlaceholderText("Search").type("cook");
     cy.url().should("include", "/search");
 
-    cy.getAllByText(/About me/i).within(() => {
+    cy.findAllByText(/About me/i).within(() => {
       cy.get("a").click({ force: true });
     });
 
@@ -34,7 +34,7 @@ describe("florent-legall.com", () => {
 
     cy.title().should("equal", "Drafts | Software kitchen");
 
-    cy.getByText(
+    cy.findByText(
       "Attention ! These articles are not published yet, they are still a draft ✍",
     ).should("exist");
   });
