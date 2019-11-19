@@ -14,16 +14,16 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v8-dependencies-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+            - v8-deps-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
             # fallback to using the latest cache if no exact match is found
-            - v8-dependencies-
+            - v8-deps-
 
       - run: yarn install --cache-folder ~/.cache/yarn
       - save_cache:
           paths:
             - node_modules
             - ~/.cache/yarn
-          key: v8-dependencies-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          key: v8-deps-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
       - run: yarn test:circle
 
 workflows:
