@@ -5,3 +5,6 @@
 
 [build]
   command = "yarn build:full"
+
+[build.environment]
+  YARN_VERSION = "1.21.1"
