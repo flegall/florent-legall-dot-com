@@ -92,7 +92,7 @@
     "cypress": "3.8.3",
     "elasticlunr": "0.9.5",
     "eslint": "6.8.0",
-    "eslint-config-prettier": "6.9.0",
+    "eslint-config-prettier": "6.10.0",
     "eslint-config-standard": "14.1.0",
     "eslint-plugin-cypress": "2.8.1",
     "eslint-plugin-import": "2.20.0",
