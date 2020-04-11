@@ -18,14 +18,12 @@
     // Import non-ES modules as default imports.
     "esModuleInterop": true,
     // Skip checking libs
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     // Warnings
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     // Browser libs
-    "lib": ["dom", "es2017"],
-    "listFiles": true,
-    "diagnostics": true
+    "lib": ["dom", "es2017"]
   },
   "include": ["./src/**/*"]
 }
