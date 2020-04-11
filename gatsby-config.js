@@ -101,17 +101,13 @@ module.exports = {
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           MarkdownRemark: {
-            title: node => node.frontmatter.title,
-            tags: node => node.frontmatter.tags,
-            published: node => node.frontmatter.published,
-            slug: node => node.fields.slug,
-            description: node => node.frontmatter.description,
-            content: node =>
-              mdToString(
-                unified()
-                  .use(parse)
-                  .parse(node.rawMarkdownBody),
-              ),
+            title: (node) => node.frontmatter.title,
+            tags: (node) => node.frontmatter.tags,
+            published: (node) => node.frontmatter.published,
+            slug: (node) => node.fields.slug,
+            description: (node) => node.frontmatter.description,
+            content: (node) =>
+              mdToString(unified().use(parse).parse(node.rawMarkdownBody)),
           },
         },
       },
@@ -134,11 +130,12 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 const siteUrl = site.siteMetadata.siteUrl;
                 const postText = `
-                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at https://florent-legall.com/. You can read it online by <a href="${siteUrl +
-                  edge.node.fields.slug}">clicking here</a>.)</div>
+                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at https://florent-legall.com/. You can read it online by <a href="${
+                  siteUrl + edge.node.fields.slug
+                }">clicking here</a>.)</div>
               `;
 
                 let html = edge.node.html;
