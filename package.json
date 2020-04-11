@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Florent Le Gall <florent.legall@gmail.com>",
   "dependencies": {
-    "@babel/core": "7.8.7",
+    "@babel/core": "7.9.0",
     "constate": "2.0.0",
     "fp-ts": "2.5.3",
     "gatsby": "2.20.17",
@@ -77,8 +77,8 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "devDependencies": {
-    "@babel/preset-env": "7.8.7",
-    "@babel/preset-typescript": "7.8.3",
+    "@babel/preset-env": "7.9.5",
+    "@babel/preset-typescript": "7.9.0",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.3.0",
     "@testing-library/cypress": "6.0.0",
     "@types/gravatar": "1.8.1",

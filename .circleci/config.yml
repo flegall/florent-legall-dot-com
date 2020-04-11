@@ -14,16 +14,16 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v10-deps-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+            - vdeps-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
             # fallback to using the latest cache if no exact match is found
-            - v10-deps-
+            - vdeps-
 
       - run: yarn install --cache-folder ~/.cache/yarn
       - save_cache:
           paths:
             - node_modules
             - ~/.cache/yarn
-          key: v10-deps-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          key: vdeps-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
       - run: yarn test:circle
 
 workflows:
