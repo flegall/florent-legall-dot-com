@@ -83,7 +83,7 @@
     "@testing-library/cypress": "6.0.0",
     "@types/gravatar": "1.8.1",
     "@types/jest": "25.2.1",
-    "@types/jquery": "3.3.34",
+    "@types/jquery": "3.3.35",
     "@types/pluralize": "0.0.29",
     "@types/react-dom": "16.9.6",
     "@types/react-gravatar": "2.6.7",
