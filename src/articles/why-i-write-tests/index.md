@@ -19,7 +19,7 @@ In many software development teams, a large amount of people do not like writing
 
 This is sad and has many **downsides**:
 
-- This makes **writing testing** feel **less attractive** to people as the current tests are of lower quality.
+- This makes **writing tests** feel **less attractive** to people as the current tests are of lower quality.
 - This makes **improving tests** feel **less attractive** too.
 - This makes **bugfixing more difficult**, as it's more difficult to step in the test suites, it's a lot harder to write a test case that reproduce the issue.
 - All in all, this contributes to **a vicious circle** where as writing and maintaining tests is seen as a chore, tests are of poor quality.
@@ -42,8 +42,8 @@ After that I can start implementing each use case one by one. I will at some poi
 
 As a software engineer, I very often tend to have many ideas at the same time. While this is very exciting, sometimes I can be tempted to solve two problems at a time for instance :
 
-- Implementing that "button" that will allow users to tick
-- Making sure I
+- Implementing the feature I'm working on.
+-
 
 ## Tests document how the product I'm building should behave
 
