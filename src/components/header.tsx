@@ -1,7 +1,7 @@
 import { Link, navigate } from "gatsby";
 import React, { useCallback, useEffect } from "react";
 import { Location, WindowLocation } from "@reach/router";
-import { useRecoilState } from "recoil";
+import { useRecoilState, useResetRecoilState } from "recoil";
 
 import { searchState } from "../search-state";
 
@@ -26,6 +26,8 @@ const Header: React.FunctionComponent<Readonly<{ siteTitle: string }>> = ({
 
 const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
   const [searchText, setSearchText] = useRecoilState(searchState);
+  const resetSearchText = useResetRecoilState(searchState);
+
   const SEARCH_URL = "/search/";
 
   // When text is entered, setSearchText and browse to /search
@@ -38,7 +40,7 @@ const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
   useEffect(
     () => () => {
       if (location.pathname === SEARCH_URL) {
-        setSearchText("");
+        resetSearchText();
       }
     },
     [location.pathname],
