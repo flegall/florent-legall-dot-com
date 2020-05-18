@@ -1,12 +1,12 @@
 import React from "react";
+import { RecoilRoot } from "recoil";
 
 import Layout from "./components/layout";
-import { SearchContextProvider } from "./search-state";
 
 export const wrapPageElement = ({ element }: { element: React.ReactNode }) => (
   <Layout>{element}</Layout>
 );
 
 export const wrapRootElement = ({ element }: { element: React.ReactNode }) => (
-  <SearchContextProvider>{element}</SearchContextProvider>
+  <RecoilRoot>{element}</RecoilRoot>
 );

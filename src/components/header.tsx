@@ -1,8 +1,9 @@
 import { Link, navigate } from "gatsby";
 import React, { useCallback, useEffect } from "react";
 import { Location, WindowLocation } from "@reach/router";
+import { useRecoilState } from "recoil";
 
-import { useSearchContext } from "../search-state";
+import { searchState } from "../search-state";
 
 const styles = require("./header.module.css");
 
@@ -24,12 +25,12 @@ const Header: React.FunctionComponent<Readonly<{ siteTitle: string }>> = ({
 );
 
 const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
-  const { searchText, search, clearSearch } = useSearchContext();
+  const [searchText, setSearchText] = useRecoilState(searchState);
   const SEARCH_URL = "/search/";
 
   // When text is entered, setSearchText and browse to /search
-  const onSearchTextChanged = useCallback(e => {
-    search(e.target.value);
+  const onSearchTextChanged = useCallback((e) => {
+    setSearchText(e.target.value);
     navigate(SEARCH_URL);
   }, []);
 
@@ -37,7 +38,7 @@ const Search: React.FC<{ location: WindowLocation }> = ({ location }) => {
   useEffect(
     () => () => {
       if (location.pathname === SEARCH_URL) {
-        clearSearch();
+        setSearchText("");
       }
     },
     [location.pathname],

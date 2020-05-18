@@ -5,9 +5,10 @@
  */
 
 import React from "react";
+import { RecoilRoot } from "recoil";
+
 import "prismjs/themes/prism-tomorrow.css";
 
-import { SearchContextProvider } from "./search-state";
 import Layout from "./components/layout";
 
 export const wrapPageElement = ({ element }: { element: React.ReactNode }) => (
@@ -18,5 +19,5 @@ export const wrapPageElement = ({ element }: { element: React.ReactNode }) => (
 );
 
 export const wrapRootElement = ({ element }: { element: React.ReactNode }) => (
-  <SearchContextProvider>{element}</SearchContextProvider>
+  <RecoilRoot>{element}</RecoilRoot>
 );

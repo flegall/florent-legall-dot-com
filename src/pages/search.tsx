@@ -1,10 +1,11 @@
 import React, { useMemo } from "react";
+import { useRecoilValue } from "recoil";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { Index } from "elasticlunr";
 import * as t from "io-ts";
 
 import SEO from "../components/seo";
-import { useSearchContext } from "../search-state";
+import { searchState } from "../search-state";
 import { useTypeChecker } from "../utils";
 
 const styles = require("./search.module.css");
@@ -23,7 +24,7 @@ const SearchPage = () => {
     `),
   );
 
-  const { searchText } = useSearchContext();
+  const searchText = useRecoilValue(searchState);
 
   const index = useMemo<IndexType>(() => Index.load(searchIndex), [
     searchIndex,
