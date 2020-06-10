@@ -79,7 +79,7 @@
   "devDependencies": {
     "@babel/preset-env": "7.10.2",
     "@babel/preset-typescript": "7.10.1",
-    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.3.0",
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.4.0",
     "@testing-library/cypress": "6.0.0",
     "@types/gravatar": "1.8.1",
     "@types/jest": "25.2.3",
