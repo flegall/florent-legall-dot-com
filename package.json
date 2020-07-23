@@ -112,7 +112,7 @@
     "remark-parse": "8.0.3",
     "start-server-and-test": "1.11.2",
     "typescript": "3.9.7",
-    "unified": "9.0.0"
+    "unified": "9.1.0"
   },
   "husky": {
     "hooks": {
