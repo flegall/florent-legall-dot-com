@@ -17187,6 +17187,18 @@ unified@9.0.0:
     trough "^1.0.0"
     vfile "^4.0.0"
 
+unified@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/unified/-/unified-9.1.0.tgz#7ba82e5db4740c47a04e688a9ca8335980547410"
+  integrity sha512-VXOv7Ic6twsKGJDeZQ2wwPqXs2hM0KNu5Hkg9WgAZbSD1pxhZ7p8swqg583nw1Je2fhwHy6U8aEjiI79x1gvag==
+  dependencies:
+    bail "^1.0.0"
+    extend "^3.0.0"
+    is-buffer "^2.0.0"
+    is-plain-obj "^2.0.0"
+    trough "^1.0.0"
+    vfile "^4.0.0"
+
 unified@^4.1.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/unified/-/unified-4.2.1.tgz#76ff43aa8da430f6e7e4a55c84ebac2ad2cfcd2e"
