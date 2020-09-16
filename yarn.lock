@@ -15639,10 +15639,10 @@ readdirp@~3.4.0:
   dependencies:
     picomatch "^2.2.1"
 
-recoil@0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.0.11.tgz#3be3bfe8e62de94a98b8c292bb3243a176679a00"
-  integrity sha512-GgSi9rFUdpnCbmgyPztN9+9COIfc8NiEOc5oqjj4z2P9u4GvpDShS1K7sTuqaeYsRE9qUP5Lj0W6PHTDXcvXsg==
+recoil@0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.0.12.tgz#1f0cf8609ab8fed19664a377efe3d27fab484a67"
+  integrity sha512-RIJXLGu+ximiU0Y5K0MC7MENnW/9ddQ3cPEFEvpDQXmhSGEgoMkxW/ic56LKtHDINFPit9gaxGOhEmv0mTHfTQ==
 
 recursive-readdir@2.2.1:
   version "2.2.1"
