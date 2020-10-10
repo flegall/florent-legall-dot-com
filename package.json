@@ -33,7 +33,7 @@
     "gravatar": "1.8.1",
     "io-ts": "2.2.11",
     "pluralize": "8.0.0",
-    "prismjs": "1.21.0",
+    "prismjs": "1.22.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-gravatar": "2.6.3",
