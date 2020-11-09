@@ -91,7 +91,7 @@
     "@types/recoil": "0.0.1",
     "@types/typography": "0.16.3",
     "babel-jest": "26.6.3",
-    "cypress": "4.12.1",
+    "cypress": "5.6.0",
     "elasticlunr": "0.9.5",
     "eslint": "7.13.0",
     "eslint-config-prettier": "6.15.0",
@@ -131,6 +131,6 @@
     ]
   },
   "resolutions": {
-    "cypress": "4.12.1"
+    "cypress": "5.6.0"
   }
 }
