@@ -6,7 +6,7 @@
   "author": "Florent Le Gall <florent.legall@gmail.com>",
   "dependencies": {
     "@babel/core": "7.12.7",
-    "fp-ts": "2.8.6",
+    "fp-ts": "2.9.0",
     "gatsby": "2.24.58",
     "gatsby-image": "2.4.17",
     "gatsby-plugin-catch-links": "2.3.11",
