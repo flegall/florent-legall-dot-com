@@ -82,7 +82,7 @@
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "2.4.2",
     "@testing-library/cypress": "6.0.1",
     "@types/gravatar": "1.8.1",
-    "@types/jest": "25.2.3",
+    "@types/jest": "26.0.22",
     "@types/jquery": "3.5.5",
     "@types/pluralize": "0.0.29",
     "@types/react-dom": "16.9.12",
