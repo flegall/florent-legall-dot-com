@@ -1,3 +1,5 @@
+const path = require("path");
+
 const unified = require("unified");
 const parse = require("remark-parse");
 
@@ -23,7 +25,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "files",
-        path: `${__dirname}/src`,
+        path: path.join(__dirname, "src"),
       },
     },
     {
@@ -48,7 +50,7 @@ module.exports = {
             options: {
               // Example code links are relative to this dir.
               // eg examples/path/to/file.js
-              directory: `${__dirname}/src/articles`,
+              directory: path.join(__dirname, "/src/articles"),
             },
           },
           {
