@@ -2,7 +2,6 @@ module.exports = {
   extends: [
     "standard",
     "prettier",
-    "prettier/standard",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/recommended",
