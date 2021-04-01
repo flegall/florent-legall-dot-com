@@ -2536,6 +2536,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@reach/router@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@reach/router@npm:1.3.4"
+  dependencies:
+    create-react-context: 0.3.0
+    invariant: ^2.2.3
+    prop-types: ^15.6.1
+    react-lifecycles-compat: ^3.0.4
+  peerDependencies:
+    react: 15.x || 16.x || 16.4.0-alpha.0911da3
+    react-dom: 15.x || 16.x || 16.4.0-alpha.0911da3
+  checksum: 7fedb32b5f589d0de236f83af7a0098bef93327925ac3dc090026ce79f6571005207d872fb01378ef00dfcd6e9ed0f0583755c5817ae9d85f3fd6d5b34b84417
+  languageName: node
+  linkType: hard
+
 "@samverschueren/stream-to-observable@npm:^0.3.0":
   version: 0.3.1
   resolution: "@samverschueren/stream-to-observable@npm:0.3.1"
@@ -6098,6 +6113,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"create-react-context@npm:0.3.0":
+  version: 0.3.0
+  resolution: "create-react-context@npm:0.3.0"
+  dependencies:
+    gud: ^1.0.0
+    warning: ^4.0.3
+  peerDependencies:
+    prop-types: ^15.0.0
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0
+  checksum: dfb153bbcfe44fb0b5d74e097f41fef382c9ea513084f604fea1759aea6683da0eef13b02ede2f0672c4eeacdd8efce0023935ca02909fcb2ae8be28b9aa63f5
+  languageName: node
+  linkType: hard
+
 "create-require@npm:^1.1.0":
   version: 1.1.1
   resolution: "create-require@npm:1.1.1"
@@ -8822,6 +8850,7 @@ __metadata:
     "@babel/preset-env": 7.13.12
     "@babel/preset-typescript": 7.13.0
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": 3.0.2
+    "@reach/router": 1.3.4
     "@testing-library/cypress": 7.0.5
     "@types/gravatar": 1.8.1
     "@types/jest": 26.0.22
@@ -10561,6 +10590,13 @@ fsevents@^1.2.7:
   version: 1.3.0
   resolution: "growly@npm:1.3.0"
   checksum: c87f7e8c785cac6ee60719c9d62f7d790a85dafa13d62c4667664e3a21ee771f5fd19df3f374d2f7bdf297b8f687cf70e19bb066aba4832e6f6caa5190812578
+  languageName: node
+  linkType: hard
+
+"gud@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "gud@npm:1.0.0"
+  checksum: 08be6bf30eb713b0e115a4676418b3805b739703956fd861710f59ce355c047102954e4d79172b180912d06794e8d94f702e9367ac6843c2fae40c8c726a4907
   languageName: node
   linkType: hard
 
@@ -21189,6 +21225,15 @@ typescript@4.2.3:
   dependencies:
     makeerror: 1.0.x
   checksum: c014f264c473fc4464ba8f59eb9f7ffa1c0cf2c83b65353de28a6012d8dd29e974bf2b0fbd5c71231f56762a3ea0d970b635f7d6f6d670ff83f426741ce6a4da
+  languageName: node
+  linkType: hard
+
+"warning@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "warning@npm:4.0.3"
+  dependencies:
+    loose-envify: ^1.0.0
+  checksum: 20ef5d29ff9c20af3060e504914a00d5a90ce346e75e6691efbedb540481cdc82070c966d75195f812de64bb0bd7f1b02315fcb52469db151c0f15e29002781c
   languageName: node
   linkType: hard
 
