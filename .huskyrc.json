@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "pre-commit": "lint-staged && yarn build:full",
+    "post-checkout": "yarn",
+    "post-merge": "yarn"
+  }
+}
