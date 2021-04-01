@@ -122,8 +122,5 @@
       "eslint --cache",
       "prettier --write"
     ]
-  },
-  "resolutions": {
-    "cypress": "4.12.1"
   }
 }
