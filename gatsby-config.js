@@ -78,12 +78,6 @@ module.exports = {
         pathToConfigModule: `src/typography`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-134707395-1`,
-      },
-    },
     `gatsby-plugin-catch-links`,
     {
       resolve: "gatsby-plugin-webpack-bundle-analyzer",

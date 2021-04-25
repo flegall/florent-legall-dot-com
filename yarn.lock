@@ -9197,7 +9197,6 @@ __metadata:
     gatsby-image: 3.3.0
     gatsby-plugin-catch-links: 3.3.0
     gatsby-plugin-feed: 3.3.0
-    gatsby-plugin-google-analytics: 3.3.0
     gatsby-plugin-manifest: 3.3.0
     gatsby-plugin-netlify: 3.3.0
     gatsby-plugin-offline: 4.3.0
@@ -9659,20 +9658,6 @@ fsevents@^1.2.7:
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
   checksum: 58583a8152cdee7778294f51cda3f8b4b7140822c4d3bccd2bbde4514528df0f324404174963836571b9bbb1adc3531bea90bc6c6b4f3442a835ff4738a8e185
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-google-analytics@npm:3.3.0":
-  version: 3.3.0
-  resolution: "gatsby-plugin-google-analytics@npm:3.3.0"
-  dependencies:
-    "@babel/runtime": ^7.12.5
-    minimatch: 3.0.4
-  peerDependencies:
-    gatsby: ^3.0.0-next.0
-    react: ^16.9.0 || ^17.0.0
-    react-dom: ^16.9.0 || ^17.0.0
-  checksum: d8c7daf95554f8eaea75875783cf27919cf91d23962d4e120bf2656e6863d62dfabc13d388e19e99f7857f76a8cba8e0cc9b9db400c05c0f1912b39191d0a1ee
   languageName: node
   linkType: hard
 
