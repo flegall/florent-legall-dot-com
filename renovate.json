@@ -4,6 +4,6 @@
   "semanticCommits": true,
   "automerge": true,
   "major": {
-    "automerge": false
+    "automerge": true
   }
 }
