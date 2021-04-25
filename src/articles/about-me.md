@@ -18,7 +18,7 @@ I'm a **passionate** developer, I've written software of many kind in various do
 
 **I enjoy particularly building user interfaces**. User interfaces are in my opinion the most fun to create. They usually give a fast and rewarding feedback when building, they get users excited, they give us nice challenges, and you never know exactly what you are going to build until you build it.
 
-I'm currently working at [Canal+](https://www.mycanal.fr/) : a french television group. I'm a tech lead working on the new satellite and internet set-top-box's interface
+I'm currently working at [Datadog](https://www.datadoghq.com/).
 
 I've written :
 
