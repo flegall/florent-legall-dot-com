@@ -9462,13 +9462,13 @@ __metadata:
     react-dom: 17.0.2
     react-gravatar: 2.6.3
     react-helmet: 6.1.0
-    react-typography: 0.16.19
+    react-typography: 0.16.20
     recoil: 0.2.0
     remark-parse: 9.0.0
     start-server-and-test: 1.12.1
     timeago.js: 4.0.2
     typescript: 4.2.4
-    typography: 0.16.19
+    typography: 0.16.21
     typography-theme-ocean-beach: 0.16.19
     unified: 9.2.1
   languageName: unknown
@@ -18033,12 +18033,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-typography@npm:0.16.19":
-  version: 0.16.19
-  resolution: "react-typography@npm:0.16.19"
+"react-typography@npm:0.16.20":
+  version: 0.16.20
+  resolution: "react-typography@npm:0.16.20"
   peerDependencies:
-    react: ^0.14.0 || ^15.0.0 || ^16.0.0
-  checksum: 9b31cbca4f914ddec1193a1df826417bc3e5b63c2900af319823d6aae917f9715fe55545cdbafdaf47260b33806b03ce490192dce0260fe60322150ee76727fb
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: c2d6f2a84ef8d3201d4160bacf851a6f9226a06d50b8afccf44afc1cf8edf0c550c13bd0f1ca0f39f6081338b1a198b33d918ab0c4dad103319f99ebf7f65054
   languageName: node
   linkType: hard
 
@@ -21113,9 +21113,9 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"typography@npm:0.16.19":
-  version: 0.16.19
-  resolution: "typography@npm:0.16.19"
+"typography@npm:0.16.21":
+  version: 0.16.21
+  resolution: "typography@npm:0.16.21"
   dependencies:
     compass-vertical-rhythm: ^1.4.5
     decamelize: ^1.2.0
@@ -21124,7 +21124,7 @@ typescript@4.2.4:
     modularscale: ^1.0.2
     object-assign: ^4.1.0
     typography-normalize: ^0.16.19
-  checksum: 665f41ba306e7656d5996deaddbec491a72e85bbdc7c9887a68e9f4d13ad531d34f0d8ad8e09d8abb091f9aa7770a3c9435ae5aa3f05b6ffaed5801b5ba940f9
+  checksum: 340d3ce358ccb85f966bbc9ff721182709e6821888de5bb8faf571591d3f2b3d45a33be9fdaec548de23be7b2138f5b5ef03be8b63e201f17e1b435a5ac0df49
   languageName: node
   linkType: hard
 
