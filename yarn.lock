@@ -9456,7 +9456,7 @@ __metadata:
     lint-staged: 11.0.0
     npm-run-all: 4.1.5
     pluralize: 8.0.0
-    prettier: 2.2.1
+    prettier: 2.3.0
     prismjs: 1.23.0
     react: 17.0.2
     react-dom: 17.0.2
@@ -17496,7 +17496,16 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.2.1, prettier@npm:^2.0.5":
+"prettier@npm:2.3.0":
+  version: 2.3.0
+  resolution: "prettier@npm:2.3.0"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 652640cc8b71bc5277cfb8bf6f161783ca588efcf683c3d630837b39da8d57fef35c9e00ae5855a8e3c75136c42274046c913cc2b2d2968558315f31c6a26981
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.0.5":
   version: 2.2.1
   resolution: "prettier@npm:2.2.1"
   bin:
