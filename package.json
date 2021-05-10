@@ -38,10 +38,10 @@
     "react-dom": "17.0.2",
     "react-gravatar": "2.6.3",
     "react-helmet": "6.1.0",
-    "react-typography": "0.16.19",
+    "react-typography": "0.16.20",
     "recoil": "0.2.0",
     "timeago.js": "4.0.2",
-    "typography": "0.16.19",
+    "typography": "0.16.21",
     "typography-theme-ocean-beach": "0.16.19"
   },
   "keywords": [
