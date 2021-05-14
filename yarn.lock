@@ -8945,24 +8945,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:3.4.0, execa@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "execa@npm:3.4.0"
-  dependencies:
-    cross-spawn: ^7.0.0
-    get-stream: ^5.0.0
-    human-signals: ^1.1.1
-    is-stream: ^2.0.0
-    merge-stream: ^2.0.0
-    npm-run-path: ^4.0.0
-    onetime: ^5.1.0
-    p-finally: ^2.0.0
-    signal-exit: ^3.0.2
-    strip-final-newline: ^2.0.0
-  checksum: 6f1eb2d6012ba061f9daee5cd0ba775dae71a5b18ab4003c4edc5f0b85047f98b982b71e731b237dde1ea3348b4a09deafa988eca5d1f1b6a9925f74c9907777
-  languageName: node
-  linkType: hard
-
 "execa@npm:4.1.0, execa@npm:^4.0.0, execa@npm:^4.0.2, execa@npm:^4.0.3":
   version: 4.1.0
   resolution: "execa@npm:4.1.0"
@@ -8977,6 +8959,23 @@ __metadata:
     signal-exit: ^3.0.2
     strip-final-newline: ^2.0.0
   checksum: 79bd736acd63aa7c0afb32cc99af21cfd70db696580686c7cd56c177857b93b78bc0b9bb2b4410f377f46c71c566c8e723987e71ef0bc9b23791bfbced02f75c
+  languageName: node
+  linkType: hard
+
+"execa@npm:5.0.0, execa@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "execa@npm:5.0.0"
+  dependencies:
+    cross-spawn: ^7.0.3
+    get-stream: ^6.0.0
+    human-signals: ^2.1.0
+    is-stream: ^2.0.0
+    merge-stream: ^2.0.0
+    npm-run-path: ^4.0.1
+    onetime: ^5.1.2
+    signal-exit: ^3.0.3
+    strip-final-newline: ^2.0.0
+  checksum: bf9664702c981ae922ce465bc60d9bfd583e9ad47ab1a89168665e1fb330cc72f7080fda606bac85454bdc341198f454072018e616f0d03aa1e4b671ef04b94e
   languageName: node
   linkType: hard
 
@@ -9010,20 +9009,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "execa@npm:5.0.0"
+"execa@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "execa@npm:3.4.0"
   dependencies:
-    cross-spawn: ^7.0.3
-    get-stream: ^6.0.0
-    human-signals: ^2.1.0
+    cross-spawn: ^7.0.0
+    get-stream: ^5.0.0
+    human-signals: ^1.1.1
     is-stream: ^2.0.0
     merge-stream: ^2.0.0
-    npm-run-path: ^4.0.1
-    onetime: ^5.1.2
-    signal-exit: ^3.0.3
+    npm-run-path: ^4.0.0
+    onetime: ^5.1.0
+    p-finally: ^2.0.0
+    signal-exit: ^3.0.2
     strip-final-newline: ^2.0.0
-  checksum: bf9664702c981ae922ce465bc60d9bfd583e9ad47ab1a89168665e1fb330cc72f7080fda606bac85454bdc341198f454072018e616f0d03aa1e4b671ef04b94e
+  checksum: 6f1eb2d6012ba061f9daee5cd0ba775dae71a5b18ab4003c4edc5f0b85047f98b982b71e731b237dde1ea3348b4a09deafa988eca5d1f1b6a9925f74c9907777
   languageName: node
   linkType: hard
 
@@ -9710,7 +9710,7 @@ __metadata:
     react-typography: 0.16.20
     recoil: 0.2.0
     remark-parse: 9.0.0
-    start-server-and-test: 1.12.1
+    start-server-and-test: 1.12.2
     timeago.js: 4.0.2
     typescript: 4.2.4
     typography: 0.16.21
@@ -20097,14 +20097,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:1.12.1":
-  version: 1.12.1
-  resolution: "start-server-and-test@npm:1.12.1"
+"start-server-and-test@npm:1.12.2":
+  version: 1.12.2
+  resolution: "start-server-and-test@npm:1.12.2"
   dependencies:
     bluebird: 3.7.2
     check-more-types: 2.24.0
     debug: 4.3.1
-    execa: 3.4.0
+    execa: 5.0.0
     lazy-ass: 1.6.0
     ps-tree: 1.2.0
     wait-on: 5.3.0
@@ -20112,7 +20112,7 @@ resolve@^2.0.0-next.3:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: 827a876e7209599ee70239e6cead080c8b10471e80c3553052d955fce72a7aae986867215adf4cd378b5d3a56df14f1eb6f24d792298ef9ede36bebbc0d7c13c
+  checksum: 7d8a22c6299dcce7078cf44264379ee6d9ac5c4ca972abdfe15e32084992eab706dd9037873fd63c6763165f00c5c95d28ca3d2fd07b9f9db2820c85778680d2
   languageName: node
   linkType: hard
 
