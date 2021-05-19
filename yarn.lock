@@ -5959,19 +5959,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio-select-tmp@npm:^0.1.0":
-  version: 0.1.1
-  resolution: "cheerio-select-tmp@npm:0.1.1"
-  dependencies:
-    css-select: ^3.1.2
-    css-what: ^4.0.0
-    domelementtype: ^2.1.0
-    domhandler: ^4.0.0
-    domutils: ^2.4.4
-  checksum: 6e9331f38749ac5a63aad4fd98baeac4cbd810600f1bcf5ed483034d800313c31a11d1227af672184487105a69dacf899752aa0902e5a9c94ee69e8d209d51f6
-  languageName: node
-  linkType: hard
-
 "cheerio-select@npm:^1.4.0":
   version: 1.4.0
   resolution: "cheerio-select@npm:1.4.0"
@@ -5985,22 +5972,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio@npm:^1.0.0-rc.3":
-  version: 1.0.0-rc.5
-  resolution: "cheerio@npm:1.0.0-rc.5"
-  dependencies:
-    cheerio-select-tmp: ^0.1.0
-    dom-serializer: ~1.2.0
-    domhandler: ^4.0.0
-    entities: ~2.1.0
-    htmlparser2: ^6.0.0
-    parse5: ^6.0.0
-    parse5-htmlparser2-tree-adapter: ^6.0.0
-  checksum: 9e5c762323c3e3b56027a2e638aab6afa28191df399a57e517300a31b35e8b1665c588ab15baf9cb3a7f7ea7de7446e0e4d975cc3386027c2eb06c8ec5ed0b0d
-  languageName: node
-  linkType: hard
-
-"cheerio@npm:^1.0.0-rc.8":
+"cheerio@npm:^1.0.0-rc.9":
   version: 1.0.0-rc.9
   resolution: "cheerio@npm:1.0.0-rc.9"
   dependencies:
@@ -7831,7 +7803,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-serializer@npm:^1.0.1, dom-serializer@npm:~1.2.0":
+"dom-serializer@npm:^1.0.1":
   version: 1.2.0
   resolution: "dom-serializer@npm:1.2.0"
   dependencies:
@@ -7936,7 +7908,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domutils@npm:^2.0.0, domutils@npm:^2.4.3, domutils@npm:^2.4.4":
+"domutils@npm:^2.0.0, domutils@npm:^2.4.3":
   version: 2.5.0
   resolution: "domutils@npm:2.5.0"
   dependencies:
@@ -8216,13 +8188,6 @@ __metadata:
   version: 2.2.0
   resolution: "entities@npm:2.2.0"
   checksum: ebd62621a15a13f4e914322cf8b1d4aeb224fa5365910d8899615835dada8b1349dea77bbcd4db2eea100845de313c46303accafece669d929d64ebcc90f4517
-  languageName: node
-  linkType: hard
-
-"entities@npm:~2.1.0":
-  version: 2.1.0
-  resolution: "entities@npm:2.1.0"
-  checksum: 91d5330633b97df881bcd02e233d32067876d45abdc7c75cf058ded524d8b22f8dc7a3965813d6982ceeba918abdbd9029a0459759ee5f6f98ec953a4786612f
   languageName: node
   linkType: hard
 
@@ -9737,25 +9702,25 @@ __metadata:
     eslint-plugin-react: 7.23.2
     eslint-plugin-standard: 5.0.0
     fp-ts: 2.10.5
-    gatsby: 3.5.0
+    gatsby: 3.5.1
     gatsby-image: 3.5.0
     gatsby-plugin-catch-links: 3.5.0
     gatsby-plugin-feed: 3.5.0
     gatsby-plugin-manifest: 3.5.0
     gatsby-plugin-netlify: 3.5.0
-    gatsby-plugin-offline: 4.5.0
+    gatsby-plugin-offline: 4.5.1
     gatsby-plugin-react-helmet: 4.5.0
     gatsby-plugin-sharp: 3.5.0
     gatsby-plugin-typescript: 3.5.0
     gatsby-plugin-typography: 3.5.0
     gatsby-plugin-webpack-bundle-analyzer: 1.0.5
     gatsby-remark-autolink-headers: 4.2.0
-    gatsby-remark-copy-linked-files: 4.2.0
+    gatsby-remark-copy-linked-files: 4.2.1
     gatsby-remark-embed-snippet: 6.2.0
     gatsby-remark-external-links: 0.0.4
-    gatsby-remark-images: 5.2.0
-    gatsby-remark-prismjs: 5.2.0
-    gatsby-remark-responsive-iframe: 4.2.0
+    gatsby-remark-images: 5.2.1
+    gatsby-remark-prismjs: 5.2.1
+    gatsby-remark-responsive-iframe: 4.2.1
     gatsby-remark-smartypants: 4.2.0
     gatsby-source-filesystem: 3.5.0
     gatsby-transformer-remark: 4.2.0
@@ -10235,12 +10200,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:4.5.0":
-  version: 4.5.0
-  resolution: "gatsby-plugin-offline@npm:4.5.0"
+"gatsby-plugin-offline@npm:4.5.1":
+  version: 4.5.1
+  resolution: "gatsby-plugin-offline@npm:4.5.1"
   dependencies:
     "@babel/runtime": ^7.12.5
-    cheerio: ^1.0.0-rc.3
+    cheerio: ^1.0.0-rc.9
     gatsby-core-utils: ^2.5.0
     glob: ^7.1.6
     idb-keyval: ^3.2.0
@@ -10250,7 +10215,7 @@ fsevents@^1.2.7:
     gatsby: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 5ea227cc29091939332cef81dcefdf6b89b0e8a47c186f215cf782632d67ed0e6f0dd57f27337bfb892b2b4d269fa53d3054e9be702e6dde023d925853d4693c
+  checksum: 1d2d9392831752dee9051e0f9669650a42834441ef023a622303889252ad23a0b4f25e401b9121e0263ad961725504ebd4c7c521823e8112697377fb7d0a0337
   languageName: node
   linkType: hard
 
@@ -10465,12 +10430,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-remark-copy-linked-files@npm:4.2.0":
-  version: 4.2.0
-  resolution: "gatsby-remark-copy-linked-files@npm:4.2.0"
+"gatsby-remark-copy-linked-files@npm:4.2.1":
+  version: 4.2.1
+  resolution: "gatsby-remark-copy-linked-files@npm:4.2.1"
   dependencies:
     "@babel/runtime": ^7.12.5
-    cheerio: ^1.0.0-rc.8
+    cheerio: ^1.0.0-rc.9
     fs-extra: ^8.1.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
@@ -10479,7 +10444,7 @@ fsevents@^1.2.7:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 660253fe3f0fd5ccddd687e9883cabe64ab43e1e1aa9c7633898ec91ef225b654b0b43ef9ffea70b8f8821d6b096df89c4234b2c83b8266f9b289c0b1569f5ea
+  checksum: 19da5da59ff705db955fe0f242955e5f09bc998d33d22e294a44801feb3fbcc290f671bc1e2cb900875799b239832f80b3590cf54d14dd288e34fb89c04ec5e3
   languageName: node
   linkType: hard
 
@@ -10510,13 +10475,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:5.2.0":
-  version: 5.2.0
-  resolution: "gatsby-remark-images@npm:5.2.0"
+"gatsby-remark-images@npm:5.2.1":
+  version: 5.2.1
+  resolution: "gatsby-remark-images@npm:5.2.1"
   dependencies:
     "@babel/runtime": ^7.12.5
     chalk: ^4.1.0
-    cheerio: ^1.0.0-rc.3
+    cheerio: ^1.0.0-rc.9
     gatsby-core-utils: ^2.5.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
@@ -10528,13 +10493,13 @@ fsevents@^1.2.7:
   peerDependencies:
     gatsby: ^3.0.0-next.0
     gatsby-plugin-sharp: ^3.0.0-next.0
-  checksum: c3185c492624494379dbfd8764a81684c75b3348ec8900a99af1a32f314373a5b98748b401441e6d88823da1cf1818d32ea88c4216e6299419e486a54baa0849
+  checksum: d6fa78aa89fbb8a388ae9ca673eeab75be5ddd9839f1234d350077ebdb613897e40a29946c9f42a103eecfb8ed424fbb354af253c3d08a4b1b15ed40f0a7ed50
   languageName: node
   linkType: hard
 
-"gatsby-remark-prismjs@npm:5.2.0":
-  version: 5.2.0
-  resolution: "gatsby-remark-prismjs@npm:5.2.0"
+"gatsby-remark-prismjs@npm:5.2.1":
+  version: 5.2.1
+  resolution: "gatsby-remark-prismjs@npm:5.2.1"
   dependencies:
     "@babel/runtime": ^7.12.5
     parse-numeric-range: ^1.2.0
@@ -10542,22 +10507,22 @@ fsevents@^1.2.7:
   peerDependencies:
     gatsby: ^3.0.0-next.0
     prismjs: ^1.15.0
-  checksum: 4f87fa86091e21532b1a266d26365bf8b5397d95df9aaed0388d0a5852e5c021a68e8754f35293e02c17c53f764f375037dec375a15c894233893f5ecf236ead
+  checksum: dedec8d1a5356db4f6fd07de2f7afa262488c3696218d30ae7b05338dc08bfb5e5f2ab7843d408d14c9b2473b3f0ec474013b184398086dea6568a0b839c106f
   languageName: node
   linkType: hard
 
-"gatsby-remark-responsive-iframe@npm:4.2.0":
-  version: 4.2.0
-  resolution: "gatsby-remark-responsive-iframe@npm:4.2.0"
+"gatsby-remark-responsive-iframe@npm:4.2.1":
+  version: 4.2.1
+  resolution: "gatsby-remark-responsive-iframe@npm:4.2.1"
   dependencies:
     "@babel/runtime": ^7.12.5
-    cheerio: ^1.0.0-rc.3
+    cheerio: ^1.0.0-rc.9
     common-tags: ^1.8.0
     lodash: ^4.17.21
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: e6bb97ffcf833518e35aa3fc53ee47b1f268c1c5b6d7cad87e3cfc6034642d9fb8b16917aa380a3b4a9db0c1c6333f867a29ddd96b2cd188b63297a266bdaddd
+  checksum: b10e852bc501d6df7c03757686f0f7ad67a1d3a8fd8c56e1fd37d2dc638466a9681e23859c347f083d05e699bb09feb05998281e8187feb6f4f458befc6fee15
   languageName: node
   linkType: hard
 
@@ -10671,9 +10636,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby@npm:3.5.0":
-  version: 3.5.0
-  resolution: "gatsby@npm:3.5.0"
+"gatsby@npm:3.5.1":
+  version: 3.5.1
+  resolution: "gatsby@npm:3.5.1"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/core": ^7.12.3
@@ -10833,7 +10798,7 @@ fsevents@^1.2.7:
     react-dom: ^16.9.0 || ^17.0.0
   bin:
     gatsby: ./cli.js
-  checksum: 514f4da801227ce9d32fa2319b56cd7d4f46d74368f0918c0c03ae706fc98d5fca6aac7267aff0a37593dacad7420671c6bb24bed0408ea57b6495ae26b6f0da
+  checksum: 003ddb84d644bccf4eac4884cd46604eba6030b42cbba6058716b9c82c39d4aa25cbd47084b4a8dd63970e22075fc6f23bc1d4cf4735703a552feed5a60523cc
   languageName: node
   linkType: hard
 
@@ -11871,18 +11836,6 @@ fsevents@^1.2.7:
     domutils: ^2.0.0
     entities: ^2.0.0
   checksum: 4a5d9ecbe339a500c23187740836c94a3b9edba6348995c5359bc832addcc8027633cb98bd5f715b96eb48caefeb5a38a1d6187522f45c1dc2b2be45a2f807ed
-  languageName: node
-  linkType: hard
-
-"htmlparser2@npm:^6.0.0":
-  version: 6.0.1
-  resolution: "htmlparser2@npm:6.0.1"
-  dependencies:
-    domelementtype: ^2.0.1
-    domhandler: ^4.0.0
-    domutils: ^2.4.4
-    entities: ^2.0.0
-  checksum: 434d948a21a69cede1daca2d9ad28c81c66ef87eab39a692ce6109a85f0f1a46f675c7395a6e09e89cab181355787debf3008a3d552a9154f053cbf499ffb76c
   languageName: node
   linkType: hard
 
@@ -16858,7 +16811,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"parse5-htmlparser2-tree-adapter@npm:^6.0.0, parse5-htmlparser2-tree-adapter@npm:^6.0.1":
+"parse5-htmlparser2-tree-adapter@npm:^6.0.1":
   version: 6.0.1
   resolution: "parse5-htmlparser2-tree-adapter@npm:6.0.1"
   dependencies:
