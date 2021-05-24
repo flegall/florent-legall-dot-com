@@ -9732,7 +9732,7 @@ __metadata:
     react-typography: 0.16.20
     recoil: 0.3.1
     remark-parse: 9.0.0
-    start-server-and-test: 1.12.2
+    start-server-and-test: 1.12.3
     timeago.js: 4.0.2
     typescript: 4.2.4
     typography: 0.16.21
@@ -20135,9 +20135,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:1.12.2":
-  version: 1.12.2
-  resolution: "start-server-and-test@npm:1.12.2"
+"start-server-and-test@npm:1.12.3":
+  version: 1.12.3
+  resolution: "start-server-and-test@npm:1.12.3"
   dependencies:
     bluebird: 3.7.2
     check-more-types: 2.24.0
@@ -20150,7 +20150,7 @@ resolve@^2.0.0-next.3:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: 7d8a22c6299dcce7078cf44264379ee6d9ac5c4ca972abdfe15e32084992eab706dd9037873fd63c6763165f00c5c95d28ca3d2fd07b9f9db2820c85778680d2
+  checksum: c4634e780a0e971737983ff6153a8fdd72fff4cfd14c6241b1850f63ebb0a938f4f78c43ff84eff51ea9cdf08a7eebe1d82c3770f9f6fcbd1736d0237685e94a
   languageName: node
   linkType: hard
 
