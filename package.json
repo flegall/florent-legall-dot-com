@@ -74,7 +74,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "devDependencies": {
-    "@babel/preset-env": "7.14.2",
+    "@babel/preset-env": "7.14.4",
     "@babel/preset-typescript": "7.13.0",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "3.0.2",
     "@testing-library/cypress": "7.0.6",
