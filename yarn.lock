@@ -3334,10 +3334,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/gravatar@npm:1.8.1":
-  version: 1.8.1
-  resolution: "@types/gravatar@npm:1.8.1"
-  checksum: a68480dc1c99e1d0cf851570202bdba3be7dc392ddba6e24e6c8b128afe05c788061472b210ba7c69088a3f1f8b7c7f372fb6a1dc611d6a90e6b5556a79dc693
+"@types/gravatar@npm:1.8.2":
+  version: 1.8.2
+  resolution: "@types/gravatar@npm:1.8.2"
+  checksum: 86ff6e29b2f738dfda6be27144087f24a1b3282268a5137b3a11ada70a63f560194d111a73d1a8eafbcb567f13faf507c1bf0a16ec114504099a2182e0d6b536
   languageName: node
   linkType: hard
 
@@ -9460,7 +9460,7 @@ __metadata:
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": 3.0.2
     "@reach/router": 1.3.4
     "@testing-library/cypress": 7.0.6
-    "@types/gravatar": 1.8.1
+    "@types/gravatar": 1.8.2
     "@types/jest": 26.0.23
     "@types/jquery": 3.5.5
     "@types/pluralize": 0.0.29
