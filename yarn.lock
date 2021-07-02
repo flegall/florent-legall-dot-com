@@ -3844,10 +3844,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/typography@npm:0.16.3":
-  version: 0.16.3
-  resolution: "@types/typography@npm:0.16.3"
-  checksum: 40f07ac01eb2a1f3e336a8432678271d68b9d2c5fbf9e2839de1d36a41b1dbc7c407ee085d307360ce511d1f7b454f06296e6cb82ae8fa4136c3797b388c26ff
+"@types/typography@npm:0.16.4":
+  version: 0.16.4
+  resolution: "@types/typography@npm:0.16.4"
+  checksum: 150d7da94f472fe4c9b768ac4ee8e641c360ae86629603c2f62f0cddf350e57fc422d43ff5623f09dcd70f8b57a366e7a1f3481ad7dcf10b4cb1471fcd50da1c
   languageName: node
   linkType: hard
 
@@ -9615,7 +9615,7 @@ __metadata:
     "@types/react-gravatar": 2.6.9
     "@types/react-helmet": 6.1.1
     "@types/recoil": 0.0.1
-    "@types/typography": 0.16.3
+    "@types/typography": 0.16.4
     babel-jest: 26.6.3
     cypress: 7.6.0
     elasticlunr: 0.9.5
