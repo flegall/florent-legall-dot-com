@@ -3760,12 +3760,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-gravatar@npm:2.6.9":
-  version: 2.6.9
-  resolution: "@types/react-gravatar@npm:2.6.9"
+"@types/react-gravatar@npm:2.6.10":
+  version: 2.6.10
+  resolution: "@types/react-gravatar@npm:2.6.10"
   dependencies:
     "@types/react": "*"
-  checksum: ed44d93b320f8a79544e4f41852d61000973db3cdcc0c12c7c7d97f5ba665b8ed71a1f9cd87d334bea76dc65547bbf80ef02c3c1b48dbd5890b6850a24b364f8
+  checksum: 83da30edd1c2cb31560e1f55e39dbaa46c7046ffe5ebc6aaa4dc394697f8feba1f533cce26888c59f612c69918e5d6e3e78ead9f56ddc35fd337787ab7e250ac
   languageName: node
   linkType: hard
 
@@ -9631,7 +9631,7 @@ __metadata:
     "@types/jquery": 3.5.6
     "@types/pluralize": 0.0.29
     "@types/react-dom": 17.0.9
-    "@types/react-gravatar": 2.6.9
+    "@types/react-gravatar": 2.6.10
     "@types/react-helmet": 6.1.2
     "@types/recoil": 0.0.1
     "@types/typography": 0.16.4

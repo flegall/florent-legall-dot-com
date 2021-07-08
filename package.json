@@ -83,7 +83,7 @@
     "@types/jquery": "3.5.6",
     "@types/pluralize": "0.0.29",
     "@types/react-dom": "17.0.9",
-    "@types/react-gravatar": "2.6.9",
+    "@types/react-gravatar": "2.6.10",
     "@types/react-helmet": "6.1.2",
     "@types/recoil": "0.0.1",
     "@types/typography": "0.16.4",
