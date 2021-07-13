@@ -103,7 +103,7 @@
     "gatsby-plugin-typescript": "3.9.0",
     "husky": "7.0.1",
     "jest": "26.6.3",
-    "lint-staged": "11.0.0",
+    "lint-staged": "11.0.1",
     "npm-run-all": "4.1.5",
     "prettier": "2.3.2",
     "remark-parse": "9.0.0",
