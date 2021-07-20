@@ -2669,6 +2669,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jest/types@npm:^27.0.6":
+  version: 27.0.6
+  resolution: "@jest/types@npm:27.0.6"
+  dependencies:
+    "@types/istanbul-lib-coverage": ^2.0.0
+    "@types/istanbul-reports": ^3.0.0
+    "@types/node": "*"
+    "@types/yargs": ^16.0.0
+    chalk: ^4.0.0
+  checksum: 86c1d8707ffcf8fb3574fa6865e1768d771c83494df5bfdc81199cac81fdbe947c69a7c113d03b7bf21c926bbfefffcfe7253138d6e52bb61a1386e05aff2a6b
+  languageName: node
+  linkType: hard
+
 "@jimp/bmp@npm:^0.14.0":
   version: 0.14.0
   resolution: "@jimp/bmp@npm:0.14.0"
@@ -3278,21 +3291,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/cypress@npm:7.0.7":
-  version: 7.0.7
-  resolution: "@testing-library/cypress@npm:7.0.7"
+"@testing-library/cypress@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@testing-library/cypress@npm:8.0.0"
   dependencies:
-    "@babel/runtime": ^7.12.5
-    "@testing-library/dom": ^7.29.6
+    "@babel/runtime": ^7.14.6
+    "@testing-library/dom": ^8.1.0
   peerDependencies:
     cypress: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
-  checksum: 5bff7d21e85eebe4ca1bf8f08ce523dbce11a2ed3f20b088178034b166c647edb0c221af578f77867448bdfbc6432884ff2da022b43910db60e9b45e3d9e9378
+  checksum: f32c2c7eb7004c74ca897ee6118e7c03672a02c6a43255efd713d912cf3599b4c55652963d3b37e3ef289b394d20060383c6564fc93842e458ec15ffbe1306f0
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.29.6":
-  version: 7.31.2
-  resolution: "@testing-library/dom@npm:7.31.2"
+"@testing-library/dom@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@testing-library/dom@npm:8.1.0"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/runtime": ^7.12.5
@@ -3301,8 +3314,8 @@ __metadata:
     chalk: ^4.1.0
     dom-accessibility-api: ^0.5.6
     lz-string: ^1.4.4
-    pretty-format: ^26.6.2
-  checksum: f930b4797fd41e515e645427027574fb82a46d90edde20523c2269916be88aeb302f2a4eb982d7c41afbe2de4ed3129e6b269424db2a90974ea76bdb9f26e3ed
+    pretty-format: ^27.0.2
+  checksum: 5b8c04123a50f2d3e01d2b1c8c929a009e83caca5b1813785330657d387914dedd87f0d158e94c6039b08d00c19a17a61a66fd9fca39cb67115718314dcced5a
   languageName: node
   linkType: hard
 
@@ -3898,6 +3911,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/yargs@npm:^16.0.0":
+  version: 16.0.4
+  resolution: "@types/yargs@npm:16.0.4"
+  dependencies:
+    "@types/yargs-parser": "*"
+  checksum: 929334a45c548f78e5aa756282b8abe17c0c7233eaaf414795808ab36a5f9957b3bc8c84151429d919fd2ac04ed2ce99853a85aea65823b4f669643656a3c65e
+  languageName: node
+  linkType: hard
+
 "@types/yauzl@npm:^2.9.1":
   version: 2.9.1
   resolution: "@types/yauzl@npm:2.9.1"
@@ -4426,6 +4448,13 @@ __metadata:
   dependencies:
     color-convert: ^2.0.1
   checksum: ea02c0179f3dd089a161f5fdd7ccd89dd84f31d82b68869f1134bf5c5b9e1313dadd2ff9edb02b44f46243f285ef5b785f6cb61c84a293694221417c42934407
+  languageName: node
+  linkType: hard
+
+"ansi-styles@npm:^5.0.0":
+  version: 5.2.0
+  resolution: "ansi-styles@npm:5.2.0"
+  checksum: 10b01465c7a49cbfcc055188e3b79b00db6283319bb53c0d20ca9ad114d1477d6f48c1d01a3ed9678f616566ec33f11116926dfaa162fa7be9ee7d5d2c2ea7e1
   languageName: node
   linkType: hard
 
@@ -9604,7 +9633,7 @@ __metadata:
     "@babel/preset-typescript": 7.14.5
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": 3.0.2
     "@reach/router": 1.3.4
-    "@testing-library/cypress": 7.0.7
+    "@testing-library/cypress": 8.0.0
     "@types/gravatar": 1.8.3
     "@types/jest": 26.0.24
     "@types/jquery": 3.5.6
@@ -17664,6 +17693,18 @@ fsevents@^1.2.7:
     ansi-styles: ^4.0.0
     react-is: ^17.0.1
   checksum: 5ad34fc128218485732cf0271d396158a00584708fc97bf063c1c3c000fe14da572e9a1d3d7b92d95c5e24965434656c56ed0e45804dea2435ca59a1f86f1b07
+  languageName: node
+  linkType: hard
+
+"pretty-format@npm:^27.0.2":
+  version: 27.0.6
+  resolution: "pretty-format@npm:27.0.6"
+  dependencies:
+    "@jest/types": ^27.0.6
+    ansi-regex: ^5.0.0
+    ansi-styles: ^5.0.0
+    react-is: ^17.0.1
+  checksum: 29baf8d88a35c04ef81e310e3e239c6fe4f5b0827c9bd8f660df78e94632a9677bd113a64be78cc95c52945a4369b85828f32559cfd86c1b591aa3cc39d0798d
   languageName: node
   linkType: hard
 
