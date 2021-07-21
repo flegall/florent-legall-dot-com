@@ -9657,7 +9657,7 @@ __metadata:
     eslint-plugin-react: 7.24.0
     eslint-plugin-standard: 5.0.0
     fp-ts: 2.10.5
-    gatsby: 3.10.0
+    gatsby: 3.10.1
     gatsby-image: 3.10.0
     gatsby-plugin-catch-links: 3.10.0
     gatsby-plugin-feed: 3.10.0
@@ -9665,7 +9665,7 @@ __metadata:
     gatsby-plugin-netlify: 3.10.0
     gatsby-plugin-offline: 4.10.0
     gatsby-plugin-react-helmet: 4.10.0
-    gatsby-plugin-sharp: 3.10.1
+    gatsby-plugin-sharp: 3.10.2
     gatsby-plugin-typescript: 3.10.0
     gatsby-plugin-typography: 3.10.0
     gatsby-plugin-webpack-bundle-analyzer: 1.0.5
@@ -10205,9 +10205,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:3.10.1":
-  version: 3.10.1
-  resolution: "gatsby-plugin-sharp@npm:3.10.1"
+"gatsby-plugin-sharp@npm:3.10.2":
+  version: 3.10.2
+  resolution: "gatsby-plugin-sharp@npm:3.10.2"
   dependencies:
     "@babel/runtime": ^7.14.6
     async: ^3.2.0
@@ -10232,7 +10232,7 @@ fsevents@^1.2.7:
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 1b79036e655f06a8f33f1d02b09515af51f8e34d5fe0e51cca611222f1518acefb4aceb3c26577ef0ae0edc983bbbade5d85e4f29c15b17615250c8219f5d0b2
+  checksum: 7094ad9b0b39e0db13a589b8e9c466954eca91508dee835d43ae9fa86cd2a4f978a778af2d7a4fde10c18dfdec9a9b5dca30263d54a9469c11945170111eff3b
   languageName: node
   linkType: hard
 
@@ -10601,9 +10601,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby@npm:3.10.0":
-  version: 3.10.0
-  resolution: "gatsby@npm:3.10.0"
+"gatsby@npm:3.10.1":
+  version: 3.10.1
+  resolution: "gatsby@npm:3.10.1"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.14.6
@@ -10762,7 +10762,7 @@ fsevents@^1.2.7:
     react-dom: ^16.9.0 || ^17.0.0
   bin:
     gatsby: ./cli.js
-  checksum: 07a3c5a0199df8317b27058b1b8a49bae9c5dad7d435e0219c50c85f486a0be2bd318fa5ba5e4a2d94e45504db17a34480202f0bca82fc42267b20b326d3c962
+  checksum: d01416b6c2cc521faf557a0d61a67635b3952dc6e03338d5580b9d9367e8ce554d373aba69b9cd2941a9d58726f668ab361b20efe58c4b4cf4dec1741e312a2e
   languageName: node
   linkType: hard
 
