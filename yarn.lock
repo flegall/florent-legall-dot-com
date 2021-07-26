@@ -9656,7 +9656,7 @@ __metadata:
     eslint-plugin-promise: 5.1.0
     eslint-plugin-react: 7.24.0
     eslint-plugin-standard: 5.0.0
-    fp-ts: 2.10.5
+    fp-ts: 2.11.0
     gatsby: 3.10.1
     gatsby-image: 3.10.0
     gatsby-plugin-catch-links: 3.10.0
@@ -9793,10 +9793,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fp-ts@npm:2.10.5":
-  version: 2.10.5
-  resolution: "fp-ts@npm:2.10.5"
-  checksum: 7a5fd244e8a0c6fd221a417ba3f3c5508b4c1fcaaf17e8a2d3cffe3766c31c2073065c5158266e848d8cb9e89ec2f62857da514c8cf4d8da75c17182dc00a28f
+"fp-ts@npm:2.11.0":
+  version: 2.11.0
+  resolution: "fp-ts@npm:2.11.0"
+  checksum: a7dd8e3fc488af2c86f1b9e64067bba9a01ce898a9994b4be384b1e77758a28bdbdbf96cba2a3dd2b86afabc5ff0d075122b28a14af647ee074737be54235f8d
   languageName: node
   linkType: hard
 
