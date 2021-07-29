@@ -9694,7 +9694,7 @@ __metadata:
     react-gravatar: 2.6.3
     react-helmet: 6.1.0
     react-typography: 0.16.20
-    recoil: 0.3.1
+    recoil: 0.4.0
     remark-parse: 9.0.0
     start-server-and-test: 1.13.1
     timeago.js: 4.0.2
@@ -18368,9 +18368,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"recoil@npm:0.3.1":
-  version: 0.3.1
-  resolution: "recoil@npm:0.3.1"
+"recoil@npm:0.4.0":
+  version: 0.4.0
+  resolution: "recoil@npm:0.4.0"
   dependencies:
     hamt_plus: 1.0.2
   peerDependencies:
@@ -18380,7 +18380,7 @@ fsevents@^1.2.7:
       optional: true
     react-native:
       optional: true
-  checksum: 6cc0ee6320f66e3e26bf119fd03c83455389e138ee53411c03290c6fdbcd2282248c00ab4308181983fb3258f30448e0254e52b4b04c54c7da3e697893c63596
+  checksum: 263e27b2462516309424c87e1a281deb06109384496c27ca8626e6b4eb081fcb5bdfa0715dc8b50b5389c06828bdf225529496884e5f3800da21c81596b57e0f
   languageName: node
   linkType: hard
 
