@@ -9893,7 +9893,7 @@ __metadata:
     gatsby-source-filesystem: 3.11.0
     gatsby-transformer-remark: 4.8.0
     gatsby-transformer-sharp: 3.11.0
-    gravatar: 1.8.1
+    gravatar: 1.8.2
     husky: 7.0.1
     io-ts: 2.2.16
     jest: 26.6.3
@@ -11545,9 +11545,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gravatar@npm:1.8.1":
-  version: 1.8.1
-  resolution: "gravatar@npm:1.8.1"
+"gravatar@npm:1.8.2":
+  version: 1.8.2
+  resolution: "gravatar@npm:1.8.2"
   dependencies:
     blueimp-md5: ^2.16.0
     email-validator: ^2.0.4
@@ -11555,7 +11555,7 @@ fsevents@^1.2.7:
     yargs: ^15.4.1
   bin:
     gravatar: cli.js
-  checksum: e542c40a9d8db37c994d6bb6b2062492b00f10b86e2b1e2fc052455f19bbc750991ac4ddd47b54ede0cd9d0cf9ada848927aea97f67756f3666ad454b8b89ff0
+  checksum: a839a353b72d503999def64807c7d1bc6dcf53436f7ee70eafb54d72e2a48fd03d5a290a67e39822ab41d99663619e9bd3361d3bb28959900a74adb0da98983d
   languageName: node
   linkType: hard
 
