@@ -6859,9 +6859,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:8.4.1":
-  version: 8.4.1
-  resolution: "cypress@npm:8.4.1"
+"cypress@npm:8.5.0":
+  version: 8.5.0
+  resolution: "cypress@npm:8.5.0"
   dependencies:
     "@cypress/request": ^2.88.6
     "@cypress/xvfb": ^1.2.4
@@ -6897,6 +6897,7 @@ __metadata:
     minimist: ^1.2.5
     ospath: ^1.2.2
     pretty-bytes: ^5.6.0
+    proxy-from-env: 1.0.0
     ramda: ~0.27.1
     request-progress: ^3.0.0
     supports-color: ^8.1.1
@@ -6906,7 +6907,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 0a319a5a8abeac5af7f51d2f34abfd5ee7b9c0da8fe7fe09359dd38c1676f95459a92a26fdb8915d603677a44a8609bf6a73620d4cccac412ea73de412369e30
+  checksum: 5f37ffa81bc0b409718ae32959d743fcf997e7434d96858d21dcbb39d3be37e3196494fbff87d63531b448da4f8772be814e1452d70539c032360a65a19e7e74
   languageName: node
   linkType: hard
 
@@ -9054,7 +9055,7 @@ __metadata:
     "@types/recoil": 0.0.1
     "@types/typography": 0.16.4
     babel-jest: 26.6.3
-    cypress: 8.4.1
+    cypress: 8.5.0
     elasticlunr: 0.9.5
     eslint: 7.32.0
     eslint-config-prettier: 8.3.0
@@ -16390,6 +16391,13 @@ __metadata:
     forwarded: ~0.1.2
     ipaddr.js: 1.9.1
   checksum: a7dcfd70258cdc3b73c5dc4a35c73db9857f3bf4cf5e6404380e8ea558f8c5569147e721a01195d00b450e36b4dde727fc9d22fdea14310ba38faa595530cd58
+  languageName: node
+  linkType: hard
+
+"proxy-from-env@npm:1.0.0":
+  version: 1.0.0
+  resolution: "proxy-from-env@npm:1.0.0"
+  checksum: 35b2f98a6a6ecb0240c7ce84f5b60f234436da4984b6115971c6f782908984850d804160e0e70063ba711124950110a8a671b61875facb1b8a77d585a739213f
   languageName: node
   linkType: hard
 
