@@ -3909,12 +3909,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jquery@npm:3.5.7":
-  version: 3.5.7
-  resolution: "@types/jquery@npm:3.5.7"
+"@types/jquery@npm:3.5.8":
+  version: 3.5.8
+  resolution: "@types/jquery@npm:3.5.8"
   dependencies:
     "@types/sizzle": "*"
-  checksum: 05bbef95483df84a70d3de7d276aba51dab599cd9fdd0016d8b8c4f5d03d804b1b56d69218c6347f0519f13933861abffd63765e62d88c1001f75a06ec392a28
+  checksum: 70c3db411e7fb72d987af97dbe489234595b12c7e902c247081eaaa18b470d88a0571da672c56f8ca74f9b90493f862a1701c63bde62a9968f0974c20f943fef
   languageName: node
   linkType: hard
 
@@ -9487,7 +9487,7 @@ __metadata:
     "@testing-library/cypress": 8.0.1
     "@types/gravatar": 1.8.3
     "@types/jest": 27.0.2
-    "@types/jquery": 3.5.7
+    "@types/jquery": 3.5.8
     "@types/pluralize": 0.0.29
     "@types/react-dom": 17.0.9
     "@types/react-gravatar": 2.6.10
