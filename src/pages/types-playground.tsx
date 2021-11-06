@@ -39,6 +39,7 @@ export const Pick = () => {
     [k in K]: T[k];
   };
 
+  // @ts-ignore
   type cases = [
     Expect<Equal<Expected1, MyPick<Todo, "title">>>,
     Expect<Equal<Expected2, MyPick<Todo, "title" | "completed">>>,
@@ -69,6 +70,7 @@ export const ReadOnly = () => {
     readonly [k in keyof T]: T[k];
   };
 
+  // @ts-ignore
   type cases = [Expect<Equal<MyReadonly<Todo1>, Readonly<Todo1>>>];
 
   interface Todo1 {
@@ -89,6 +91,7 @@ export const TupleToObject = () => {
 
   const tuple = ["tesla", "model 3", "model X", "model Y"] as const;
 
+  // @ts-ignore
   type cases = [
     Expect<
       Equal<
@@ -107,6 +110,7 @@ export const TupleToObject = () => {
 export const FirstOfArray = () => {
   type First<T extends unknown[]> = T extends [] ? never : T[0];
 
+  // @ts-ignore
   type cases = [
     Expect<Equal<First<[3, 2, 1]>, 3>>,
     Expect<Equal<First<[() => 123, { a: string }]>, () => 123>>,
@@ -131,6 +135,7 @@ export const LengthOfTuple = () => {
     "HUMAN SPACEFLIGHT",
   ] as const;
 
+  // @ts-ignore
   type cases = [
     Expect<Equal<Length<typeof tesla>, 4>>,
     Expect<Equal<Length<typeof spaceX>, 5>>,
@@ -140,6 +145,7 @@ export const LengthOfTuple = () => {
 export const Exclude = () => {
   type MyExclude<T, U> = T extends U ? never : T;
 
+  // @ts-ignore
   type cases = [
     Expect<
       Equal<MyExclude<"a" | "b" | "c", "a">, Exclude<"a" | "b" | "c", "a">>
@@ -166,6 +172,7 @@ export const Awaited = () => {
   type Y = Promise<{ field: number }>;
   type Z = Promise<Promise<boolean>>;
 
+  // @ts-ignore
   type cases = [
     Expect<Equal<Awaited<X>, string>>,
     Expect<Equal<Awaited<Y>, { field: number }>>,
@@ -182,6 +189,7 @@ export const AwaitedRecursive = () => {
   type Y = Promise<{ field: number }>;
   type Z = Promise<Promise<boolean>>;
 
+  // @ts-ignore
   type cases = [
     Expect<Equal<AwaitedRecursive<X>, string>>,
     Expect<Equal<AwaitedRecursive<Y>, { field: number }>>,
@@ -192,6 +200,7 @@ export const AwaitedRecursive = () => {
 export const If = () => {
   type If<C, T, F> = C extends true ? T : F;
 
+  // @ts-ignore
   type cases = [
     Expect<Equal<If<true, "a", "b">, "a">>,
     Expect<Equal<If<false, "a", 2>, 2>>,
@@ -204,6 +213,7 @@ export const If = () => {
 export const Concat = () => {
   type Concat<T extends unknown[], U extends unknown[]> = [...T, ...U];
 
+  // @ts-ignore
   type cases = [
     Expect<Equal<Concat<[], []>, []>>,
     Expect<Equal<Concat<[], [1]>, [1]>>,
@@ -222,6 +232,7 @@ export const Includes = () => {
     ? true
     : false;
 
+  // @ts-ignore
   type cases = [
     Expect<
       Equal<Includes<["Kars", "Esidisi", "Wamuu", "Santana"], "Kars">, true>
@@ -233,9 +244,42 @@ export const Includes = () => {
   ];
 };
 
+export const Push = () => {
+  type Push<T extends readonly any[], U> = [...T, U];
+
+  // @ts-ignore
+  type cases = [
+    Expect<Equal<Push<[1, 2], 3>, [1, 2, 3]>>,
+    Expect<Equal<Push<[], 1>, [1]>>,
+  ];
+};
+
+export const Unshift = () => {
+  type Unshift<T extends readonly any[], U> = [U, ...T];
+
+  // @ts-ignore
+  type cases = [
+    Expect<Equal<Unshift<[1, 2], 3>, [3, 1, 2]>>,
+    Expect<Equal<Unshift<[], 1>, [1]>>,
+  ];
+};
+
+export const Parameters = () => {
+  type MyParameters<F> = F extends (...args: infer P) => any ? P : never;
+
+  // @ts-ignore
+  type cases = [
+    Expect<
+      Equal<MyParameters<(a: number, b: string) => string>, [number, string]>
+    >,
+    Expect<Equal<MyParameters<() => string>, []>>,
+  ];
+};
+
 export const ReturnType = () => {
   type MyReturnType<T> = T extends (...args: any) => infer R ? R : never;
 
+  // @ts-ignore
   type cases = [
     Expect<Equal<string, MyReturnType<() => string>>>,
     Expect<Equal<123, MyReturnType<() => 123>>>,
@@ -253,7 +297,7 @@ export const ReturnType = () => {
   };
 
   const fn = (v: boolean) => (v ? 1 : 2);
-  const fn1 = (v: boolean, w: any) => (v ? 1 : 2);
+  const fn1 = (v: boolean, _: any) => (v ? 1 : 2);
 };
 
 export const Omit = () => {
@@ -262,6 +306,7 @@ export const Omit = () => {
     [k in MyExclude<keyof T, K>]: T[k];
   };
 
+  // @ts-ignore
   type cases = [
     Expect<Equal<Expected1, MyOmit<Todo, "description">>>,
     Expect<Equal<Expected2, MyOmit<Todo, "description" | "completed">>>,
@@ -291,6 +336,7 @@ export const Readonly2 = () => {
   type MyReadonly2<T, K extends keyof T = keyof T> = MyExclude<T, K> &
     MyReadonly<Pick<T, K>>;
 
+  // @ts-ignore
   type cases = [
     Expect<Alike<MyReadonly2<Todo1>, Readonly<Todo1>>>,
     Expect<Alike<MyReadonly2<Todo1, "title" | "description">, Expected>>,
@@ -323,6 +369,7 @@ export const DeepReadonly = () => {
       : T[k];
   };
 
+  // @ts-ignore
   type cases = [Expect<Equal<MyDeepReadonly<X>, Expected>>];
 
   type X = {
@@ -358,4 +405,169 @@ export const DeepReadonly = () => {
       };
     };
   };
+};
+
+export const MyTupleToUnion = () => {
+  type TupleToUnion<T extends any[]> = T extends [infer FIRST, ...infer TAIL]
+    ? FIRST | TupleToUnion<TAIL>
+    : never;
+
+  // @ts-ignore
+  type test = TupleToUnion<[1, 2, 3]>;
+  // @ts-ignore
+  type cases = [
+    Expect<Equal<TupleToUnion<[1, 2, 3]>, 1 | 2 | 3>>,
+    Expect<Equal<TupleToUnion<[]>, never>>,
+  ];
+};
+
+export const OtherTupleToUnion = () => {
+  type TupleToUnion<T extends any[]> = T[number];
+
+  // @ts-ignore
+  type test = TupleToUnion<[1, 2, 3]>;
+  // @ts-ignore
+  type cases = [
+    Expect<Equal<TupleToUnion<[1, 2, 3]>, 1 | 2 | 3>>,
+    Expect<Equal<TupleToUnion<[]>, never>>,
+  ];
+};
+
+export const ChainableOptions = () => {
+  type Chainable<T extends {} = {}> = {
+    option: <K extends string, V>(
+      name: K,
+      value: V,
+    ) => Chainable<{
+      [P in K | keyof T]: P extends K ? V : P extends keyof T ? T[P] : unknown;
+    }>;
+    get: () => T;
+  };
+  const config: Chainable = "" as any;
+
+  // @ts-ignore
+  const result = config
+    .option("foo", 123)
+    .option("name", "type-challenges")
+    .option("bar", { value: "Hello World" })
+    .get();
+
+  // @ts-ignore
+  type cases = [
+    Expect<
+      Equal<
+        typeof result,
+        {
+          foo: number;
+          name: string;
+          bar: {
+            value: string;
+          };
+        }
+      >
+    >,
+  ];
+};
+export const LastOfArray = () => {
+  type arr1 = ["a", "b", "c"];
+  type arr2 = [3, 2, 1];
+
+  type Last<T extends any[]> = T extends [...infer _, infer TAIL]
+    ? TAIL
+    : never;
+
+  // @ts-ignore
+  type tail1 = Last<arr1>; // expected to be 'c'
+  // @ts-ignore
+  type tail2 = Last<arr2>; // expected to be 1
+
+  // @ts-ignore
+  type cases = [
+    Expect<Equal<Last<["a", "b", "c"]>, "c">>,
+    Expect<Equal<Last<[3, 2, 1]>, 1>>,
+  ];
+};
+
+export const OtherLastOfArray = () => {
+  type arr1 = ["a", "b", "c"];
+  type arr2 = [3, 2, 1];
+
+  type Last<T extends any[]> = [never, ...T][T["length"]];
+
+  // @ts-ignore
+  type tail1 = Last<arr1>; // expected to be 'c'
+  // @ts-ignore
+  type tail2 = Last<arr2>; // expected to be 1
+
+  // @ts-ignore
+  type cases = [
+    Expect<Equal<Last<["a", "b", "c"]>, "c">>,
+    Expect<Equal<Last<[3, 2, 1]>, 1>>,
+  ];
+};
+
+export const Pop = () => {
+  type arr1 = ["a", "b", "c", "d"];
+  type arr2 = [3, 2, 1];
+
+  type Pop<T extends any[]> = T extends [...infer REST, infer _] ? REST : never;
+  // @ts-ignore
+  type re1 = Pop<arr1>; // expected to be ['a', 'b', 'c']
+  // @ts-ignore
+  type re2 = Pop<arr2>; // expected to be [3, 2]
+
+  // @ts-ignore
+  type cases = [
+    Expect<Equal<Pop<["a", "b", "c"]>, ["a", "b"]>>,
+    Expect<Equal<Pop<[3, 2, 1]>, [3, 2]>>,
+  ];
+};
+
+export const Shift = () => {
+  type arr1 = ["a", "b", "c", "d"];
+  type arr2 = [3, 2, 1];
+
+  type Shift<T extends any[]> = T extends [infer _, ...infer REST]
+    ? REST
+    : never;
+  // @ts-ignore
+  type re1 = Shift<arr1>; // expected to be ['a', 'b', 'c']
+  // @ts-ignore
+  type re2 = Shift<arr2>; // expected to be [3, 2]
+
+  // @ts-ignore
+  type cases = [
+    Expect<Equal<Shift<["a", "b", "c"]>, ["b", "c"]>>,
+    Expect<Equal<Shift<[3, 2, 1]>, [2, 1]>>,
+  ];
+};
+
+export const Promise_All = () => {
+  type Awaited<T> = T extends Promise<infer A> ? Awaited<A> : T;
+  type AwaitedArray<A extends Array<any>> = A extends [
+    infer HEAD,
+    ...infer TAIL
+  ]
+    ? [Awaited<HEAD>, ...AwaitedArray<TAIL>]
+    : [];
+
+  // @ts-ignore
+  type z = Promise<AwaitedArray<[Promise<Promise<number>>, 42]>>;
+
+  const PromiseAll = <T extends Array<any>>(
+    _: readonly [...T],
+  ): Promise<AwaitedArray<T>> => "LOBSTER" as any;
+  // @ts-ignore
+  const p = PromiseAll([
+    Promise.resolve(3),
+    42,
+    new Promise<string>((resolve) => {
+      setTimeout(resolve, 100, "foo");
+    }),
+  ] as const);
+
+  type check = Expect<Equal<typeof p, Promise<[number, 42, string]>>>;
+
+  // @ts-ignore
+  const doSomething: check = 42 as any;
 };
