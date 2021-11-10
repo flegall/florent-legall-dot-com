@@ -3250,9 +3250,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cypress/request@npm:^2.88.6":
-  version: 2.88.6
-  resolution: "@cypress/request@npm:2.88.6"
+"@cypress/request@npm:^2.88.7":
+  version: 2.88.7
+  resolution: "@cypress/request@npm:2.88.7"
   dependencies:
     aws-sign2: ~0.7.0
     aws4: ^1.8.0
@@ -3273,7 +3273,7 @@ __metadata:
     tough-cookie: ~2.5.0
     tunnel-agent: ^0.6.0
     uuid: ^8.3.2
-  checksum: 51cc70e5ed659dfc196e7d0c0ce8561972f8cc8fa4c0c7f5b9e71a46525e94c9b2e8474aebc3529cb2a88ce61dfbd9f8e9a18194f44249e074b48a27e7e600cb
+  checksum: c739179031a609e13cd58061b7645685458d6c747d77a81525c5d72c2cd01d18647850b20f8d5fb5a07ea7252d520bfc6802dbe0aa9680f3addf226e93e0a55b
   languageName: node
   linkType: hard
 
@@ -8187,11 +8187,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:8.7.0":
-  version: 8.7.0
-  resolution: "cypress@npm:8.7.0"
+"cypress@npm:9.0.0":
+  version: 9.0.0
+  resolution: "cypress@npm:9.0.0"
   dependencies:
-    "@cypress/request": ^2.88.6
+    "@cypress/request": ^2.88.7
     "@cypress/xvfb": ^1.2.4
     "@types/node": ^14.14.31
     "@types/sinonjs__fake-timers": ^6.0.2
@@ -8226,7 +8226,6 @@ __metadata:
     ospath: ^1.2.2
     pretty-bytes: ^5.6.0
     proxy-from-env: 1.0.0
-    ramda: ~0.27.1
     request-progress: ^3.0.0
     supports-color: ^8.1.1
     tmp: ~0.2.1
@@ -8235,7 +8234,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: aa09cbc3aca8ecdc62b20dd54deab81b70e7e845479348d514b293632953f141d24db36dff848b603f7663f2e439f1450a0949da9e26ba94761b40a41961a865
+  checksum: d25de99ce2fb68c2b6fbefb256558ba4d8952362a49231c75e6481ba00373b8ebc341660d94775c9fb6e5729773a802c2b42c2c89a8896e4bf74d99c0ee326f7
   languageName: node
   linkType: hard
 
@@ -10544,7 +10543,7 @@ __metadata:
     "@types/recoil": 0.0.1
     "@types/typography": 0.16.4
     babel-jest: 26.6.3
-    cypress: 8.7.0
+    cypress: 9.0.0
     elasticlunr: 0.9.5
     eslint: 8.2.0
     eslint-config-prettier: 8.3.0
@@ -18279,13 +18278,6 @@ __metadata:
   version: 5.1.1
   resolution: "quick-lru@npm:5.1.1"
   checksum: fafb2b2fa1a948d6f2e88d4a60571be70b316d9b0be857d24fba0ac28fc31acebf535b643fe968473d689f8c655bcb2a0e4da67912f571059a4e4eb15740b021
-  languageName: node
-  linkType: hard
-
-"ramda@npm:~0.27.1":
-  version: 0.27.1
-  resolution: "ramda@npm:0.27.1"
-  checksum: 9aa4655dffdca66f8ba2ceabebe51996d6c75f6a2fb901a150885ace22c5950c211dd589868780b7a91c1443771702634d4370e7572d8c63c60e4b4f61aa57a9
   languageName: node
   linkType: hard
 
