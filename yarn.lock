@@ -4515,15 +4515,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/cypress@npm:8.0.1":
-  version: 8.0.1
-  resolution: "@testing-library/cypress@npm:8.0.1"
+"@testing-library/cypress@npm:8.0.2":
+  version: 8.0.2
+  resolution: "@testing-library/cypress@npm:8.0.2"
   dependencies:
     "@babel/runtime": ^7.14.6
     "@testing-library/dom": ^8.1.0
   peerDependencies:
-    cypress: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
-  checksum: 7a1e5d003253230f61fdb83963e0a92e1446c751545bf99f741db7ab554253d81691f023ae46581cdaf4e48c2235a8701f8ba95b9b764a2842eec89bb16be19f
+    cypress: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
+  checksum: 5f8c706cf228fc0f4bfe23f9a33393c19c15a8c9b8d8e4bc0d22569c7864ee93e79e54cf240652a49a890f551bae77cf569c85b672ae00e962fce0b2d8ebf1af
   languageName: node
   linkType: hard
 
@@ -10563,7 +10563,7 @@ __metadata:
     "@babel/preset-typescript": 7.16.0
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": 3.0.2
     "@reach/router": 1.3.4
-    "@testing-library/cypress": 8.0.1
+    "@testing-library/cypress": 8.0.2
     "@types/gravatar": 1.8.3
     "@types/jest": 27.0.2
     "@types/jquery": 3.5.8
