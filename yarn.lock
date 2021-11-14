@@ -10614,7 +10614,7 @@ __metadata:
     husky: 7.0.4
     io-ts: 2.2.16
     jest: 26.6.3
-    lint-staged: 12.0.1
+    lint-staged: 12.0.2
     npm-run-all: 4.1.5
     pluralize: 8.0.0
     prettier: 2.4.1
@@ -14713,9 +14713,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:12.0.1":
-  version: 12.0.1
-  resolution: "lint-staged@npm:12.0.1"
+"lint-staged@npm:12.0.2":
+  version: 12.0.2
+  resolution: "lint-staged@npm:12.0.2"
   dependencies:
     cli-truncate: 3.1.0
     colorette: ^2.0.16
@@ -14731,7 +14731,7 @@ __metadata:
     supports-color: 9.0.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 4eade09257f4e02faa89eff9b0c8cd050169b57e110d8f4fe336f17c79ff8a120152f2edf3417051632d62ec8e6bdef2f2ac560ea5843c961404c058bfb57aef
+  checksum: e1b3f574a78fdd01acbbeb3414a46859dd5adb2c3505546f7454a27f546e6c715982fbc0ac8bd880146351420f0897ecf5566474a549e27d36809fb65bb11bb2
   languageName: node
   linkType: hard
 
