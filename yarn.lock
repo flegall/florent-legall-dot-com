@@ -7293,16 +7293,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-truncate@npm:3.1.0":
-  version: 3.1.0
-  resolution: "cli-truncate@npm:3.1.0"
-  dependencies:
-    slice-ansi: ^5.0.0
-    string-width: ^5.0.0
-  checksum: 92952d8328e76586c43feecf08a5dd8d9b793f914c3e3920279f6a3097901f2b97e06ff0faff7f909fb413764119c94ecdbc21640a957117d201a177b72d9d8a
-  languageName: node
-  linkType: hard
-
 "cli-truncate@npm:^2.1.0":
   version: 2.1.0
   resolution: "cli-truncate@npm:2.1.0"
@@ -7310,6 +7300,16 @@ __metadata:
     slice-ansi: ^3.0.0
     string-width: ^4.2.0
   checksum: 2b20f9e353cd34b015ff0067effd2810490c4e23eb9b4edfd7cdc41f00311d0d1a6148eb7e9947d4ab858295f4da5b5d8f150842a8802dc7999c51288fe26e62
+  languageName: node
+  linkType: hard
+
+"cli-truncate@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "cli-truncate@npm:3.1.0"
+  dependencies:
+    slice-ansi: ^5.0.0
+    string-width: ^5.0.0
+  checksum: 92952d8328e76586c43feecf08a5dd8d9b793f914c3e3920279f6a3097901f2b97e06ff0faff7f909fb413764119c94ecdbc21640a957117d201a177b72d9d8a
   languageName: node
   linkType: hard
 
@@ -10621,7 +10621,7 @@ __metadata:
     husky: 7.0.4
     io-ts: 2.2.16
     jest: 26.6.3
-    lint-staged: 12.0.2
+    lint-staged: 12.0.3
     npm-run-all: 4.1.5
     pluralize: 8.0.0
     prettier: 2.4.1
@@ -12284,13 +12284,6 @@ __metadata:
   version: 4.0.0
   resolution: "has-flag@npm:4.0.0"
   checksum: 2e5391139d3d287231ccb58659702392f6e3abeac3296fb4721afaff46493f3d9b99a9329ae015dfe973aa206ed5c75f43e86aec0267dce79aa5c2b6e811b3ad
-  languageName: node
-  linkType: hard
-
-"has-flag@npm:^5.0.0":
-  version: 5.0.1
-  resolution: "has-flag@npm:5.0.1"
-  checksum: ff048d8cde6d04954bb3a2f35c64e764b96046ffd31665853f50b4db4e37661ea3023ea528dd6d445f68ba7736e7a039f525b0006cc0e7152f1450129380ca0b
   languageName: node
   linkType: hard
 
@@ -14697,25 +14690,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:12.0.2":
-  version: 12.0.2
-  resolution: "lint-staged@npm:12.0.2"
+"lint-staged@npm:12.0.3":
+  version: 12.0.3
+  resolution: "lint-staged@npm:12.0.3"
   dependencies:
-    cli-truncate: 3.1.0
+    cli-truncate: ^3.1.0
     colorette: ^2.0.16
     commander: ^8.3.0
     cosmiconfig: ^7.0.1
     debug: ^4.3.2
+    enquirer: ^2.3.6
     execa: ^5.1.1
     listr2: ^3.13.3
     micromatch: ^4.0.4
     normalize-path: ^3.0.0
-    object-inspect: 1.11.0
-    string-argv: 0.3.1
-    supports-color: 9.0.2
+    object-inspect: ^1.11.0
+    string-argv: ^0.3.1
+    supports-color: ^9.0.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: e1b3f574a78fdd01acbbeb3414a46859dd5adb2c3505546f7454a27f546e6c715982fbc0ac8bd880146351420f0897ecf5566474a549e27d36809fb65bb11bb2
+  checksum: 12120a5a8337ca5308d00bb3bc3d19e1372a3f180bf2502fb509a4f1f0650c6bbb064f48e1269fcfed1ed50750167209618b0560667b94d683bc803bda2f4ea4
   languageName: node
   linkType: hard
 
@@ -16512,17 +16506,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object-inspect@npm:1.11.0, object-inspect@npm:^1.11.0":
-  version: 1.11.0
-  resolution: "object-inspect@npm:1.11.0"
-  checksum: 7890688465619b0947d4370c82d7454cbca855012facb0e1083eb9c44f35718a3479f06887a0acf72b1f181930151a465e899bc16127f7d8c5fb2eee0c61c093
-  languageName: node
-  linkType: hard
-
 "object-inspect@npm:^1.10.3":
   version: 1.10.3
   resolution: "object-inspect@npm:1.10.3"
   checksum: f5d21d86dbedf7224f5e2bee8235beb1e94a419443102ae0d6c17603ace26b930de584ece5695ae6c338ec996656477d5ca425b1f8770b4aa3340aa3d188aa9a
+  languageName: node
+  linkType: hard
+
+"object-inspect@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "object-inspect@npm:1.11.0"
+  checksum: 7890688465619b0947d4370c82d7454cbca855012facb0e1083eb9c44f35718a3479f06887a0acf72b1f181930151a465e899bc16127f7d8c5fb2eee0c61c093
   languageName: node
   linkType: hard
 
@@ -20125,7 +20119,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"string-argv@npm:0.3.1":
+"string-argv@npm:^0.3.1":
   version: 0.3.1
   resolution: "string-argv@npm:0.3.1"
   checksum: 002a6902698eff6bd463ddd2b03864bf9be08a1359879243d94d3906ebbe984ff355d73224064be7504d20262eadb06897b3d40b5d7cefccacc69c9dc45c8d0e
@@ -20525,15 +20519,6 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"supports-color@npm:9.0.2":
-  version: 9.0.2
-  resolution: "supports-color@npm:9.0.2"
-  dependencies:
-    has-flag: ^5.0.0
-  checksum: 641a982f9b36d4d3a5eff68456910f84e24a9272c6f70fecc83c79af2dfa9b0b6e68bc4c929cef79b3dab55e8b3a5aff10e80112fcd220eb04c498eb1f98614d
-  languageName: node
-  linkType: hard
-
 "supports-color@npm:^5.3.0":
   version: 5.5.0
   resolution: "supports-color@npm:5.5.0"
@@ -20567,6 +20552,13 @@ resolve@^2.0.0-next.3:
   dependencies:
     has-flag: ^4.0.0
   checksum: 0219f5c91753fea8dc8046cd4b18d39458b5dc0c6421c67c1072209faae9ba93b89283252e3b05d5c18901fd9f8b95001e3247fb93e2265f66d584a676522c75
+  languageName: node
+  linkType: hard
+
+"supports-color@npm:^9.0.2":
+  version: 9.1.0
+  resolution: "supports-color@npm:9.1.0"
+  checksum: b4d04718435140a748390661dc8b186264cd24fb7d330d9cacdc4751bcde213e84197e94c5459851ccbf3ea7995e1202a164ee86d09bc470a52e36b317aaf889
   languageName: node
   linkType: hard
 
