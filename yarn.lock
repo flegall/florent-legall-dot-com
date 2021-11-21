@@ -7897,19 +7897,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cosmiconfig@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "cosmiconfig@npm:7.0.1"
-  dependencies:
-    "@types/parse-json": ^4.0.0
-    import-fresh: ^3.2.1
-    parse-json: ^5.0.0
-    path-type: ^4.0.0
-    yaml: ^1.10.0
-  checksum: 796261c250559339589455c1522bfa284b5bf8203ced7e3c5b0060bd5b27cad86418214d8d86d59c8c9af81e526f27965a6bd725cb12021f1835d9b347727272
-  languageName: node
-  linkType: hard
-
 "create-gatsby@npm:^2.2.0":
   version: 2.2.0
   resolution: "create-gatsby@npm:2.2.0"
@@ -10648,7 +10635,7 @@ __metadata:
     husky: 7.0.4
     io-ts: 2.2.16
     jest: 26.6.3
-    lint-staged: 12.0.3
+    lint-staged: 12.1.1
     npm-run-all: 4.1.5
     pluralize: 8.0.0
     prettier: 2.4.1
@@ -14710,6 +14697,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lilconfig@npm:2.0.4":
+  version: 2.0.4
+  resolution: "lilconfig@npm:2.0.4"
+  checksum: d29c90f4790ba146508e8e326f9f41faea70803eb75475ea426bd4ed0b17eb1d261e2f91f2ffe2b90964019673e5ff58d257b090e9aa027c15b6d2b1e8eec137
+  languageName: node
+  linkType: hard
+
 "lines-and-columns@npm:^1.1.6":
   version: 1.1.6
   resolution: "lines-and-columns@npm:1.1.6"
@@ -14717,26 +14711,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:12.0.3":
-  version: 12.0.3
-  resolution: "lint-staged@npm:12.0.3"
+"lint-staged@npm:12.1.1":
+  version: 12.1.1
+  resolution: "lint-staged@npm:12.1.1"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
     commander: ^8.3.0
-    cosmiconfig: ^7.0.1
     debug: ^4.3.2
     enquirer: ^2.3.6
     execa: ^5.1.1
+    lilconfig: 2.0.4
     listr2: ^3.13.3
     micromatch: ^4.0.4
     normalize-path: ^3.0.0
     object-inspect: ^1.11.0
     string-argv: ^0.3.1
     supports-color: ^9.0.2
+    yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 12120a5a8337ca5308d00bb3bc3d19e1372a3f180bf2502fb509a4f1f0650c6bbb064f48e1269fcfed1ed50750167209618b0560667b94d683bc803bda2f4ea4
+  checksum: 54bcf50bf552040acf3aa4da73e5256484b3e4abe4603eea0d5171dba0d75756001ac000c8c0d2d2a773f950625ac67660a658197115144d932bf6b16325dd8f
   languageName: node
   linkType: hard
 
@@ -22598,7 +22593,7 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"yaml@npm:^1.10.0, yaml@npm:^1.7.2, yaml@npm:^1.8.3":
+"yaml@npm:^1.10.0, yaml@npm:^1.10.2, yaml@npm:^1.7.2, yaml@npm:^1.8.3":
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: 8d72062ea3dbfd8fae3d6ddd5b741c2aeb5835a31b0719bf14fac71dd84adde0829763d6fbac46387309da00af1440194c796da5efc349b0baf9de39d82ae69e
