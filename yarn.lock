@@ -8265,9 +8265,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:9.0.0":
-  version: 9.0.0
-  resolution: "cypress@npm:9.0.0"
+"cypress@npm:9.1.0":
+  version: 9.1.0
+  resolution: "cypress@npm:9.1.0"
   dependencies:
     "@cypress/request": ^2.88.7
     "@cypress/xvfb": ^1.2.4
@@ -8276,7 +8276,7 @@ __metadata:
     "@types/sizzle": ^2.3.2
     arch: ^2.2.0
     blob-util: ^2.0.2
-    bluebird: ^3.7.2
+    bluebird: 3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.0
     check-more-types: ^2.24.0
@@ -8312,7 +8312,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: d25de99ce2fb68c2b6fbefb256558ba4d8952362a49231c75e6481ba00373b8ebc341660d94775c9fb6e5729773a802c2b42c2c89a8896e4bf74d99c0ee326f7
+  checksum: bce1048642def8f844fc3d187e4122e717f32ca68dd0d1bb466ea4eefdc905718ed197a334ecf149718a81bef0c51a9c7fc5b11792f234e868185d964f05dfe8
   languageName: node
   linkType: hard
 
@@ -10595,7 +10595,7 @@ __metadata:
     "@types/recoil": 0.0.1
     "@types/typography": 0.16.4
     babel-jest: 26.6.3
-    cypress: 9.0.0
+    cypress: 9.1.0
     elasticlunr: 0.9.5
     eslint: 8.3.0
     eslint-config-prettier: 8.3.0
