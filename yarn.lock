@@ -10638,7 +10638,7 @@ __metadata:
     lint-staged: 12.1.2
     npm-run-all: 4.1.5
     pluralize: 8.0.0
-    prettier: 2.4.1
+    prettier: 2.5.0
     prismjs: 1.25.0
     react: 17.0.2
     react-dom: 17.0.2
@@ -17946,7 +17946,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.4.1, prettier@npm:^2.4.1":
+"prettier@npm:2.5.0":
+  version: 2.5.0
+  resolution: "prettier@npm:2.5.0"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 4f2da53948fc6b5cb85030bc033cc8a9d40ba3c3904e038ab1e9f5acbf68c71606a77157d880bcc41bb69362fedeac76f0aa8570588db2b4c7d3816c3ce3e173
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.4.1":
   version: 2.4.1
   resolution: "prettier@npm:2.4.1"
   bin:
