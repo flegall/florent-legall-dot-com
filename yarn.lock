@@ -5165,12 +5165,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-helmet@npm:6.1.4":
-  version: 6.1.4
-  resolution: "@types/react-helmet@npm:6.1.4"
+"@types/react-helmet@npm:6.1.5":
+  version: 6.1.5
+  resolution: "@types/react-helmet@npm:6.1.5"
   dependencies:
     "@types/react": "*"
-  checksum: 817bf5f1dd1ec1f9265dc10a87e3017a820c80a6a1be41e1e43b0fcb7d45c4c4f7072a467d49663fbf9a557e69ab7136d15b740b05aa6b263c6713db5bd64c02
+  checksum: 527cdbcafa559d0dca4d7e9fc4e1c7d29fdc600e179c2968a7d2f26bd3cce5d8edb262195164d712c51edf781b82c41a158c0e21f1aae5eab9281e31e7dff5ec
   languageName: node
   linkType: hard
 
@@ -10628,7 +10628,7 @@ __metadata:
     "@types/pluralize": 0.0.29
     "@types/react-dom": 17.0.11
     "@types/react-gravatar": 2.6.10
-    "@types/react-helmet": 6.1.4
+    "@types/react-helmet": 6.1.5
     "@types/recoil": 0.0.1
     "@types/typography": 0.16.4
     babel-jest: 26.6.3
