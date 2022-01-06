@@ -10660,7 +10660,7 @@ __metadata:
     npm-run-all: 4.1.5
     pluralize: 8.0.0
     prettier: 2.5.1
-    prismjs: 1.25.0
+    prismjs: 1.26.0
     react: 17.0.2
     react-dom: 17.0.2
     react-gravatar: 2.6.3
@@ -17931,10 +17931,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prismjs@npm:1.25.0":
-  version: 1.25.0
-  resolution: "prismjs@npm:1.25.0"
-  checksum: 24120e9c2ce00bff73cf25d26a957321178e72a5df3d94089a47d7724e1544f26092064abac6b48205d79465b711424c93c71fba7a6b2dbb27d15d3d8c024d92
+"prismjs@npm:1.26.0":
+  version: 1.26.0
+  resolution: "prismjs@npm:1.26.0"
+  checksum: 189d0e130bd02c79499344e5db99d97d8c1c1403591e313bdca7e59bc81486a4aa0674ab4d3a8cf46a232eb355c83285f316dd33738471382760e926f210fc45
   languageName: node
   linkType: hard
 
