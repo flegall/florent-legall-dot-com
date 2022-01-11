@@ -7389,17 +7389,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-table3@npm:~0.6.0":
-  version: 0.6.0
-  resolution: "cli-table3@npm:0.6.0"
+"cli-table3@npm:~0.6.1":
+  version: 0.6.1
+  resolution: "cli-table3@npm:0.6.1"
   dependencies:
-    colors: ^1.1.2
-    object-assign: ^4.1.0
+    colors: 1.4.0
     string-width: ^4.2.0
   dependenciesMeta:
     colors:
       optional: true
-  checksum: 4b61f9db4fb26039ab9299089d5a8a6a269f0d79eefd1e8b9479746f26ec186365bc6bf2bceb4812446cc213426b0f86cd86b7fc130a43d270d0f76e77f251f3
+  checksum: b8104fe8ed7608ce7da368ac7626c744ea695cdef81c757bb7e4f122e156cc6cac5c6ba50da6a8ef0ae3af90c64763cbf557f31cd8d2b1b3977ac8768a0fa0f9
   languageName: node
   linkType: hard
 
@@ -7607,7 +7606,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colors@npm:^1.1.2":
+"colors@npm:1.4.0":
   version: 1.4.0
   resolution: "colors@npm:1.4.0"
   checksum: a0f266ac041a9774d92cc9624a984707678d2eeec125d54e8d8231075ce36c24c5352fb5d0f90c6ee420d0f63e354417cec716386ad341309334aad18e32b933
@@ -8356,9 +8355,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:9.2.0":
-  version: 9.2.0
-  resolution: "cypress@npm:9.2.0"
+"cypress@npm:9.2.1":
+  version: 9.2.1
+  resolution: "cypress@npm:9.2.1"
   dependencies:
     "@cypress/request": ^2.88.10
     "@cypress/xvfb": ^1.2.4
@@ -8372,7 +8371,7 @@ __metadata:
     chalk: ^4.1.0
     check-more-types: ^2.24.0
     cli-cursor: ^3.1.0
-    cli-table3: ~0.6.0
+    cli-table3: ~0.6.1
     commander: ^5.1.0
     common-tags: ^1.8.0
     dayjs: ^1.10.4
@@ -8403,7 +8402,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: c08ae2371f4be6ca62aed645db5a52591073f7f23afbc458103aa8c0f4a0c48c98ab84a555e7ac83895991dc8caf71d3e166f40ede43971d1a81e4761e55bfcf
+  checksum: c566b8a281474f7307c8e1a44780a9d9f94caaf3d783bf929b809ef50dc8099cb3a775cab9268487b6290b36899d686fd361c81194860bfe2ba1b4bc2d2a7112
   languageName: node
   linkType: hard
 
@@ -10668,7 +10667,7 @@ __metadata:
     "@types/recoil": 0.0.1
     "@types/typography": 0.16.4
     babel-jest: 26.6.3
-    cypress: 9.2.0
+    cypress: 9.2.1
     elasticlunr: 0.9.5
     eslint: 8.6.0
     eslint-config-prettier: 8.3.0
