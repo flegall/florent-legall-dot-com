@@ -5092,10 +5092,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sinonjs__fake-timers@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "@types/sinonjs__fake-timers@npm:6.0.2"
-  checksum: 1dd1b391904c2a2972318b753026f615784c14a827c12ba21f67707ca6565f3cea195790a1c64178f2208e330eec4ab9c78823c99019384b9a01b02cc6987071
+"@types/sinonjs__fake-timers@npm:8.1.1":
+  version: 8.1.1
+  resolution: "@types/sinonjs__fake-timers@npm:8.1.1"
+  checksum: 78a47b7e7911d9ffe71cd08db37553e1a7897d691dfc2863d505b6671241d25349c704b4d96f5e36e8f8fe7399a170719b33c93c7d9093c56eeae7ce88668393
   languageName: node
   linkType: hard
 
@@ -6766,7 +6766,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer@npm:^5.2.0, buffer@npm:^5.5.0, buffer@npm:^5.7.0":
+"buffer@npm:^5.2.0, buffer@npm:^5.5.0, buffer@npm:^5.6.0, buffer@npm:^5.7.0":
   version: 5.7.1
   resolution: "buffer@npm:5.7.1"
   dependencies:
@@ -8183,18 +8183,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:9.2.1":
-  version: 9.2.1
-  resolution: "cypress@npm:9.2.1"
+"cypress@npm:9.3.1":
+  version: 9.3.1
+  resolution: "cypress@npm:9.3.1"
   dependencies:
     "@cypress/request": ^2.88.10
     "@cypress/xvfb": ^1.2.4
     "@types/node": ^14.14.31
-    "@types/sinonjs__fake-timers": ^6.0.2
+    "@types/sinonjs__fake-timers": 8.1.1
     "@types/sizzle": ^2.3.2
     arch: ^2.2.0
     blob-util: ^2.0.2
-    bluebird: 3.7.2
+    bluebird: ^3.7.2
+    buffer: ^5.6.0
     cachedir: ^2.3.0
     chalk: ^4.1.0
     check-more-types: ^2.24.0
@@ -8230,7 +8231,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: c566b8a281474f7307c8e1a44780a9d9f94caaf3d783bf929b809ef50dc8099cb3a775cab9268487b6290b36899d686fd361c81194860bfe2ba1b4bc2d2a7112
+  checksum: 5c333ca9770889015705085d7edd3eff467d9fc61d01f401c7287c9421a7a305ca905ac38b93dee528e1259a69acae434870955e6f9a58480f4a100515e21938
   languageName: node
   linkType: hard
 
@@ -10455,7 +10456,7 @@ __metadata:
     "@types/recoil": 0.0.1
     "@types/typography": 0.16.4
     babel-jest: 26.6.3
-    cypress: 9.2.1
+    cypress: 9.3.1
     elasticlunr: 0.9.5
     eslint: 8.7.0
     eslint-config-prettier: 8.3.0
