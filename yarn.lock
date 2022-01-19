@@ -2997,15 +2997,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.14.8":
-  version: 7.15.3
-  resolution: "@babel/runtime@npm:7.15.3"
-  dependencies:
-    regenerator-runtime: ^0.13.4
-  checksum: dfb5ba324d36b141f3ed5a6af8a4c03b6b5c94cc2453b265dbdd56ae3b5c28c1a44640b31fa9d7462d8278c7c8af967be8004024a87c795175c724cd77c5cce1
-  languageName: node
-  linkType: hard
-
 "@babel/runtime@npm:^7.15.4":
   version: 7.15.4
   resolution: "@babel/runtime@npm:7.15.4"
@@ -3021,6 +3012,15 @@ __metadata:
   dependencies:
     regenerator-runtime: ^0.13.4
   checksum: b105c2a0d3893e3424454ef127fe70a57bbeea976dc90c1cd37cebd9bccd4c55b8b9118195f145557d79408ea0fe211896f8f2221136b5939e1bc0b04115df22
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.16.7":
+  version: 7.16.7
+  resolution: "@babel/runtime@npm:7.16.7"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 2e2078cd935c4a0f79d1128f3fc5aa2e89b2112b01cc6538fcca0da056252d5b88d20164192893bb891831ec147aafeeedb08172535547592ffbcdde67d82dd4
   languageName: node
   linkType: hard
 
@@ -10474,7 +10474,7 @@ __metadata:
     gatsby-plugin-catch-links: 4.5.0
     gatsby-plugin-feed: 4.5.0
     gatsby-plugin-manifest: 4.5.2
-    gatsby-plugin-netlify: 3.14.0
+    gatsby-plugin-netlify: 4.0.0
     gatsby-plugin-offline: 5.5.2
     gatsby-plugin-react-helmet: 5.5.0
     gatsby-plugin-sharp: 4.5.2
@@ -10923,18 +10923,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-netlify@npm:3.14.0":
-  version: 3.14.0
-  resolution: "gatsby-plugin-netlify@npm:3.14.0"
+"gatsby-plugin-netlify@npm:4.0.0":
+  version: 4.0.0
+  resolution: "gatsby-plugin-netlify@npm:4.0.0"
   dependencies:
-    "@babel/runtime": ^7.14.8
+    "@babel/runtime": ^7.16.7
     fs-extra: ^10.0.0
+    gatsby-core-utils: ^3.5.2
     kebab-hash: ^0.1.2
     lodash: ^4.17.21
     webpack-assets-manifest: ^5.0.6
   peerDependencies:
-    gatsby: ^3.0.0
-  checksum: b54de7d9a5d608798768dd87401ab4bbf926ac9a8dda4b13a91502e5b586ae1e262099927aacb4541444f9c33d26e10465704683f0f8853abfbf90b15a849374
+    gatsby: ^4.0.0
+  checksum: 1b6b7aa2c0418741df7e30ff390e2f5fc39cfd298df562a821adbbbc23e03253ed37f6be858260ea56e0e20117f282fe24d422f7b48fafb6db0367e41b434ce4
   languageName: node
   linkType: hard
 
