@@ -8,7 +8,7 @@
     "@babel/core": "7.16.12",
     "@reach/router": "1.3.4",
     "fp-ts": "2.11.8",
-    "gatsby": "4.5.4",
+    "gatsby": "4.5.5",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-catch-links": "4.5.0",
     "gatsby-plugin-feed": "4.5.0",
