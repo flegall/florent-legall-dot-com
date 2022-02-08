@@ -10537,7 +10537,7 @@ __metadata:
     eslint-plugin-react: 7.28.0
     eslint-plugin-standard: 5.0.0
     fp-ts: 2.11.8
-    gatsby: 4.7.0
+    gatsby: 4.7.1
     gatsby-image: 3.11.0
     gatsby-plugin-catch-links: 4.7.0
     gatsby-plugin-feed: 4.7.0
@@ -10934,9 +10934,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-link@npm:^4.7.0":
-  version: 4.7.0
-  resolution: "gatsby-link@npm:4.7.0"
+"gatsby-link@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "gatsby-link@npm:4.7.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@types/reach__router": ^1.3.10
@@ -10946,7 +10946,7 @@ __metadata:
     "@gatsbyjs/reach-router": ^1.3.5
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 012772e92ea6f01760710b62257ee1ef45b8478f13e9f15cb6c0b8694dbf21010074d954632c8ff33eb9bf341ef53b82828e94f93eb28286fcbd84f74a5c4bbf
+  checksum: fc9a1ebb112693658b2f945a450fed403f5e6f706e3522a16d6e6471cdb0c21b4f5d572c9ed1acde2af37e8d5e72a68f1f5344c6657f8520d6f4d609c7614504
   languageName: node
   linkType: hard
 
@@ -11419,9 +11419,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:4.7.0":
-  version: 4.7.0
-  resolution: "gatsby@npm:4.7.0"
+"gatsby@npm:4.7.1":
+  version: 4.7.1
+  resolution: "gatsby@npm:4.7.1"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -11494,7 +11494,7 @@ __metadata:
     gatsby-core-utils: ^3.7.0
     gatsby-graphiql-explorer: ^2.7.0
     gatsby-legacy-polyfills: ^2.7.0
-    gatsby-link: ^4.7.0
+    gatsby-link: ^4.7.1
     gatsby-page-utils: ^2.7.0
     gatsby-plugin-page-creator: ^4.7.0
     gatsby-plugin-typescript: ^4.7.0
@@ -11582,7 +11582,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: fa53393a39d630770c78fde05c6516a4f1f51e696e7be8cdb7648412179ca691697ffcbdaf08995e84b70e619972f1fadad01055eeecc8662de05a341c66398c
+  checksum: 862298b62a25e035c7113a37a47b4026f86262e6d74ca1c9abd37cb63ab45c05832c98e4641ae15788fda58ee08ad63150c50300608f4da810e2c72a583b038c
   languageName: node
   linkType: hard
 
