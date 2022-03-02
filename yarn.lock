@@ -5751,12 +5751,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:17.0.12":
-  version: 17.0.12
-  resolution: "@types/react-dom@npm:17.0.12"
+"@types/react-dom@npm:17.0.13":
+  version: 17.0.13
+  resolution: "@types/react-dom@npm:17.0.13"
   dependencies:
     "@types/react": "*"
-  checksum: 0f413abdbc9b202a11b5a5278a4a253f61d48bf711ac00d409537f591c8fa3d67322b4691ff43aa67a977be18e79d65111966dbbb1633a5bc8ac95b687c11689
+  checksum: 21a4cf169cdb5bc32ed20e95de453499adb04cc7f3a287a8d012b3d1f28de9751aadfff96090a69d6b40075a7564a26da56a1908b01378384d7b7d90dedf26b3
   languageName: node
   linkType: hard
 
@@ -11213,7 +11213,7 @@ __metadata:
     "@types/jest": 27.4.1
     "@types/jquery": 3.5.14
     "@types/pluralize": 0.0.29
-    "@types/react-dom": 17.0.12
+    "@types/react-dom": 17.0.13
     "@types/react-gravatar": 2.6.10
     "@types/react-helmet": 6.1.5
     "@types/recoil": 0.0.1
