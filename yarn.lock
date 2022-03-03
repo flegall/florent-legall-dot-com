@@ -11232,7 +11232,7 @@ __metadata:
     eslint-plugin-react: 7.29.2
     eslint-plugin-standard: 5.0.0
     fp-ts: 2.11.8
-    gatsby: 4.9.0
+    gatsby: 4.9.1
     gatsby-image: 3.11.0
     gatsby-plugin-catch-links: 4.9.0
     gatsby-plugin-feed: 4.9.0
@@ -12167,9 +12167,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:4.9.0":
-  version: 4.9.0
-  resolution: "gatsby@npm:4.9.0"
+"gatsby@npm:4.9.1":
+  version: 4.9.1
+  resolution: "gatsby@npm:4.9.1"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -12332,7 +12332,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 3f1d173848a7a73cbcb8ec19ce2bf098dbb9ba2b1ea157b98940b43654bbb5c3681de402f68e888bd40c0b306c00098990c9b9c79b2b3d5a1c3d78d9d02bd140
+  checksum: 2c10f5ad3a3cfb7faeb41646a050b55f18ca896df6e49bde7588edacf3325ee8803cc764caf230fdacf8da0c78c36069581480bbffb66b733d4ac0146ac420e0
   languageName: node
   linkType: hard
 
