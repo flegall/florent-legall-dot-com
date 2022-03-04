@@ -10277,7 +10277,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:7.29.2, eslint-plugin-react@npm:^7.29.2":
+"eslint-plugin-react@npm:7.29.3":
+  version: 7.29.3
+  resolution: "eslint-plugin-react@npm:7.29.3"
+  dependencies:
+    array-includes: ^3.1.4
+    array.prototype.flatmap: ^1.2.5
+    doctrine: ^2.1.0
+    estraverse: ^5.3.0
+    jsx-ast-utils: ^2.4.1 || ^3.0.0
+    minimatch: ^3.1.2
+    object.entries: ^1.1.5
+    object.fromentries: ^2.0.5
+    object.hasown: ^1.1.0
+    object.values: ^1.1.5
+    prop-types: ^15.8.1
+    resolve: ^2.0.0-next.3
+    semver: ^6.3.0
+    string.prototype.matchall: ^4.0.6
+  peerDependencies:
+    eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
+  checksum: e2ae8ed8769574449eeb2f3784ee3dbc3c169b46d2b2d6d7d97f3673e6f43014f5cb2de7eb492e072c2413d551c91b774fc1f93525030ce59322bc427f76d4d9
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-react@npm:^7.29.2":
   version: 7.29.2
   resolution: "eslint-plugin-react@npm:7.29.2"
   dependencies:
@@ -11229,7 +11253,7 @@ __metadata:
     eslint-plugin-node: 11.1.0
     eslint-plugin-prettier: 4.0.0
     eslint-plugin-promise: 6.0.0
-    eslint-plugin-react: 7.29.2
+    eslint-plugin-react: 7.29.3
     eslint-plugin-standard: 5.0.0
     fp-ts: 2.11.8
     gatsby: 4.9.1
