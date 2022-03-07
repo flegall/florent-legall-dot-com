@@ -11256,7 +11256,7 @@ __metadata:
     eslint-plugin-react: 7.29.3
     eslint-plugin-standard: 5.0.0
     fp-ts: 2.11.8
-    gatsby: 4.9.1
+    gatsby: 4.9.2
     gatsby-image: 3.11.0
     gatsby-plugin-catch-links: 4.9.0
     gatsby-plugin-feed: 4.9.0
@@ -12191,9 +12191,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:4.9.1":
-  version: 4.9.1
-  resolution: "gatsby@npm:4.9.1"
+"gatsby@npm:4.9.2":
+  version: 4.9.2
+  resolution: "gatsby@npm:4.9.2"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -12291,7 +12291,7 @@ __metadata:
     joi: ^17.4.2
     json-loader: ^0.5.7
     latest-version: 5.1.0
-    lmdb: 2.2.1
+    lmdb: ^2.2.3
     lodash: ^4.17.21
     md5-file: ^5.0.0
     meant: ^1.0.3
@@ -12356,7 +12356,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 2c10f5ad3a3cfb7faeb41646a050b55f18ca896df6e49bde7588edacf3325ee8803cc764caf230fdacf8da0c78c36069581480bbffb66b733d4ac0146ac420e0
+  checksum: 5fb65726f09623ece8b1852f364101c4f9a880b18f49543187c262c59c9ce17703bbdc3a72a917d3f89a0366188050d93550a9dfecc559979bee19f60a375985
   languageName: node
   linkType: hard
 
@@ -15447,20 +15447,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lmdb@npm:2.2.1":
-  version: 2.2.1
-  resolution: "lmdb@npm:2.2.1"
-  dependencies:
-    msgpackr: ^1.5.4
-    nan: ^2.14.2
-    node-gyp: latest
-    node-gyp-build: ^4.2.3
-    ordered-binary: ^1.2.4
-    weak-lru-cache: ^1.2.2
-  checksum: ea02d028c5a48dd0deac3321742c70b563d1d0457a00986c56fdc9f996b60f3bb100e3df16201e66f8966108b67b38c6a5b86ed32df0374c43d19555388fec2b
-  languageName: node
-  linkType: hard
-
 "lmdb@npm:^2.0.2":
   version: 2.2.3
   resolution: "lmdb@npm:2.2.3"
@@ -15486,6 +15472,20 @@ __metadata:
     ordered-binary: ^1.2.4
     weak-lru-cache: ^1.2.2
   checksum: dc74a96b1163486723500fa959af1fb2e7e38953449a753034a8b9d0f9953c95196781fdea5896cd1fd8f5bdf34fbdd38a1813e69e9f5d51d9e1808bbd044c1e
+  languageName: node
+  linkType: hard
+
+"lmdb@npm:^2.2.3":
+  version: 2.2.4
+  resolution: "lmdb@npm:2.2.4"
+  dependencies:
+    msgpackr: ^1.5.4
+    nan: ^2.14.2
+    node-gyp: latest
+    node-gyp-build: ^4.2.3
+    ordered-binary: ^1.2.4
+    weak-lru-cache: ^1.2.2
+  checksum: 26592d66f87063e6a201171142caaefa36dbbdb7abd09d2ea2f83e3c6730dcef7a08c6ea1dba17b78000c4ed36d9ee3e31d973be95d711b94ebd5546a706ca10
   languageName: node
   linkType: hard
 
