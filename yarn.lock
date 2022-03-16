@@ -11311,7 +11311,7 @@ __metadata:
     husky: 7.0.4
     io-ts: 2.2.16
     jest: 26.6.3
-    lint-staged: 12.3.5
+    lint-staged: 12.3.6
     npm-run-all: 4.1.5
     pluralize: 8.0.0
     prettier: 2.5.1
@@ -15414,9 +15414,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:12.3.5":
-  version: 12.3.5
-  resolution: "lint-staged@npm:12.3.5"
+"lint-staged@npm:12.3.6":
+  version: 12.3.6
+  resolution: "lint-staged@npm:12.3.6"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -15428,12 +15428,13 @@ __metadata:
     micromatch: ^4.0.4
     normalize-path: ^3.0.0
     object-inspect: ^1.12.0
+    pidtree: ^0.5.0
     string-argv: ^0.3.1
     supports-color: ^9.2.1
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 3f2815fbce5e222193f8de1a4c2692b9f2e6985262863e24621cd532bff0bdceaa3e09182e3ec20f611f6a2654d560f3fd1f9cc89bf4e6e66e3a8761cb10bdbf
+  checksum: 0fc8bf1796426365768d4256dc802f0342f6191e971e62712eb0fc0c8413b6a74cea396bf1aa320e1838de67c52843ded653e6c2d2afbb59b079921948fbecdd
   languageName: node
   linkType: hard
 
@@ -17912,6 +17913,15 @@ __metadata:
   bin:
     pidtree: bin/pidtree.js
   checksum: 8a48f063cb60e188bc94c307a309d309e20e9a3c3ca3537a035baf66dba2315f7b175d3a13a3b816db349dad270e347877b5aeae6d763360be650b3d1b1ca9b3
+  languageName: node
+  linkType: hard
+
+"pidtree@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "pidtree@npm:0.5.0"
+  bin:
+    pidtree: bin/pidtree.js
+  checksum: 05ad53c1ecd3b1d9f77bea340068bbf9d5b11704a8c7e177dbfd4ef530d01aab06fac62a8bfefa3b8b8b2104304a6f742ba7301435184a409de390daee7e5aa7
   languageName: node
   linkType: hard
 
