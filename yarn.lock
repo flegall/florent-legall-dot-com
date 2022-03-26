@@ -10431,9 +10431,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.11.0":
-  version: 8.11.0
-  resolution: "eslint@npm:8.11.0"
+"eslint@npm:8.12.0":
+  version: 8.12.0
+  resolution: "eslint@npm:8.12.0"
   dependencies:
     "@eslint/eslintrc": ^1.2.1
     "@humanwhocodes/config-array": ^0.9.2
@@ -10472,7 +10472,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 14df74ab66152832baffbe0d21645d3d2b1ce5cf8a329410abbc7e952bce284ec404cb2b6d3f3f20458dfb87348dd59053bd1593355f6302f693a61a3beb02ac
+  checksum: 8214be812ddc9c7554436030a952d6bcd0632057de93279ae1517d582aaed0e84072f18415c19464d185418833d62010cce3998729e2f404c3a42dea0f7f6696
   languageName: node
   linkType: hard
 
@@ -11257,7 +11257,7 @@ __metadata:
     babel-jest: 26.6.3
     cypress: 9.5.2
     elasticlunr: 0.9.5
-    eslint: 8.11.0
+    eslint: 8.12.0
     eslint-config-prettier: 8.5.0
     eslint-config-standard: 16.0.3
     eslint-plugin-cypress: 2.12.1
