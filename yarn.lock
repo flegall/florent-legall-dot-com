@@ -8998,9 +8998,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:9.5.2":
-  version: 9.5.2
-  resolution: "cypress@npm:9.5.2"
+"cypress@npm:9.5.3":
+  version: 9.5.3
+  resolution: "cypress@npm:9.5.3"
   dependencies:
     "@cypress/request": ^2.88.10
     "@cypress/xvfb": ^1.2.4
@@ -9034,7 +9034,7 @@ __metadata:
     listr2: ^3.8.3
     lodash: ^4.17.21
     log-symbols: ^4.0.0
-    minimist: ^1.2.5
+    minimist: ^1.2.6
     ospath: ^1.2.2
     pretty-bytes: ^5.6.0
     proxy-from-env: 1.0.0
@@ -9046,7 +9046,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 030906944d699b24f09305678684c427231bf410e40c6e3d1d81b067661866efed3d878277b78e4e000de0eafc095b741e98ae4ad257dd56d87ea720eee5b7f1
+  checksum: 305910d76f32e33e4b1b8ce6e63cce7d5811d10a000572654e4874757260872f7ae3b5c63ad220cd04e725fd545250e3c95ad0aafbc4562795172eea3d2d2e63
   languageName: node
   linkType: hard
 
@@ -11255,7 +11255,7 @@ __metadata:
     "@types/recoil": 0.0.1
     "@types/typography": 0.16.4
     babel-jest: 26.6.3
-    cypress: 9.5.2
+    cypress: 9.5.3
     elasticlunr: 0.9.5
     eslint: 8.12.0
     eslint-config-prettier: 8.5.0
@@ -16515,6 +16515,13 @@ __metadata:
   version: 1.2.5
   resolution: "minimist@npm:1.2.5"
   checksum: b77b8590147a4e217ff34266236bc39de23b52e6e33054076991ff674c7397a1380a7bde11111916f16f003a94aaa7e4f3d92595a32189644ff607fabc65a5b6
+  languageName: node
+  linkType: hard
+
+"minimist@npm:^1.2.6":
+  version: 1.2.6
+  resolution: "minimist@npm:1.2.6"
+  checksum: 56b3aeedcc7776139f72ca9dce0dae06825437f71ebd823d97dc49a34f3280e627909d54aca6fa81c47e17f11e5affc7357bfb8fd8140ca6138e80f946dd0dbc
   languageName: node
   linkType: hard
 
