@@ -5807,12 +5807,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:17.0.14":
-  version: 17.0.14
-  resolution: "@types/react-dom@npm:17.0.14"
+"@types/react-dom@npm:17.0.15":
+  version: 17.0.15
+  resolution: "@types/react-dom@npm:17.0.15"
   dependencies:
-    "@types/react": "*"
-  checksum: 3565d6658304b00acfe90504e5f52f744a46f1acab60a3c369d03be2f9a48ba7b2f163b212e4d9907e0452f574191ef618d30da0214a437ba30d2e66e969f0d1
+    "@types/react": ^17
+  checksum: ed2f0e9451f613df10a01e3a0603762cd2cea550ebaa91319550eb1a39b8ae9004cb6297dce96ee8a884156dbd3e4a976dab8ed97479fdfb5799139cc619369b
   languageName: node
   linkType: hard
 
@@ -5842,6 +5842,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 5bcaabadc90a23ad9008540eae98a5819b638c4cf1b968adc67be47d6a8dc8cb100061d877dae97618fb275e405dc484b37154080c7ac0ea7df5efcdd8f98c24
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^17":
+  version: 17.0.44
+  resolution: "@types/react@npm:17.0.44"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 50f46da2b774ab1e86eb896b4028b6e7e04a4201bbbba56fbba4742f37d31781b61f0f51f2d0872c4dc7441ece64856b007ab6e2584788310db64615be46769a
   languageName: node
   linkType: hard
 
@@ -11310,7 +11321,7 @@ __metadata:
     "@types/jest": 27.4.1
     "@types/jquery": 3.5.14
     "@types/pluralize": 0.0.29
-    "@types/react-dom": 17.0.14
+    "@types/react-dom": 17.0.15
     "@types/react-gravatar": 2.6.10
     "@types/react-helmet": 6.1.5
     "@types/recoil": 0.0.1
