@@ -11329,7 +11329,7 @@ __metadata:
     eslint-plugin-react: 7.29.4
     eslint-plugin-standard: 5.0.0
     fp-ts: 2.11.9
-    gatsby: 4.11.2
+    gatsby: 4.11.3
     gatsby-image: 3.11.0
     gatsby-plugin-catch-links: 4.11.0
     gatsby-plugin-feed: 4.11.1
@@ -12271,9 +12271,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:4.11.2":
-  version: 4.11.2
-  resolution: "gatsby@npm:4.11.2"
+"gatsby@npm:4.11.3":
+  version: 4.11.3
+  resolution: "gatsby@npm:4.11.3"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -12371,7 +12371,7 @@ __metadata:
     joi: ^17.4.2
     json-loader: ^0.5.7
     latest-version: 5.1.0
-    lmdb: ^2.2.3
+    lmdb: ~2.2.3
     lodash: ^4.17.21
     md5-file: ^5.0.0
     meant: ^1.0.3
@@ -12436,7 +12436,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: fdc13d12347415a46eeeabe3a3546b12cbd22924b83957f1a96063baf9066a3a170386c3886d4fd61c33ccca876ab8b3b064dabf5ddd0dcefd823093e67384bf
+  checksum: 6cec56d7e53f111807324def16397e4a81153d1a6cbc5ca84820b444f7bfcd1a64f852e6d5ae2177cd56400552809a2b3e7f7d1b43fb365fcd37628bb962b972
   languageName: node
   linkType: hard
 
@@ -15523,7 +15523,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lmdb@npm:2.2.4, lmdb@npm:^2.2.3":
+"lmdb@npm:2.2.4":
   version: 2.2.4
   resolution: "lmdb@npm:2.2.4"
   dependencies:
@@ -15576,6 +15576,20 @@ __metadata:
     ordered-binary: ^1.2.4
     weak-lru-cache: ^1.2.2
   checksum: 77a7b019fbba51753248a0aa71f7a85f3e904fd5aed504189665a6ee850e0441b813784c1a584866a6d9bfc73a57a7742a9dd5e658caee62d5295162323cca87
+  languageName: node
+  linkType: hard
+
+"lmdb@npm:~2.2.3":
+  version: 2.2.6
+  resolution: "lmdb@npm:2.2.6"
+  dependencies:
+    msgpackr: ^1.5.4
+    nan: ^2.14.2
+    node-gyp: latest
+    node-gyp-build: ^4.2.3
+    ordered-binary: ^1.2.4
+    weak-lru-cache: ^1.2.2
+  checksum: 1a4bd48e3a851368a271f58d6d309a302c5e1a64d2862c948d1d6848403f32b07730af9cf5e918d03b66825bc903eafc433f41559778b06b38a19de7cc27de30
   languageName: node
   linkType: hard
 
