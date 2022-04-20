@@ -11322,7 +11322,7 @@ __metadata:
     gatsby-plugin-catch-links: 4.12.1
     gatsby-plugin-feed: 4.12.1
     gatsby-plugin-manifest: 4.12.1
-    gatsby-plugin-netlify: 4.2.0
+    gatsby-plugin-netlify: 4.3.0
     gatsby-plugin-offline: 5.12.1
     gatsby-plugin-react-helmet: 5.12.1
     gatsby-plugin-sharp: 4.12.1
@@ -11846,9 +11846,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-netlify@npm:4.2.0":
-  version: 4.2.0
-  resolution: "gatsby-plugin-netlify@npm:4.2.0"
+"gatsby-plugin-netlify@npm:4.3.0":
+  version: 4.3.0
+  resolution: "gatsby-plugin-netlify@npm:4.3.0"
   dependencies:
     "@babel/runtime": ^7.16.7
     fs-extra: ^10.0.0
@@ -11858,7 +11858,7 @@ __metadata:
     webpack-assets-manifest: ^5.0.6
   peerDependencies:
     gatsby: ^4.0.0
-  checksum: e00cafef02fc203e590d672c8cb454d4be5ebc0d7b6702f8e321448eb6a8b0490a41f7c35f53af25204593ef0ed642aa3b2204a629e6fe0c57a6ccf36e5824d5
+  checksum: d0e4332d92b188d9dc105b6c403e10cfc19492a8f9b9b7177371b397f49371356056874ee66ba48275d4cce6fdc37518798bc6fa140230f3d7eb5f89adafee08
   languageName: node
   linkType: hard
 
