@@ -11203,8 +11203,8 @@ __metadata:
     pluralize: 8.0.0
     prettier: 2.6.2
     prismjs: 1.28.0
-    react: 18.0.0
-    react-dom: 18.0.0
+    react: 18.1.0
+    react-dom: 18.1.0
     react-gravatar: 2.6.3
     react-helmet: 6.1.0
     react-typography: 0.16.20
@@ -18839,15 +18839,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.0.0":
-  version: 18.0.0
-  resolution: "react-dom@npm:18.0.0"
+"react-dom@npm:18.1.0":
+  version: 18.1.0
+  resolution: "react-dom@npm:18.1.0"
   dependencies:
     loose-envify: ^1.1.0
-    scheduler: ^0.21.0
+    scheduler: ^0.22.0
   peerDependencies:
-    react: ^18.0.0
-  checksum: 4bdb133817e5a59716d673cfa0d01b8970c18ed61ad3793143b2480ed96ddc095b5b4e68073088294984a21d1356f2c17f2e40553e5e3f4b571e7af6893e2876
+    react: ^18.1.0
+  checksum: 40ab704328673a84ce71d6f462474ff0b731fb0852bbf264b337586b5147de7b0e7744107608d0d9c5c7259df66b3c8c8f8c7fb50abd08abca369a043dd64aad
   languageName: node
   linkType: hard
 
@@ -18945,12 +18945,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.0.0":
-  version: 18.0.0
-  resolution: "react@npm:18.0.0"
+"react@npm:18.1.0":
+  version: 18.1.0
+  resolution: "react@npm:18.1.0"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: 83d69fad37b5919762b584140d65d3e21e8c45760f7dbce90e78afc59c38bf96a058691886e28f7c2d8bb595facf4dec1907b92d2c5264de194ed91d0e3eb8e1
+  checksum: c581a1b60cff0d1a09a476cd442b4f61fdf68f4c54b4a7b5af9687e5a2a34296d32f53d65c44610cdeab789359165364e275c82dd23cfd6ffe78c0021bbe74d0
   languageName: node
   linkType: hard
 
@@ -19722,12 +19722,12 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.21.0":
-  version: 0.21.0
-  resolution: "scheduler@npm:0.21.0"
+"scheduler@npm:^0.22.0":
+  version: 0.22.0
+  resolution: "scheduler@npm:0.22.0"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: 9a6e6524c3e864291b88cebf3f3b5af3839dfedf9c6333efc9a126939ef8acbc4bf9179bcc4c77b8c3f41b49c1adf22f5bf70d40f70b8bfd1a569574fe2b94ca
+  checksum: 6d17ab2080e290a43eeaa63a9bc8c8af07bbb1daa1c62147858ce7ec6d23960c943f89fff04ae1c137bcb77189375cc09ea32db513cee9ff9d2b329b22bf389e
   languageName: node
   linkType: hard
 
