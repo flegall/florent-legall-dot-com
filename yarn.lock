@@ -11393,7 +11393,7 @@ __metadata:
     gatsby-transformer-remark: 5.13.0
     gatsby-transformer-sharp: 4.13.0
     gravatar: 1.8.2
-    husky: 7.0.4
+    husky: 8.0.0
     io-ts: 2.2.16
     jest: 28.1.0
     lint-staged: 12.4.1
@@ -13489,12 +13489,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:7.0.4":
-  version: 7.0.4
-  resolution: "husky@npm:7.0.4"
+"husky@npm:8.0.0":
+  version: 8.0.0
+  resolution: "husky@npm:8.0.0"
   bin:
     husky: lib/bin.js
-  checksum: 4052668d7cc948d722cafbd9194adc0726d2f29d0139a552394f1983357bf2eaf3205923753ba6b1cfc9bb5eb6fcaac5db0dea900ccd9150c1620edb30496b85
+  checksum: 20ac4bff9346b0f29096ed385a9f8e268d5e39f27ac9d8868232f1bed5d97d564980e633cf658cfb50d0a35a5cb5004d8e91059ce2fb41e7112852db81351a11
   languageName: node
   linkType: hard
 
