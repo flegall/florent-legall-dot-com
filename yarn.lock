@@ -5744,13 +5744,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:27.5.0":
-  version: 27.5.0
-  resolution: "@types/jest@npm:27.5.0"
+"@types/jest@npm:27.5.1":
+  version: 27.5.1
+  resolution: "@types/jest@npm:27.5.1"
   dependencies:
     jest-matcher-utils: ^27.0.0
     pretty-format: ^27.0.0
-  checksum: 537ff3752077563944258d4fdd0c546e0d2066ab0a41e6adeed3726a1c7a9f4889ee429c6095446b48bed62946040ae9d999e1472e322812df39de7523a376d5
+  checksum: ca62ceb7f26a2db114f490af1e4f80c9b077b6bdde7915693899a5258bb5c2cd3020953522e48e824435b23a0b51efb1abc58fd09843a1909defb0384a6e2e42
   languageName: node
   linkType: hard
 
@@ -11347,7 +11347,7 @@ __metadata:
     "@reach/router": 1.3.4
     "@testing-library/cypress": 8.0.2
     "@types/gravatar": 1.8.3
-    "@types/jest": 27.5.0
+    "@types/jest": 27.5.1
     "@types/jquery": 3.5.14
     "@types/pluralize": 0.0.29
     "@types/react-dom": 18.0.3
