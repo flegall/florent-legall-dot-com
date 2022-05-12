@@ -6184,12 +6184,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.0.3":
-  version: 18.0.3
-  resolution: "@types/react-dom@npm:18.0.3"
+"@types/react-dom@npm:18.0.4":
+  version: 18.0.4
+  resolution: "@types/react-dom@npm:18.0.4"
   dependencies:
     "@types/react": "*"
-  checksum: 63b5dbe41d6c24024d9b2ffb1776656981ee5c9ab539b1b1e772b61385511732943e70b6e3f2cc83741668496e9097e63c3044918be3661fcb78b10987d8feb6
+  checksum: 4dc2f275e56ff33e9182ca8ecacc93f4d720975c419c06fe99369329234c10c9950267c9a422be9cfb67cdca278c546d08c3683bdaff280372df451640b3cfa5
   languageName: node
   linkType: hard
 
@@ -11585,7 +11585,7 @@ __metadata:
     "@types/jest": 27.5.1
     "@types/jquery": 3.5.14
     "@types/pluralize": 0.0.29
-    "@types/react-dom": 18.0.3
+    "@types/react-dom": 18.0.4
     "@types/react-gravatar": 2.6.10
     "@types/react-helmet": 6.1.5
     "@types/recoil": 0.0.1
