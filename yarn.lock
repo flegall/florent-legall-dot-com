@@ -10503,15 +10503,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard@npm:16.0.3":
-  version: 16.0.3
-  resolution: "eslint-config-standard@npm:16.0.3"
+"eslint-config-standard@npm:17.0.0":
+  version: 17.0.0
+  resolution: "eslint-config-standard@npm:17.0.0"
   peerDependencies:
-    eslint: ^7.12.1
-    eslint-plugin-import: ^2.22.1
-    eslint-plugin-node: ^11.1.0
-    eslint-plugin-promise: ^4.2.1 || ^5.0.0
-  checksum: bac061664b12d830c1413005c109ecfe40a4fb89985295a4f2592b6c0649e65a75be2c096ef887d0ae8e904faef2bb79dd6ff6cef0976040c346faff34c2e5cb
+    eslint: ^8.0.1
+    eslint-plugin-import: ^2.25.2
+    eslint-plugin-n: ^15.0.0
+    eslint-plugin-promise: ^6.0.0
+  checksum: 3c80b161317f9c0c606c4e28030ddea3d5199485f5ab970c8f7f2f6bf00249ac271b18c92c77264d2893d48eb0265e9f1c4237fea2625bab0010a53911ef162a
   languageName: node
   linkType: hard
 
@@ -11595,7 +11595,7 @@ __metadata:
     elasticlunr: 0.9.5
     eslint: 8.15.0
     eslint-config-prettier: 8.5.0
-    eslint-config-standard: 16.0.3
+    eslint-config-standard: 17.0.0
     eslint-plugin-cypress: 2.12.1
     eslint-plugin-import: 2.26.0
     eslint-plugin-node: 11.1.0
