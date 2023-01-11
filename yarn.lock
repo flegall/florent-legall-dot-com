@@ -4902,6 +4902,48 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lmdb/lmdb-darwin-arm64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-darwin-arm64@npm:2.5.3"
+  checksum: 06a176200d32617343cb3a3956a416bdd56ae4789d38795be73ea31f439023a26acc048ede5c0432bd78ab8d34ff899dff9a83372aa7662efa7acb2a9bbe4d2a
+  languageName: node
+  linkType: hard
+
+"@lmdb/lmdb-darwin-x64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-darwin-x64@npm:2.5.3"
+  checksum: 60b8dbdb01c609da1bf861e462177d557a8411b622b9bc958cea0b6a5e97e6cb0880ba1ef6f9f93df5c8a8ced39d230c61a6e0b49081bcd7421e77e681eed5e8
+  languageName: node
+  linkType: hard
+
+"@lmdb/lmdb-linux-arm64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-linux-arm64@npm:2.5.3"
+  checksum: 005855674e8d22562cfd855ff405b719cf90e82dc871b183b3977060c045ebae7ed9ed51d140d9476b32c33a6491bc00db88ca81958e6ff3ee2be58e8c8693cd
+  languageName: node
+  linkType: hard
+
+"@lmdb/lmdb-linux-arm@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-linux-arm@npm:2.5.3"
+  checksum: a67bfb09f81f20861e236eb8ab09ca3b22c29b621bb317cf9c5fa0fb5a371bf63849b425714a1e404c81124057ab2b6cdee8704841feec86e3346ea56656e5e8
+  languageName: node
+  linkType: hard
+
+"@lmdb/lmdb-linux-x64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-linux-x64@npm:2.5.3"
+  checksum: 94a1e2655615b68d82cebfa3a6025ffd98d7620a28445fac7b57f18b567966a8108c6f69a26647892618a979d6d77650802b3f575bbc04ff4800d2fbaad52100
+  languageName: node
+  linkType: hard
+
+"@lmdb/lmdb-win32-x64@npm:2.5.3":
+  version: 2.5.3
+  resolution: "@lmdb/lmdb-win32-x64@npm:2.5.3"
+  checksum: ebc3e51e4f7eb7bb892589dee0293c87926b6ad50ff98f17f1106ddf9fcef8954353efb088d2082c448f77e53e84fbe6a77b4e609513cf475cac371b9e1f13a5
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.4":
   version: 2.1.4
   resolution: "@nodelib/fs.scandir@npm:2.1.4"
@@ -11625,7 +11667,7 @@ __metadata:
     gatsby-remark-responsive-iframe: 5.14.0
     gatsby-remark-smartypants: 5.14.0
     gatsby-source-filesystem: 4.14.0
-    gatsby-transformer-remark: 5.14.0
+    gatsby-transformer-remark: 5.25.1
     gatsby-transformer-sharp: 4.14.0
     gravatar: 1.8.2
     husky: 8.0.1
@@ -11964,6 +12006,29 @@ __metadata:
     tmp: ^0.2.1
     xdg-basedir: ^4.0.0
   checksum: 899a626a931ba63b1ef04240583c680fe8e7a50877e2fc2ee3dff25514211e81665bba2441beb331d506332f4f5417b9dabd5a502eb82e1e970ad7d6105b5f0f
+  languageName: node
+  linkType: hard
+
+"gatsby-core-utils@npm:^3.25.0":
+  version: 3.25.0
+  resolution: "gatsby-core-utils@npm:3.25.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.13.0
+    file-type: ^16.5.3
+    fs-extra: ^10.1.0
+    got: ^11.8.5
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 958c2ce1b40c158ce0c98de8b1bba5b393cb5dafe9827d0203615c2f55fe2c4c748edc4769c93c8e06323a592a3fb6da4796e6d5e90ac56e1fb037206d2dac16
   languageName: node
   linkType: hard
 
@@ -12499,12 +12564,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-remark@npm:5.14.0":
-  version: 5.14.0
-  resolution: "gatsby-transformer-remark@npm:5.14.0"
+"gatsby-transformer-remark@npm:5.25.1":
+  version: 5.25.1
+  resolution: "gatsby-transformer-remark@npm:5.25.1"
   dependencies:
     "@babel/runtime": ^7.15.4
-    gatsby-core-utils: ^3.14.0
+    gatsby-core-utils: ^3.25.0
     gray-matter: ^4.0.3
     hast-util-raw: ^6.0.2
     hast-util-to-html: ^7.1.3
@@ -12527,7 +12592,7 @@ __metadata:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: e2ec9dd5793f092995f4d7f2567b8e8821290eb100940884ec4725735aee0900c8ef1b2dfd6f7b61ad742987b6192f8168cdc3e05ef58162faf0a7c490cbb868
+  checksum: ace20feb6646c1dad8049f160deb636dfeb74bb0d02d6aeac18522f4d75b7efc7a5cbac49d8f206a3ff323462bd02bc805f1b71621cc16aefaf75d7dffd0ccdf
   languageName: node
   linkType: hard
 
@@ -13076,6 +13141,25 @@ __metadata:
     p-cancelable: ^2.0.0
     responselike: ^2.0.0
   checksum: 9c7e94bc0828f505de52451f445664394aee83c2051e033413a5fead1128814f322976de96905c3b2e74e6b91b122ab10f3c6b7806a15e49429e40440181c844
+  languageName: node
+  linkType: hard
+
+"got@npm:^11.8.5":
+  version: 11.8.6
+  resolution: "got@npm:11.8.6"
+  dependencies:
+    "@sindresorhus/is": ^4.0.0
+    "@szmarczak/http-timer": ^4.0.5
+    "@types/cacheable-request": ^6.0.1
+    "@types/responselike": ^1.0.0
+    cacheable-lookup: ^5.0.3
+    cacheable-request: ^7.0.2
+    decompress-response: ^6.0.0
+    http2-wrapper: ^1.0.0-beta.5.2
+    lowercase-keys: ^2.0.0
+    p-cancelable: ^2.0.0
+    responselike: ^2.0.0
+  checksum: 44ca54c1ec20c42b76a461fc68670ffc63e6b4fea9a714cdf38fea654a02dd89de14cb1175b3cf04e46f0bf1bcb2fa2ba9003b5d8cc7de15d393caf91eafcaaa
   languageName: node
   linkType: hard
 
@@ -15692,6 +15776,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lmdb@npm:2.5.3":
+  version: 2.5.3
+  resolution: "lmdb@npm:2.5.3"
+  dependencies:
+    "@lmdb/lmdb-darwin-arm64": 2.5.3
+    "@lmdb/lmdb-darwin-x64": 2.5.3
+    "@lmdb/lmdb-linux-arm": 2.5.3
+    "@lmdb/lmdb-linux-arm64": 2.5.3
+    "@lmdb/lmdb-linux-x64": 2.5.3
+    "@lmdb/lmdb-win32-x64": 2.5.3
+    msgpackr: ^1.5.4
+    node-addon-api: ^4.3.0
+    node-gyp: latest
+    node-gyp-build-optional-packages: 5.0.3
+    ordered-binary: ^1.2.4
+    weak-lru-cache: ^1.2.2
+  dependenciesMeta:
+    "@lmdb/lmdb-darwin-arm64":
+      optional: true
+    "@lmdb/lmdb-darwin-x64":
+      optional: true
+    "@lmdb/lmdb-linux-arm":
+      optional: true
+    "@lmdb/lmdb-linux-arm64":
+      optional: true
+    "@lmdb/lmdb-linux-x64":
+      optional: true
+    "@lmdb/lmdb-win32-x64":
+      optional: true
+  checksum: a593c37a41740e881ae0c230df796abac5a46a4e805f508ea886d6d264b9e40f3f34b5292bc5ab0b22f565e64f8e636ef502739b98fc65a58d20a50b17153ca3
+  languageName: node
+  linkType: hard
+
 "lmdb@npm:^2.0.2":
   version: 2.2.3
   resolution: "lmdb@npm:2.2.3"
@@ -17112,6 +17229,17 @@ __metadata:
   dependencies:
     whatwg-url: ^5.0.0
   checksum: c0a4450cca0568be1e75911a850758f7b78b0687b720cdb337f9729ceaa7af76d37b637472893e11d3cee8dfa7916d94aeb0a64f96b597234c2e1a8717eb4be9
+  languageName: node
+  linkType: hard
+
+"node-gyp-build-optional-packages@npm:5.0.3":
+  version: 5.0.3
+  resolution: "node-gyp-build-optional-packages@npm:5.0.3"
+  bin:
+    node-gyp-build-optional-packages: bin.js
+    node-gyp-build-optional-packages-optional: optional.js
+    node-gyp-build-optional-packages-test: build-test.js
+  checksum: bcc97db78ecf10d4a6882d48f24a8ddad24b45f628fb1ff06dd28576618b002da11437a98314ce1723a247dd8a5a5603fd0e418382328e1a47d49a4bdb95c971
   languageName: node
   linkType: hard
 
